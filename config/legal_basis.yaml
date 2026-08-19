@@ -1,0 +1,179 @@
+# Legal / policy categories to monitor (spec section 2, A-J).
+# Each entry: keywords used for classify.py keyword matching (case-insensitive,
+# substring match against title + abstract), plus event-stage phrases used by
+# classify.py to help infer investigation_stage (spec section 8).
+# Edit this file to add/remove keywords -- no code changes needed.
+
+AD_CVD:
+  name: "AD/CVD"
+  priority: HIGH
+  keywords:
+    - antidumping
+    - anti-dumping
+    - countervailing
+    - "CVD"
+    - dumping
+    - subsidy
+    - less-than-fair-value
+    - injury
+    - petition
+    - preliminary determination
+    - final determination
+    - administrative review
+    - new shipper review
+    - sunset review
+    - changed circumstances review
+    - scope ruling
+    - circumvention
+    - anti-circumvention
+    - evasion
+
+SECTION_232:
+  name: "Section 232"
+  priority: HIGH
+  keywords:
+    - section 232
+    - "232 investigation"
+    - national security tariff
+    - tariff-rate quota
+    - "232 exclusion"
+    - "232 exemption"
+
+SECTION_301:
+  name: "Section 301"
+  priority: HIGH
+  keywords:
+    - section 301
+    - "301 investigation"
+    - foreign-country practice
+    - structural excess capacity
+    - unfair trade practice
+    - "301 action"
+    - "301 tariff"
+    - "301 exclusion"
+
+SECTION_201:
+  name: "Section 201"
+  priority: HIGH
+  keywords:
+    - section 201
+    - safeguard
+    - "increased imports"
+    - serious injury
+    - global safeguard
+
+SECTION_337:
+  name: "Section 337"
+  priority: HIGH
+  keywords:
+    - section 337
+    - "337 investigation"
+    - unfair competition
+    - exclusion order
+    - cease-and-desist order
+    - ALJ initial determination
+    - Commission determination
+    - temporary exclusion order
+
+IEEPA_PRESIDENTIAL:
+  name: "IEEPA / Presidential / Emergency Trade Action"
+  priority: HIGH
+  keywords:
+    - IEEPA
+    - national emergency
+    - additional duty
+    - surcharge
+    - reciprocal tariff
+    - executive order
+    - presidential proclamation
+    - presidential memorandum
+
+UFLPA_FORCED_LABOR:
+  name: "UFLPA / Forced Labor"
+  priority: HIGH
+  keywords:
+    - UFLPA
+    - "Uyghur Forced Labor Prevention Act"
+    - forced labor
+    - "withhold release order"
+    - "WRO"
+    - detention
+    - seizure
+    - import ban
+
+BIS_EXPORT_CONTROLS:
+  name: "BIS / Export Controls"
+  priority: MEDIUM_HIGH
+  keywords:
+    - entity list
+    - export control
+    - "EAR"
+    - end-use
+    - end-user
+    - restricted party
+    - license requirement
+    - advanced computing
+    - dual use
+
+OFAC_SANCTIONS:
+  name: "OFAC / Sanctions"
+  priority: MEDIUM_HIGH
+  keywords:
+    - OFAC
+    - "SDN"
+    - sanctions
+    - blocked persons
+    - sectoral sanctions
+    - secondary sanctions
+
+SPECIAL_301_IP:
+  name: "Special 301 / IP / Trade Reports"
+  priority: EARLY_WARNING
+  keywords:
+    - special 301
+    - priority foreign country
+    - priority watch list
+    - watch list
+    - intellectual property protection
+    - market access
+
+# Stage phrases used by classify.py to infer investigation_stage (spec section 8).
+# Order matters: later matches override earlier ones (more advanced stage wins).
+stage_phrases:
+  STAGE_0:
+    - industry pressure
+    - domestic producer complaint
+  STAGE_1:
+    - petition filed
+    - request for
+  STAGE_2:
+    - investigation initiated
+    - initiation of investigation
+    - notice of initiation
+  STAGE_3:
+    - preliminary determination
+    - preliminary affirmative
+    - preliminary negative
+  STAGE_4:
+    - proposed remedy
+    - proposed action
+    - proposed tariff
+  STAGE_5:
+    - final determination
+    - final affirmative
+    - final action
+  STAGE_6:
+    - antidumping duty order
+    - countervailing duty order
+    - order effective
+    - tariff effective
+  STAGE_7:
+    - administrative review
+    - sunset review
+    - changed circumstances review
+    - scope modification
+    - tariff modification
+  STAGE_8:
+    - terminated
+    - withdrawn
+    - revoked

@@ -1,0 +1,47 @@
+# Country / geographic watchlist (spec section 3).
+# Edit this file to add/remove countries or circumvention keywords -- no code changes needed.
+
+vietnam_terms:
+  - vietnam
+  - viet nam
+  - socialist republic of vietnam
+  - vietnamese
+
+china_terms:
+  - china
+  - "prc"
+  - people's republic of china
+  - chinese
+
+other_watchlist:
+  - india
+  - thailand
+  - indonesia
+  - malaysia
+  - brazil
+  - ecuador
+  - mexico
+  - chile
+  - bangladesh
+  - cambodia
+  - philippines
+  - south korea
+  - japan
+  - taiwan
+  - turkey
+  - european union
+
+# Presence of these terms alongside a China mention is what flags
+# indirect_vietnam / third_country_risk in exposure.py (spec section 9).
+circumvention_terms:
+  - transshipment
+  - circumvention
+  - evasion
+  - third country
+  - substantial transformation
+  - chinese inputs
+  - china-origin inputs
+  - processing in vietnam
+  - processing in third countries
+  - supply chain diversion
+  - country of origin

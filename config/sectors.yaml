@@ -1,0 +1,121 @@
+# Sector watchlist (spec section 4). Edit to add/remove sectors or keywords --
+# no code changes needed. Keys are the canonical sector name used elsewhere
+# (companies.csv "sector" column should match a key here for company matching
+# in exposure.py to work).
+
+Seafood:
+  - pangasius
+  - tilapia
+  - shrimp
+  - frozen fish
+  - fish fillets
+  - seafood
+
+Wood / Furniture:
+  - plywood
+  - hardwood
+  - furniture
+  - cabinets
+  - flooring
+  - timber
+  - wood products
+  - wood
+
+Textiles / Apparel:
+  - textile
+  - apparel
+  - garment
+  - yarn
+  - fabric
+
+Footwear:
+  - footwear
+  - shoes
+
+Electronics:
+  - electronics
+  - consumer electronics
+
+Semiconductors:
+  - semiconductor
+  - chips
+  - integrated circuit
+
+Machinery:
+  - machinery
+  - industrial equipment
+
+Steel:
+  - steel
+  - hot-rolled
+  - cold-rolled
+  - galvanized steel
+
+Aluminum:
+  - aluminum
+  - aluminium
+
+Copper:
+  - copper
+
+Cement:
+  - cement
+
+Chemicals:
+  - chemical
+  - chemicals
+
+Plastics:
+  - plastic
+  - plastics
+
+Solar:
+  - solar
+  - photovoltaic
+  - solar cell
+  - solar module
+
+Batteries:
+  - battery
+  - batteries
+  - lithium-ion
+
+EV / Automotive:
+  - electric vehicle
+  - "EV"
+  - automotive
+  - auto parts
+
+Agriculture:
+  - agriculture
+  - agricultural
+
+Fertilizer:
+  - fertilizer
+
+Rubber:
+  - rubber
+
+Coffee:
+  - coffee
+
+Cashew:
+  - cashew
+
+Rice:
+  - rice
+
+Fruit / Durian:
+  - fruit
+  - durian
+
+Pharmaceuticals:
+  - pharmaceutical
+  - pharmaceuticals
+
+Consumer Goods:
+  - consumer goods
+
+Construction Materials:
+  - construction materials
+  - building materials
