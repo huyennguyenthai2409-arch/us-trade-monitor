@@ -1,7 +1,7 @@
 """Daily digest generation (spec section 16-17), rendered as Markdown into
 data/digests/YYYY-MM-DD.md. Built from the events newly ingested in a given
 pipeline run, grouped by the same risk_level field the dashboard filters on
-(Thấp/Trung bình/Cao, a 3-tier collapse of spec section 10's 5-tier model per
+(Low/Medium/High, a 3-tier collapse of spec section 10's 5-tier model per
 user request) -- not a separately score-thresholded set of bands, so a label
 in the digest always matches what you can filter for in the dashboard."""
 
@@ -13,9 +13,9 @@ from pathlib import Path
 DIGESTS_DIR = Path(__file__).parent / "data" / "digests"
 
 _BAND_ORDER = [
-    ("Cao", "\U0001F534 CAO"),
-    ("Trung bình", "\U0001F7E1 TRUNG BÌNH"),
-    ("Thấp", "\U0001F7E2 THẤP"),
+    ("High", "\U0001F534 HIGH"),
+    ("Medium", "\U0001F7E1 MEDIUM"),
+    ("Low", "\U0001F7E2 LOW"),
 ]
 
 
@@ -47,7 +47,7 @@ def build_daily_digest(run_result: dict, digest_date: dt.date) -> str:
     header = [f"## US TRADE DAILY — {digest_date.isoformat()}", ""]
     header.append(
         f"Fetched {run_result['fetched']} documents ({run_result['start_date']} to {run_result['end_date']}), "
-        f"{run_result['new_documents']} new, {run_result['new_alerts']} Cao-priority alerts."
+        f"{run_result['new_documents']} new, {run_result['new_alerts']} High-priority alerts."
     )
     header.append("")
 

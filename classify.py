@@ -58,7 +58,7 @@ def classify_document_type(document: dict) -> str:
 
 # Most-advanced-stage-wins tie-break order when a document matches more than
 # one stage's phrases -- must match the key order in config/legal_basis.yaml.
-STAGE_ORDER = ["Khởi xướng", "Điều tra", "Sơ bộ", "Cuối cùng"]
+STAGE_ORDER = ["Initiation", "Review", "Preliminary", "Final"]
 
 
 def classify_stage(document: dict) -> str | None:

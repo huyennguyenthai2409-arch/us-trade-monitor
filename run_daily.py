@@ -33,11 +33,11 @@ def _run_chunked(start_date: dt.date, end_date: dt.date, chunk_days: int) -> Non
         total_new += result["new_documents"]
         total_alerts += result["new_alerts"]
         print(f"  {current} to {chunk_end}: fetched {result['fetched']}, new {result['new_documents']}, "
-              f"Cao-priority {result['new_alerts']}")
+              f"High-priority {result['new_alerts']}")
         current = chunk_end + dt.timedelta(days=1)
 
     print(f"\nBackfill done ({start_date} to {end_date}): fetched {total_fetched}, "
-          f"new documents {total_new}, new Cao-priority alerts {total_alerts}. No digest generated for backfills.")
+          f"new documents {total_new}, new High-priority alerts {total_alerts}. No digest generated for backfills.")
 
 
 def main() -> None:
@@ -77,7 +77,7 @@ def main() -> None:
     path = digest.save_digest(content, digest_date)
 
     print(f"Fetched: {result['fetched']} | New documents: {result['new_documents']} | "
-          f"New Cao-priority alerts: {result['new_alerts']}")
+          f"New High-priority alerts: {result['new_alerts']}")
     print(f"Digest written to: {path}")
 
 

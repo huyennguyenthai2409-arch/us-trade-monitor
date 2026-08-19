@@ -135,8 +135,8 @@ def run_pipeline(start_date: dt.date | None = None, end_date: dt.date | None = N
         a_level = scoring.alert_level(exp, doc_type, legal_basis, stage, score)
         if low_confidence:
             score = min(score, 39)
-            r_level = "Thấp"
-            a_level = "Thấp"
+            r_level = "Low"
+            a_level = "Low"
 
         canonical_id = dedupe.assign_canonical_event_id(doc, events_df)
 
@@ -180,7 +180,7 @@ def run_pipeline(start_date: dt.date | None = None, end_date: dt.date | None = N
                 "match_type": "hs_code" if exp["company_product_match"] else "sector_keyword",
             })
 
-        if a_level == "Cao":
+        if a_level == "High":
             new_alert_rows.append({
                 "alert_id": f"ALT-{event_id}",
                 "event_id": event_id,

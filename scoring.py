@@ -9,18 +9,18 @@ Stage and risk-level vocabularies are simplified from the spec's original
 from __future__ import annotations
 
 # Stage -> score sub-table (investigation-stage component of the 0-100 risk
-# score, spec section 10-11's 0-15 range). "Điều tra" (review of an existing
-# order) scores below "Sơ bộ"/"Cuối cùng" since, absent an explicit
+# score, spec section 10-11's 0-15 range). "Review" (review of an existing
+# order) scores below "Preliminary"/"Final" since, absent an explicit
 # preliminary/final phrase also matching, it usually means a review just
 # opened with no new determination yet.
 _STAGE_SCORE = {
-    "Khởi xướng": 5,
-    "Điều tra": 8,
-    "Sơ bộ": 11,
-    "Cuối cùng": 15,
+    "Initiation": 5,
+    "Review": 8,
+    "Preliminary": 11,
+    "Final": 15,
 }
 
-_HIGH_PROBABILITY_STAGES = {"Điều tra", "Sơ bộ", "Cuối cùng"}
+_HIGH_PROBABILITY_STAGES = {"Review", "Preliminary", "Final"}
 
 
 def stage_score(stage: str | None) -> int:
@@ -32,7 +32,7 @@ def stage_score(stage: str | None) -> int:
 def probability_score(stage: str | None) -> int:
     if stage in _HIGH_PROBABILITY_STAGES:
         return 10
-    if stage == "Khởi xướng":
+    if stage == "Initiation":
         return 5
     return 0  # unknown stage
 
@@ -71,38 +71,38 @@ def compute_risk_score(exposure: dict, stage: str | None, has_company_match: boo
 
 def risk_level(score: int) -> str:
     """3-tier band (collapsed from spec section 10's 5-tier LOW/MONITOR/MEDIUM/
-    HIGH/CRITICAL): Thấp 0-39, Trung bình 40-59, Cao 60-100."""
+    HIGH/CRITICAL): Low 0-39, Medium 40-59, High 60-100."""
     if score >= 60:
-        return "Cao"
+        return "High"
     if score >= 40:
-        return "Trung bình"
-    return "Thấp"
+        return "Medium"
+    return "Low"
 
 
 def alert_level(exposure: dict, doc_type: str, legal_basis: list[str], stage: str | None, score: int) -> str:
     """Spec section 12 alert priority, adapted to the 3-tier scale -- layers a
-    few explicit "bump to Cao" overrides on top of the risk band, since a
+    few explicit "bump to High" overrides on top of the risk band, since a
     straight score threshold alone would under-alert some of the spec's named
     scenarios (e.g. a fresh Vietnam investigation initiation sitting at
-    Trung bình but that spec section 12 calls high-priority)."""
+    Medium but that spec section 12 calls high-priority)."""
     base = risk_level(score)
 
     if exposure["vietnam_direct"]:
-        if stage in {"Cuối cùng", "Điều tra"} and "AD_CVD" in legal_basis:
-            return "Cao"
-        if doc_type == "Circumvention" and stage == "Cuối cùng":
-            return "Cao"
+        if stage in {"Final", "Review"} and "AD_CVD" in legal_basis:
+            return "High"
+        if doc_type == "Circumvention" and stage == "Final":
+            return "High"
         if doc_type == "Exclusion / exemption" and exposure["company_sector_match"]:
-            return "Cao"
-        if stage == "Khởi xướng":
-            return "Cao"
+            return "High"
+        if stage == "Initiation":
+            return "High"
         if any(b in legal_basis for b in ("SECTION_301", "SECTION_232")):
-            return "Cao"
+            return "High"
 
     if "UFLPA_FORCED_LABOR" in legal_basis and exposure["company_sector_match"]:
-        return "Cao"
+        return "High"
 
     if exposure["third_country_risk"] and "AD_CVD" in legal_basis:
-        return "Trung bình" if base == "Thấp" else base
+        return "Medium" if base == "Low" else base
 
     return base

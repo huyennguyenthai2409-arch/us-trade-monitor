@@ -31,6 +31,15 @@ def load_events() -> pd.DataFrame:
 
 
 @st.cache_data(ttl=300)
+def load_documents() -> pd.DataFrame:
+    path = DATA_DIR / "documents.csv"
+    if not path.exists():
+        return pd.DataFrame(columns=["document_id", "abstract"])
+    df = pd.read_csv(path, dtype=str).fillna("")
+    return df[["document_id", "abstract"]].drop_duplicates("document_id")
+
+
+@st.cache_data(ttl=300)
 def load_event_company() -> pd.DataFrame:
     path = DATA_DIR / "event_company.csv"
     if not path.exists():
@@ -58,7 +67,7 @@ st.title("US Trade Policy Monitor")
 st.caption(
     "Tracks US trade-policy actions (AD/CVD, Section 232/301/201/337, IEEPA, UFLPA, BIS, OFAC) "
     "via the Federal Register API, scored for Vietnam exposure. Rule-based classification (no LLM in this MVP) — "
-    "verify Cao-priority items against the source before acting. Product/HS code/tariff-rate/effective-date "
+    "verify High-priority items against the source before acting. Product/HS code/tariff-rate/effective-date "
     "fields are not yet extracted (Phase 2/3)."
 )
 
@@ -76,6 +85,12 @@ with tab_dashboard:
         events = events.merge(companies_by_event.rename("companies"), on="event_id", how="left")
         events["companies"] = events["companies"].fillna("")
         events["vietnam_exposure"] = events.apply(vietnam_exposure_label, axis=1)
+
+        documents = load_documents()
+        events = events.merge(documents, on="document_id", how="left")
+        events["abstract"] = events["abstract"].fillna("")
+        events["summary"] = events["abstract"].where(events["abstract"] != "", events["title"])
+        events["summary"] = events["summary"].str.slice(0, 300)
 
         st.subheader("Filters")
         f1, f2, f3, f4 = st.columns(4)
@@ -95,7 +110,7 @@ with tab_dashboard:
             ))
             selected_legal_basis = st.multiselect("Legal basis", all_legal_basis)
         with f3:
-            risk_levels = ["Cao", "Trung bình", "Thấp"]
+            risk_levels = ["High", "Medium", "Low"]
             selected_risk = st.multiselect("Risk level", risk_levels)
         with f4:
             vn_exposure_filter = st.multiselect("Vietnam exposure", ["Direct", "Indirect", "None"])
@@ -144,9 +159,11 @@ with tab_dashboard:
         st.divider()
         c1, c2, c3, c4 = st.columns(4)
         c1.metric("Events shown", len(filtered))
-        c2.metric("Cao", int((filtered["risk_level"] == "Cao").sum()))
-        c3.metric("Trung bình", int((filtered["risk_level"] == "Trung bình").sum()))
+        c2.metric("High", int((filtered["risk_level"] == "High").sum()))
+        c3.metric("Medium", int((filtered["risk_level"] == "Medium").sum()))
         c4.metric("Direct Vietnam exposure", int((filtered["vietnam_exposure"] == "Direct").sum()))
+
+        sort_order = st.radio("Sort by date", ["Newest first", "Oldest first"], horizontal=True)
 
         display_cols = {
             "publication_date": "Date",
@@ -158,10 +175,10 @@ with tab_dashboard:
             "risk_score": "Risk Score",
             "risk_level": "Risk",
             "companies": "Companies",
-            "title": "Title",
+            "summary": "Summary",
             "source_url": "Source",
         }
-        table = filtered.sort_values("publication_date", ascending=False)[list(display_cols.keys())]
+        table = filtered.sort_values("publication_date", ascending=(sort_order == "Oldest first"))[list(display_cols.keys())]
         table = table.rename(columns=display_cols)
         table["Date"] = table["Date"].dt.strftime("%Y-%m-%d")
 
@@ -172,7 +189,7 @@ with tab_dashboard:
             column_config={
                 "Source": st.column_config.LinkColumn("Source", display_text="Open"),
                 "Risk Score": st.column_config.NumberColumn(format="%d"),
-                "Title": st.column_config.TextColumn(width="large"),
+                "Summary": st.column_config.TextColumn(width="large"),
             },
         )
 

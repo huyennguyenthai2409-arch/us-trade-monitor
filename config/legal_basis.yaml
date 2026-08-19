@@ -140,12 +140,12 @@ SPECIAL_301_IP:
 # Stage phrases used by classify.py to infer investigation_stage -- collapsed
 # to 4 stages per user request (simpler than spec section 8's 9-stage model).
 # Order matters: later stages override earlier ones when a document matches
-# more than one (most-advanced-stage wins). "Điều tra" covers reviews of an
+# more than one (most-advanced-stage wins). "Review" covers reviews of an
 # EXISTING order (administrative/sunset/changed-circumstances review, scope
-# or tariff modification) -- distinct from "Khởi xướng", which covers a fresh
+# or tariff modification) -- distinct from "Initiation", which covers a fresh
 # case being opened (signal, petition, initiation).
 stage_phrases:
-  "Khởi xướng":
+  "Initiation":
     - industry pressure
     - domestic producer complaint
     - petition filed
@@ -153,20 +153,20 @@ stage_phrases:
     - investigation initiated
     - initiation of investigation
     - notice of initiation
-  "Điều tra":
+  "Review":
     - administrative review
     - sunset review
     - changed circumstances review
     - scope modification
     - tariff modification
-  "Sơ bộ":
+  "Preliminary":
     - preliminary determination
     - preliminary affirmative
     - preliminary negative
     - proposed remedy
     - proposed action
     - proposed tariff
-  "Cuối cùng":
+  "Final":
     - final determination
     - final affirmative
     - final action

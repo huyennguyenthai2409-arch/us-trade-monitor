@@ -2,14 +2,13 @@
 
 Tracks US trade-policy actions (AD/CVD, Section 232/301/201/337, IEEPA, UFLPA,
 BIS export controls, OFAC sanctions) that could affect Vietnam, scores them
-for Vietnam/sector/company exposure, and surfaces Cao-priority (high-risk)
-items in a Streamlit dashboard.
+for Vietnam/sector/company exposure, and surfaces High-priority items in a
+Streamlit dashboard.
 
 Investigation stage and risk level use a simplified vocabulary (collapsed
 from the spec's original 9-stage / 5-tier model, per user request):
-- **Stage** (4): Khởi xướng (initiation) → Điều tra (review of an existing
-  order) → Sơ bộ (preliminary) → Cuối cùng (final)
-- **Risk level** (3): Thấp (low) / Trung bình (medium) / Cao (high)
+- **Stage** (4): Initiation → Review (of an existing order) → Preliminary → Final
+- **Risk level** (3): Low / Medium / High
 
 Built from `US_Trade_Policy_Monitoring_AI_Coding_Spec_v1.0.md` — this is the
 **Phase 1 MVP** of that spec (see "Scope" below for what's deferred).
@@ -91,7 +90,7 @@ risk scoring (spec §10-11), alert priority (spec §12), case-level dedup
 Classification is keyword-based against document **title + abstract only**
 (no full-text/PDF parsing yet), so nuanced or implicitly-worded documents can
 be missed or misclassified — treat this as a triage/early-warning layer, not
-a substitute for reading the source document on any Cao-priority item.
+a substitute for reading the source document on any High-priority item.
 
 The dashboard table doesn't show the source agency column (removed per user
 request) — the underlying data still has it (`data/events.csv`'s
