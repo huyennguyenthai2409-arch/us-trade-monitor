@@ -1,27 +1,26 @@
-"""Risk scoring (spec section 10-11) and alert priority (spec section 12).
-Rule-based only -- every sub-score is derived from flags already computed by
-classify.py/exposure.py, nothing here is invented or estimated from outside data."""
+"""Risk scoring (spec section 10-11, adapted) and alert priority (spec
+section 12, adapted). Rule-based only -- every sub-score is derived from
+flags already computed by classify.py/exposure.py, nothing here is invented
+or estimated from outside data.
+
+Stage and risk-level vocabularies are simplified from the spec's original
+9-stage / 5-band model to 4 stages and 3 risk tiers per user request."""
 
 from __future__ import annotations
 
-# Spec section 11 stage -> score sub-table. STAGE_7 (review/modification of an
-# existing order) and STAGE_8 (terminated) aren't in the spec's table; STAGE_7
-# is treated as ongoing real impact (same weight as STAGE_6), STAGE_8 as
-# resolved/no ongoing risk.
+# Stage -> score sub-table (investigation-stage component of the 0-100 risk
+# score, spec section 10-11's 0-15 range). "Điều tra" (review of an existing
+# order) scores below "Sơ bộ"/"Cuối cùng" since, absent an explicit
+# preliminary/final phrase also matching, it usually means a review just
+# opened with no new determination yet.
 _STAGE_SCORE = {
-    "STAGE_0": 2,
-    "STAGE_1": 4,
-    "STAGE_2": 7,
-    "STAGE_3": 10,
-    "STAGE_4": 12,
-    "STAGE_5": 14,
-    "STAGE_6": 15,
-    "STAGE_7": 15,
-    "STAGE_8": 0,
+    "Khởi xướng": 5,
+    "Điều tra": 8,
+    "Sơ bộ": 11,
+    "Cuối cùng": 15,
 }
 
-_HIGH_PROBABILITY_STAGES = {"STAGE_3", "STAGE_4", "STAGE_5", "STAGE_6", "STAGE_7"}
-_MEDIUM_PROBABILITY_STAGES = {"STAGE_1", "STAGE_2"}
+_HIGH_PROBABILITY_STAGES = {"Điều tra", "Sơ bộ", "Cuối cùng"}
 
 
 def stage_score(stage: str | None) -> int:
@@ -33,11 +32,9 @@ def stage_score(stage: str | None) -> int:
 def probability_score(stage: str | None) -> int:
     if stage in _HIGH_PROBABILITY_STAGES:
         return 10
-    if stage in _MEDIUM_PROBABILITY_STAGES:
+    if stage == "Khởi xướng":
         return 5
-    if stage == "STAGE_0":
-        return 2
-    return 0  # STAGE_8 (terminated) or unknown
+    return 0  # unknown stage
 
 
 def compute_risk_score(exposure: dict, stage: str | None, has_company_match: bool) -> int:
@@ -73,41 +70,39 @@ def compute_risk_score(exposure: dict, stage: str | None, has_company_match: boo
 
 
 def risk_level(score: int) -> str:
-    if score >= 80:
-        return "CRITICAL"
+    """3-tier band (collapsed from spec section 10's 5-tier LOW/MONITOR/MEDIUM/
+    HIGH/CRITICAL): Thấp 0-39, Trung bình 40-59, Cao 60-100."""
     if score >= 60:
-        return "HIGH"
+        return "Cao"
     if score >= 40:
-        return "MEDIUM"
-    if score >= 20:
-        return "MONITOR"
-    return "LOW"
+        return "Trung bình"
+    return "Thấp"
 
 
 def alert_level(exposure: dict, doc_type: str, legal_basis: list[str], stage: str | None, score: int) -> str:
-    """Spec section 12 alert priority -- layers a few explicit "always
-    CRITICAL/HIGH" overrides from the spec on top of the section 10 risk band,
-    since a straight score threshold alone would under-alert some of the
-    spec's named scenarios (e.g. a fresh Vietnam investigation initiation
-    sitting at a MEDIUM score but that spec section 12 calls HIGH)."""
+    """Spec section 12 alert priority, adapted to the 3-tier scale -- layers a
+    few explicit "bump to Cao" overrides on top of the risk band, since a
+    straight score threshold alone would under-alert some of the spec's named
+    scenarios (e.g. a fresh Vietnam investigation initiation sitting at
+    Trung bình but that spec section 12 calls high-priority)."""
     base = risk_level(score)
 
     if exposure["vietnam_direct"]:
-        if stage in {"STAGE_6", "STAGE_7"} and "AD_CVD" in legal_basis:
-            return "CRITICAL"
-        if doc_type == "Circumvention" and stage in {"STAGE_5", "STAGE_6"}:
-            return "CRITICAL"
+        if stage in {"Cuối cùng", "Điều tra"} and "AD_CVD" in legal_basis:
+            return "Cao"
+        if doc_type == "Circumvention" and stage == "Cuối cùng":
+            return "Cao"
         if doc_type == "Exclusion / exemption" and exposure["company_sector_match"]:
-            return "CRITICAL"
-        if stage == "STAGE_2":
-            return "HIGH" if base in {"LOW", "MONITOR"} else base
+            return "Cao"
+        if stage == "Khởi xướng":
+            return "Cao"
         if any(b in legal_basis for b in ("SECTION_301", "SECTION_232")):
-            return "HIGH" if base in {"LOW", "MONITOR"} else base
+            return "Cao"
 
     if "UFLPA_FORCED_LABOR" in legal_basis and exposure["company_sector_match"]:
-        return "HIGH" if base in {"LOW", "MONITOR"} else base
+        return "Cao"
 
     if exposure["third_country_risk"] and "AD_CVD" in legal_basis:
-        return "MEDIUM" if base == "LOW" else base
+        return "Trung bình" if base == "Thấp" else base
 
     return base

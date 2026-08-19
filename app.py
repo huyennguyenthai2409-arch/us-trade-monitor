@@ -16,15 +16,6 @@ st.set_page_config(page_title="US Trade Policy Monitor", layout="wide")
 DATA_DIR = Path(__file__).parent / "data"
 DIGESTS_DIR = DATA_DIR / "digests"
 
-RISK_COLOR = {
-    "CRITICAL": "#B03A2E",
-    "HIGH": "#C8952A",
-    "MEDIUM": "#D4AC0D",
-    "MONITOR": "#7F8C8D",
-    "LOW": "#95A5A6",
-}
-
-
 @st.cache_data(ttl=300)
 def load_events() -> pd.DataFrame:
     path = DATA_DIR / "events.csv"
@@ -67,7 +58,7 @@ st.title("US Trade Policy Monitor")
 st.caption(
     "Tracks US trade-policy actions (AD/CVD, Section 232/301/201/337, IEEPA, UFLPA, BIS, OFAC) "
     "via the Federal Register API, scored for Vietnam exposure. Rule-based classification (no LLM in this MVP) — "
-    "verify HIGH/CRITICAL items against the source before acting. Product/HS code/tariff-rate/effective-date "
+    "verify Cao-priority items against the source before acting. Product/HS code/tariff-rate/effective-date "
     "fields are not yet extracted (Phase 2/3)."
 )
 
@@ -99,29 +90,26 @@ with tab_dashboard:
                     min_value=min_date.date(), max_value=max_date.date(),
                 )
         with f2:
-            agencies = sorted(a for a in events["source_agency"].unique() if a)
-            selected_agencies = st.multiselect("Agency", agencies)
-        with f3:
             all_legal_basis = sorted(set(
                 lb.strip() for row in events["legal_basis"] for lb in row.split(";") if lb.strip()
             ))
             selected_legal_basis = st.multiselect("Legal basis", all_legal_basis)
-        with f4:
-            risk_levels = ["CRITICAL", "HIGH", "MEDIUM", "MONITOR", "LOW"]
+        with f3:
+            risk_levels = ["Cao", "Trung bình", "Thấp"]
             selected_risk = st.multiselect("Risk level", risk_levels)
-
-        f5, f6, f7, f8 = st.columns(4)
-        with f5:
+        with f4:
             vn_exposure_filter = st.multiselect("Vietnam exposure", ["Direct", "Indirect", "None"])
-        with f6:
+
+        f5, f6, f7 = st.columns(3)
+        with f5:
             all_sectors = sorted(set(
                 s.strip() for row in events["sectors_matched"] for s in row.split(";") if s.strip()
             ))
             selected_sectors = st.multiselect("Sector", all_sectors)
-        with f7:
+        with f6:
             all_stages = sorted(s for s in events["investigation_stage"].unique() if s)
             selected_stages = st.multiselect("Stage", all_stages)
-        with f8:
+        with f7:
             all_companies = sorted(event_company["ticker"].unique())
             selected_companies = st.multiselect("Company", all_companies)
         hide_low_confidence = st.checkbox("Hide low-confidence matches", value=True)
@@ -132,8 +120,6 @@ with tab_dashboard:
             filtered = filtered[
                 (filtered["publication_date"].dt.date >= start) & (filtered["publication_date"].dt.date <= end)
             ]
-        if selected_agencies:
-            filtered = filtered[filtered["source_agency"].isin(selected_agencies)]
         if selected_legal_basis:
             filtered = filtered[filtered["legal_basis"].apply(
                 lambda v: any(lb in v for lb in selected_legal_basis)
@@ -158,13 +144,12 @@ with tab_dashboard:
         st.divider()
         c1, c2, c3, c4 = st.columns(4)
         c1.metric("Events shown", len(filtered))
-        c2.metric("Critical", int((filtered["risk_level"] == "CRITICAL").sum()))
-        c3.metric("High", int((filtered["risk_level"] == "HIGH").sum()))
+        c2.metric("Cao", int((filtered["risk_level"] == "Cao").sum()))
+        c3.metric("Trung bình", int((filtered["risk_level"] == "Trung bình").sum()))
         c4.metric("Direct Vietnam exposure", int((filtered["vietnam_exposure"] == "Direct").sum()))
 
         display_cols = {
             "publication_date": "Date",
-            "source_agency": "Agency",
             "legal_basis": "Legal Basis",
             "document_type": "Action",
             "vietnam_exposure": "VN Exposure",

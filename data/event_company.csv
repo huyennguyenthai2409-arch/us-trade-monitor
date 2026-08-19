@@ -1,4 +1,1571 @@
 event_id,company_id,ticker,sector,match_type
+EVT-2025-01797,DGC,DGC,Chemicals,sector_keyword
+EVT-2025-01791,HPG,HPG,Steel,sector_keyword
+EVT-2025-01791,NKG,NKG,Steel,sector_keyword
+EVT-2025-01791,HSG,HSG,Steel,sector_keyword
+EVT-2025-01781,HPG,HPG,Steel,sector_keyword
+EVT-2025-01781,NKG,NKG,Steel,sector_keyword
+EVT-2025-01781,HSG,HSG,Steel,sector_keyword
+EVT-2025-01680,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-01680,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-01654,VHC,VHC,Seafood,sector_keyword
+EVT-2025-01654,ANV,ANV,Seafood,sector_keyword
+EVT-2025-01654,MPC,MPC,Seafood,sector_keyword
+EVT-2025-01434,HPG,HPG,Steel,sector_keyword
+EVT-2025-01434,NKG,NKG,Steel,sector_keyword
+EVT-2025-01434,HSG,HSG,Steel,sector_keyword
+EVT-2025-00550,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2025-00550,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2025-00550,TCM,TCM,Textiles / Apparel,sector_keyword
+EVT-2025-00815,HPG,HPG,Steel,sector_keyword
+EVT-2025-00815,NKG,NKG,Steel,sector_keyword
+EVT-2025-00815,HSG,HSG,Steel,sector_keyword
+EVT-2025-00581,HPG,HPG,Steel,sector_keyword
+EVT-2025-00581,NKG,NKG,Steel,sector_keyword
+EVT-2025-00581,HSG,HSG,Steel,sector_keyword
+EVT-2025-00435,HPG,HPG,Steel,sector_keyword
+EVT-2025-00435,NKG,NKG,Steel,sector_keyword
+EVT-2025-00435,HSG,HSG,Steel,sector_keyword
+EVT-2025-00225,HPG,HPG,Steel,sector_keyword
+EVT-2025-00225,NKG,NKG,Steel,sector_keyword
+EVT-2025-00225,HSG,HSG,Steel,sector_keyword
+EVT-2025-00189,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-00189,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-00019,HPG,HPG,Steel,sector_keyword
+EVT-2025-00019,NKG,NKG,Steel,sector_keyword
+EVT-2025-00019,HSG,HSG,Steel,sector_keyword
+EVT-2024-31592,HPG,HPG,Steel,sector_keyword
+EVT-2024-31592,NKG,NKG,Steel,sector_keyword
+EVT-2024-31592,HSG,HSG,Steel,sector_keyword
+EVT-2024-31587,HPG,HPG,Steel,sector_keyword
+EVT-2024-31587,NKG,NKG,Steel,sector_keyword
+EVT-2024-31587,HSG,HSG,Steel,sector_keyword
+EVT-2024-31480,HPG,HPG,Steel,sector_keyword
+EVT-2024-31480,NKG,NKG,Steel,sector_keyword
+EVT-2024-31480,HSG,HSG,Steel,sector_keyword
+EVT-2025-00621,HPG,HPG,Steel,sector_keyword
+EVT-2025-00621,NKG,NKG,Steel,sector_keyword
+EVT-2025-00621,HSG,HSG,Steel,sector_keyword
+EVT-2025-03261,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-03261,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-03185,HPG,HPG,Steel,sector_keyword
+EVT-2025-03185,NKG,NKG,Steel,sector_keyword
+EVT-2025-03185,HSG,HSG,Steel,sector_keyword
+EVT-2025-03182,HPG,HPG,Steel,sector_keyword
+EVT-2025-03182,NKG,NKG,Steel,sector_keyword
+EVT-2025-03182,HSG,HSG,Steel,sector_keyword
+EVT-2025-03181,HPG,HPG,Steel,sector_keyword
+EVT-2025-03181,NKG,NKG,Steel,sector_keyword
+EVT-2025-03181,HSG,HSG,Steel,sector_keyword
+EVT-2025-03054,HPG,HPG,Steel,sector_keyword
+EVT-2025-03054,NKG,NKG,Steel,sector_keyword
+EVT-2025-03054,HSG,HSG,Steel,sector_keyword
+EVT-2025-02988,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-02988,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-02925,HPG,HPG,Steel,sector_keyword
+EVT-2025-02925,NKG,NKG,Steel,sector_keyword
+EVT-2025-02925,HSG,HSG,Steel,sector_keyword
+EVT-2025-02906,HPG,HPG,Steel,sector_keyword
+EVT-2025-02906,NKG,NKG,Steel,sector_keyword
+EVT-2025-02906,HSG,HSG,Steel,sector_keyword
+EVT-2025-02892,HPG,HPG,Steel,sector_keyword
+EVT-2025-02892,NKG,NKG,Steel,sector_keyword
+EVT-2025-02892,HSG,HSG,Steel,sector_keyword
+EVT-2025-02764,HPG,HPG,Steel,sector_keyword
+EVT-2025-02764,NKG,NKG,Steel,sector_keyword
+EVT-2025-02764,HSG,HSG,Steel,sector_keyword
+EVT-2025-02706,DGC,DGC,Chemicals,sector_keyword
+EVT-2025-02624,HPG,HPG,Steel,sector_keyword
+EVT-2025-02624,NKG,NKG,Steel,sector_keyword
+EVT-2025-02624,HSG,HSG,Steel,sector_keyword
+EVT-2025-02548,DGC,DGC,Chemicals,sector_keyword
+EVT-2025-02546,HPG,HPG,Steel,sector_keyword
+EVT-2025-02546,NKG,NKG,Steel,sector_keyword
+EVT-2025-02546,HSG,HSG,Steel,sector_keyword
+EVT-2025-02483,VHC,VHC,Seafood,sector_keyword
+EVT-2025-02483,ANV,ANV,Seafood,sector_keyword
+EVT-2025-02483,MPC,MPC,Seafood,sector_keyword
+EVT-2025-02482,VHC,VHC,Seafood,sector_keyword
+EVT-2025-02482,ANV,ANV,Seafood,sector_keyword
+EVT-2025-02482,MPC,MPC,Seafood,sector_keyword
+EVT-2025-02454,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2025-02454,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2025-02454,TCM,TCM,Textiles / Apparel,sector_keyword
+EVT-2025-02454,HPG,HPG,Steel,sector_keyword
+EVT-2025-02454,NKG,NKG,Steel,sector_keyword
+EVT-2025-02454,HSG,HSG,Steel,sector_keyword
+EVT-2025-02443,HPG,HPG,Steel,sector_keyword
+EVT-2025-02443,NKG,NKG,Steel,sector_keyword
+EVT-2025-02443,HSG,HSG,Steel,sector_keyword
+EVT-2025-02442,HPG,HPG,Steel,sector_keyword
+EVT-2025-02442,NKG,NKG,Steel,sector_keyword
+EVT-2025-02442,HSG,HSG,Steel,sector_keyword
+EVT-2025-02380,HPG,HPG,Steel,sector_keyword
+EVT-2025-02380,NKG,NKG,Steel,sector_keyword
+EVT-2025-02380,HSG,HSG,Steel,sector_keyword
+EVT-2025-02379,HPG,HPG,Steel,sector_keyword
+EVT-2025-02379,NKG,NKG,Steel,sector_keyword
+EVT-2025-02379,HSG,HSG,Steel,sector_keyword
+EVT-2025-02378,HPG,HPG,Steel,sector_keyword
+EVT-2025-02378,NKG,NKG,Steel,sector_keyword
+EVT-2025-02378,HSG,HSG,Steel,sector_keyword
+EVT-2025-02377,HPG,HPG,Steel,sector_keyword
+EVT-2025-02377,NKG,NKG,Steel,sector_keyword
+EVT-2025-02377,HSG,HSG,Steel,sector_keyword
+EVT-2025-02166,HPG,HPG,Steel,sector_keyword
+EVT-2025-02166,NKG,NKG,Steel,sector_keyword
+EVT-2025-02166,HSG,HSG,Steel,sector_keyword
+EVT-2025-02000,HPG,HPG,Steel,sector_keyword
+EVT-2025-02000,NKG,NKG,Steel,sector_keyword
+EVT-2025-02000,HSG,HSG,Steel,sector_keyword
+EVT-2025-02071,HPG,HPG,Steel,sector_keyword
+EVT-2025-02071,NKG,NKG,Steel,sector_keyword
+EVT-2025-02071,HSG,HSG,Steel,sector_keyword
+EVT-2025-02070,HPG,HPG,Steel,sector_keyword
+EVT-2025-02070,NKG,NKG,Steel,sector_keyword
+EVT-2025-02070,HSG,HSG,Steel,sector_keyword
+EVT-2025-02050,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2025-02050,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2025-02050,TCM,TCM,Textiles / Apparel,sector_keyword
+EVT-2025-02050,HPG,HPG,Steel,sector_keyword
+EVT-2025-02050,NKG,NKG,Steel,sector_keyword
+EVT-2025-02050,HSG,HSG,Steel,sector_keyword
+EVT-2025-02833,HPG,HPG,Steel,sector_keyword
+EVT-2025-02833,NKG,NKG,Steel,sector_keyword
+EVT-2025-02833,HSG,HSG,Steel,sector_keyword
+EVT-2025-02194,DGC,DGC,Chemicals,sector_keyword
+EVT-2025-05419,HPG,HPG,Steel,sector_keyword
+EVT-2025-05419,NKG,NKG,Steel,sector_keyword
+EVT-2025-05419,HSG,HSG,Steel,sector_keyword
+EVT-2025-05288,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2025-05288,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2025-05288,TCM,TCM,Textiles / Apparel,sector_keyword
+EVT-2025-05113,HPG,HPG,Steel,sector_keyword
+EVT-2025-05113,NKG,NKG,Steel,sector_keyword
+EVT-2025-05113,HSG,HSG,Steel,sector_keyword
+EVT-2025-04916,HPG,HPG,Steel,sector_keyword
+EVT-2025-04916,NKG,NKG,Steel,sector_keyword
+EVT-2025-04916,HSG,HSG,Steel,sector_keyword
+EVT-2025-04915,HPG,HPG,Steel,sector_keyword
+EVT-2025-04915,NKG,NKG,Steel,sector_keyword
+EVT-2025-04915,HSG,HSG,Steel,sector_keyword
+EVT-2025-04876,HPG,HPG,Steel,sector_keyword
+EVT-2025-04876,NKG,NKG,Steel,sector_keyword
+EVT-2025-04876,HSG,HSG,Steel,sector_keyword
+EVT-2025-04708,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-04708,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-04663,HPG,HPG,Steel,sector_keyword
+EVT-2025-04663,NKG,NKG,Steel,sector_keyword
+EVT-2025-04663,HSG,HSG,Steel,sector_keyword
+EVT-2025-04256,HPG,HPG,Steel,sector_keyword
+EVT-2025-04256,NKG,NKG,Steel,sector_keyword
+EVT-2025-04256,HSG,HSG,Steel,sector_keyword
+EVT-2025-04210,HPG,HPG,Steel,sector_keyword
+EVT-2025-04210,NKG,NKG,Steel,sector_keyword
+EVT-2025-04210,HSG,HSG,Steel,sector_keyword
+EVT-2025-04092,HPG,HPG,Steel,sector_keyword
+EVT-2025-04092,NKG,NKG,Steel,sector_keyword
+EVT-2025-04092,HSG,HSG,Steel,sector_keyword
+EVT-2025-04060,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-04060,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-03961,HPG,HPG,Steel,sector_keyword
+EVT-2025-03961,NKG,NKG,Steel,sector_keyword
+EVT-2025-03961,HSG,HSG,Steel,sector_keyword
+EVT-2025-03860,HPG,HPG,Steel,sector_keyword
+EVT-2025-03860,NKG,NKG,Steel,sector_keyword
+EVT-2025-03860,HSG,HSG,Steel,sector_keyword
+EVT-2025-03826,HPG,HPG,Steel,sector_keyword
+EVT-2025-03826,NKG,NKG,Steel,sector_keyword
+EVT-2025-03826,HSG,HSG,Steel,sector_keyword
+EVT-2025-03825,HPG,HPG,Steel,sector_keyword
+EVT-2025-03825,NKG,NKG,Steel,sector_keyword
+EVT-2025-03825,HSG,HSG,Steel,sector_keyword
+EVT-2025-03824,HPG,HPG,Steel,sector_keyword
+EVT-2025-03824,NKG,NKG,Steel,sector_keyword
+EVT-2025-03824,HSG,HSG,Steel,sector_keyword
+EVT-2025-03773,HPG,HPG,Steel,sector_keyword
+EVT-2025-03773,NKG,NKG,Steel,sector_keyword
+EVT-2025-03773,HSG,HSG,Steel,sector_keyword
+EVT-2025-03692,DGC,DGC,Chemicals,sector_keyword
+EVT-2025-03625,HPG,HPG,Steel,sector_keyword
+EVT-2025-03625,NKG,NKG,Steel,sector_keyword
+EVT-2025-03625,HSG,HSG,Steel,sector_keyword
+EVT-2025-03615,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-03615,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-03614,VHC,VHC,Seafood,sector_keyword
+EVT-2025-03614,ANV,ANV,Seafood,sector_keyword
+EVT-2025-03614,MPC,MPC,Seafood,sector_keyword
+EVT-2025-03598,HPG,HPG,Steel,sector_keyword
+EVT-2025-03598,NKG,NKG,Steel,sector_keyword
+EVT-2025-03598,HSG,HSG,Steel,sector_keyword
+EVT-2025-03558,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-03558,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-03520,HPG,HPG,Steel,sector_keyword
+EVT-2025-03520,NKG,NKG,Steel,sector_keyword
+EVT-2025-03520,HSG,HSG,Steel,sector_keyword
+EVT-2025-03505,HPG,HPG,Steel,sector_keyword
+EVT-2025-03505,NKG,NKG,Steel,sector_keyword
+EVT-2025-03505,HSG,HSG,Steel,sector_keyword
+EVT-2025-03475,HPG,HPG,Steel,sector_keyword
+EVT-2025-03475,NKG,NKG,Steel,sector_keyword
+EVT-2025-03475,HSG,HSG,Steel,sector_keyword
+EVT-2025-03422,HPG,HPG,Steel,sector_keyword
+EVT-2025-03422,NKG,NKG,Steel,sector_keyword
+EVT-2025-03422,HSG,HSG,Steel,sector_keyword
+EVT-2025-03290,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-03290,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-03695,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-03695,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-03693,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-03693,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-07081,HPG,HPG,Steel,sector_keyword
+EVT-2025-07081,NKG,NKG,Steel,sector_keyword
+EVT-2025-07081,HSG,HSG,Steel,sector_keyword
+EVT-2025-07031,HPG,HPG,Steel,sector_keyword
+EVT-2025-07031,NKG,NKG,Steel,sector_keyword
+EVT-2025-07031,HSG,HSG,Steel,sector_keyword
+EVT-2025-06844,HPG,HPG,Steel,sector_keyword
+EVT-2025-06844,NKG,NKG,Steel,sector_keyword
+EVT-2025-06844,HSG,HSG,Steel,sector_keyword
+EVT-2025-06768,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2025-06768,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2025-06768,TCM,TCM,Textiles / Apparel,sector_keyword
+EVT-2025-06468,HPG,HPG,Steel,sector_keyword
+EVT-2025-06468,NKG,NKG,Steel,sector_keyword
+EVT-2025-06468,HSG,HSG,Steel,sector_keyword
+EVT-2025-06323,HPG,HPG,Steel,sector_keyword
+EVT-2025-06323,NKG,NKG,Steel,sector_keyword
+EVT-2025-06323,HSG,HSG,Steel,sector_keyword
+EVT-2025-06286,HPG,HPG,Steel,sector_keyword
+EVT-2025-06286,NKG,NKG,Steel,sector_keyword
+EVT-2025-06286,HSG,HSG,Steel,sector_keyword
+EVT-2025-06223,HPG,HPG,Steel,sector_keyword
+EVT-2025-06223,NKG,NKG,Steel,sector_keyword
+EVT-2025-06223,HSG,HSG,Steel,sector_keyword
+EVT-2025-06142,HPG,HPG,Steel,sector_keyword
+EVT-2025-06142,NKG,NKG,Steel,sector_keyword
+EVT-2025-06142,HSG,HSG,Steel,sector_keyword
+EVT-2025-06141,HPG,HPG,Steel,sector_keyword
+EVT-2025-06141,NKG,NKG,Steel,sector_keyword
+EVT-2025-06141,HSG,HSG,Steel,sector_keyword
+EVT-2025-06140,HPG,HPG,Steel,sector_keyword
+EVT-2025-06140,NKG,NKG,Steel,sector_keyword
+EVT-2025-06140,HSG,HSG,Steel,sector_keyword
+EVT-2025-06139,HPG,HPG,Steel,sector_keyword
+EVT-2025-06139,NKG,NKG,Steel,sector_keyword
+EVT-2025-06139,HSG,HSG,Steel,sector_keyword
+EVT-2025-06138,HPG,HPG,Steel,sector_keyword
+EVT-2025-06138,NKG,NKG,Steel,sector_keyword
+EVT-2025-06138,HSG,HSG,Steel,sector_keyword
+EVT-2025-06137,HPG,HPG,Steel,sector_keyword
+EVT-2025-06137,NKG,NKG,Steel,sector_keyword
+EVT-2025-06137,HSG,HSG,Steel,sector_keyword
+EVT-2025-06136,HPG,HPG,Steel,sector_keyword
+EVT-2025-06136,NKG,NKG,Steel,sector_keyword
+EVT-2025-06136,HSG,HSG,Steel,sector_keyword
+EVT-2025-06135,HPG,HPG,Steel,sector_keyword
+EVT-2025-06135,NKG,NKG,Steel,sector_keyword
+EVT-2025-06135,HSG,HSG,Steel,sector_keyword
+EVT-2025-06134,HPG,HPG,Steel,sector_keyword
+EVT-2025-06134,NKG,NKG,Steel,sector_keyword
+EVT-2025-06134,HSG,HSG,Steel,sector_keyword
+EVT-2025-06133,HPG,HPG,Steel,sector_keyword
+EVT-2025-06133,NKG,NKG,Steel,sector_keyword
+EVT-2025-06133,HSG,HSG,Steel,sector_keyword
+EVT-2025-06103,HPG,HPG,Steel,sector_keyword
+EVT-2025-06103,NKG,NKG,Steel,sector_keyword
+EVT-2025-06103,HSG,HSG,Steel,sector_keyword
+EVT-2025-05951,HPG,HPG,Steel,sector_keyword
+EVT-2025-05951,NKG,NKG,Steel,sector_keyword
+EVT-2025-05951,HSG,HSG,Steel,sector_keyword
+EVT-2025-05926,HPG,HPG,Steel,sector_keyword
+EVT-2025-05926,NKG,NKG,Steel,sector_keyword
+EVT-2025-05926,HSG,HSG,Steel,sector_keyword
+EVT-2025-05925,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2025-05925,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2025-05925,TCM,TCM,Textiles / Apparel,sector_keyword
+EVT-2025-05891,HPG,HPG,Steel,sector_keyword
+EVT-2025-05891,NKG,NKG,Steel,sector_keyword
+EVT-2025-05891,HSG,HSG,Steel,sector_keyword
+EVT-2025-05694,HPG,HPG,Steel,sector_keyword
+EVT-2025-05694,NKG,NKG,Steel,sector_keyword
+EVT-2025-05694,HSG,HSG,Steel,sector_keyword
+EVT-2025-05692,HPG,HPG,Steel,sector_keyword
+EVT-2025-05692,NKG,NKG,Steel,sector_keyword
+EVT-2025-05692,HSG,HSG,Steel,sector_keyword
+EVT-2025-05691,HPG,HPG,Steel,sector_keyword
+EVT-2025-05691,NKG,NKG,Steel,sector_keyword
+EVT-2025-05691,HSG,HSG,Steel,sector_keyword
+EVT-2025-05640,HPG,HPG,Steel,sector_keyword
+EVT-2025-05640,NKG,NKG,Steel,sector_keyword
+EVT-2025-05640,HSG,HSG,Steel,sector_keyword
+EVT-2025-05638,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2025-05638,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2025-05638,TCM,TCM,Textiles / Apparel,sector_keyword
+EVT-2025-05513,DGC,DGC,Chemicals,sector_keyword
+EVT-2025-07062,VHC,VHC,Seafood,sector_keyword
+EVT-2025-07062,ANV,ANV,Seafood,sector_keyword
+EVT-2025-07062,MPC,MPC,Seafood,sector_keyword
+EVT-2025-09768,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-09768,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-09701,HPG,HPG,Steel,sector_keyword
+EVT-2025-09701,NKG,NKG,Steel,sector_keyword
+EVT-2025-09701,HSG,HSG,Steel,sector_keyword
+EVT-2025-09656,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-09656,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-09564,HPG,HPG,Steel,sector_keyword
+EVT-2025-09564,NKG,NKG,Steel,sector_keyword
+EVT-2025-09564,HSG,HSG,Steel,sector_keyword
+EVT-2025-09451,DGC,DGC,Chemicals,sector_keyword
+EVT-2025-09354,HPG,HPG,Steel,sector_keyword
+EVT-2025-09354,NKG,NKG,Steel,sector_keyword
+EVT-2025-09354,HSG,HSG,Steel,sector_keyword
+EVT-2025-09319,HPG,HPG,Steel,sector_keyword
+EVT-2025-09319,NKG,NKG,Steel,sector_keyword
+EVT-2025-09319,HSG,HSG,Steel,sector_keyword
+EVT-2025-09246,HPG,HPG,Steel,sector_keyword
+EVT-2025-09246,NKG,NKG,Steel,sector_keyword
+EVT-2025-09246,HSG,HSG,Steel,sector_keyword
+EVT-2025-09118,HPG,HPG,Steel,sector_keyword
+EVT-2025-09118,NKG,NKG,Steel,sector_keyword
+EVT-2025-09118,HSG,HSG,Steel,sector_keyword
+EVT-2025-09110,HPG,HPG,Steel,sector_keyword
+EVT-2025-09110,NKG,NKG,Steel,sector_keyword
+EVT-2025-09110,HSG,HSG,Steel,sector_keyword
+EVT-2025-08894,HPG,HPG,Steel,sector_keyword
+EVT-2025-08894,NKG,NKG,Steel,sector_keyword
+EVT-2025-08894,HSG,HSG,Steel,sector_keyword
+EVT-2025-08820,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-08820,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-08812,HPG,HPG,Steel,sector_keyword
+EVT-2025-08812,NKG,NKG,Steel,sector_keyword
+EVT-2025-08812,HSG,HSG,Steel,sector_keyword
+EVT-2025-08733,DGC,DGC,Chemicals,sector_keyword
+EVT-2025-08721,VHC,VHC,Seafood,sector_keyword
+EVT-2025-08721,ANV,ANV,Seafood,sector_keyword
+EVT-2025-08721,MPC,MPC,Seafood,sector_keyword
+EVT-2025-08713,HPG,HPG,Steel,sector_keyword
+EVT-2025-08713,NKG,NKG,Steel,sector_keyword
+EVT-2025-08713,HSG,HSG,Steel,sector_keyword
+EVT-2025-08612,HPG,HPG,Steel,sector_keyword
+EVT-2025-08612,NKG,NKG,Steel,sector_keyword
+EVT-2025-08612,HSG,HSG,Steel,sector_keyword
+EVT-2025-08604,HPG,HPG,Steel,sector_keyword
+EVT-2025-08604,NKG,NKG,Steel,sector_keyword
+EVT-2025-08604,HSG,HSG,Steel,sector_keyword
+EVT-2025-08522,HPG,HPG,Steel,sector_keyword
+EVT-2025-08522,NKG,NKG,Steel,sector_keyword
+EVT-2025-08522,HSG,HSG,Steel,sector_keyword
+EVT-2025-08521,HPG,HPG,Steel,sector_keyword
+EVT-2025-08521,NKG,NKG,Steel,sector_keyword
+EVT-2025-08521,HSG,HSG,Steel,sector_keyword
+EVT-2025-08507,HPG,HPG,Steel,sector_keyword
+EVT-2025-08507,NKG,NKG,Steel,sector_keyword
+EVT-2025-08507,HSG,HSG,Steel,sector_keyword
+EVT-2025-08505,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-08505,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-08408,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-08408,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-08165,HPG,HPG,Steel,sector_keyword
+EVT-2025-08165,NKG,NKG,Steel,sector_keyword
+EVT-2025-08165,HSG,HSG,Steel,sector_keyword
+EVT-2025-08163,HPG,HPG,Steel,sector_keyword
+EVT-2025-08163,NKG,NKG,Steel,sector_keyword
+EVT-2025-08163,HSG,HSG,Steel,sector_keyword
+EVT-2025-07995,HPG,HPG,Steel,sector_keyword
+EVT-2025-07995,NKG,NKG,Steel,sector_keyword
+EVT-2025-07995,HSG,HSG,Steel,sector_keyword
+EVT-2025-07962,HPG,HPG,Steel,sector_keyword
+EVT-2025-07962,NKG,NKG,Steel,sector_keyword
+EVT-2025-07962,HSG,HSG,Steel,sector_keyword
+EVT-2025-07927,HPG,HPG,Steel,sector_keyword
+EVT-2025-07927,NKG,NKG,Steel,sector_keyword
+EVT-2025-07927,HSG,HSG,Steel,sector_keyword
+EVT-2025-07887,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-07887,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-07783,HPG,HPG,Steel,sector_keyword
+EVT-2025-07783,NKG,NKG,Steel,sector_keyword
+EVT-2025-07783,HSG,HSG,Steel,sector_keyword
+EVT-2025-07782,HPG,HPG,Steel,sector_keyword
+EVT-2025-07782,NKG,NKG,Steel,sector_keyword
+EVT-2025-07782,HSG,HSG,Steel,sector_keyword
+EVT-2025-07681,HPG,HPG,Steel,sector_keyword
+EVT-2025-07681,NKG,NKG,Steel,sector_keyword
+EVT-2025-07681,HSG,HSG,Steel,sector_keyword
+EVT-2025-07676,HPG,HPG,Steel,sector_keyword
+EVT-2025-07676,NKG,NKG,Steel,sector_keyword
+EVT-2025-07676,HSG,HSG,Steel,sector_keyword
+EVT-2025-07582,HPG,HPG,Steel,sector_keyword
+EVT-2025-07582,NKG,NKG,Steel,sector_keyword
+EVT-2025-07582,HSG,HSG,Steel,sector_keyword
+EVT-2025-07519,HPG,HPG,Steel,sector_keyword
+EVT-2025-07519,NKG,NKG,Steel,sector_keyword
+EVT-2025-07519,HSG,HSG,Steel,sector_keyword
+EVT-2025-11912,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2025-11912,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2025-11912,TCM,TCM,Textiles / Apparel,sector_keyword
+EVT-2025-11753,HPG,HPG,Steel,sector_keyword
+EVT-2025-11753,NKG,NKG,Steel,sector_keyword
+EVT-2025-11753,HSG,HSG,Steel,sector_keyword
+EVT-2025-11570,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2025-11570,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2025-11570,TCM,TCM,Textiles / Apparel,sector_keyword
+EVT-2025-11383,HPG,HPG,Steel,sector_keyword
+EVT-2025-11383,NKG,NKG,Steel,sector_keyword
+EVT-2025-11383,HSG,HSG,Steel,sector_keyword
+EVT-2025-11286,HPG,HPG,Steel,sector_keyword
+EVT-2025-11286,NKG,NKG,Steel,sector_keyword
+EVT-2025-11286,HSG,HSG,Steel,sector_keyword
+EVT-2025-11205,VHC,VHC,Seafood,sector_keyword
+EVT-2025-11205,ANV,ANV,Seafood,sector_keyword
+EVT-2025-11205,MPC,MPC,Seafood,sector_keyword
+EVT-2025-11075,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-11075,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-11074,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-11074,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-11067,HPG,HPG,Steel,sector_keyword
+EVT-2025-11067,NKG,NKG,Steel,sector_keyword
+EVT-2025-11067,HSG,HSG,Steel,sector_keyword
+EVT-2025-10950,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-10950,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-10947,HPG,HPG,Steel,sector_keyword
+EVT-2025-10947,NKG,NKG,Steel,sector_keyword
+EVT-2025-10947,HSG,HSG,Steel,sector_keyword
+EVT-2025-10946,HPG,HPG,Steel,sector_keyword
+EVT-2025-10946,NKG,NKG,Steel,sector_keyword
+EVT-2025-10946,HSG,HSG,Steel,sector_keyword
+EVT-2025-10792,HPG,HPG,Steel,sector_keyword
+EVT-2025-10792,NKG,NKG,Steel,sector_keyword
+EVT-2025-10792,HSG,HSG,Steel,sector_keyword
+EVT-2025-10729,HPG,HPG,Steel,sector_keyword
+EVT-2025-10729,NKG,NKG,Steel,sector_keyword
+EVT-2025-10729,HSG,HSG,Steel,sector_keyword
+EVT-2025-10655,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2025-10655,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2025-10655,TCM,TCM,Textiles / Apparel,sector_keyword
+EVT-2025-10653,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-10653,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-10652,HPG,HPG,Steel,sector_keyword
+EVT-2025-10652,NKG,NKG,Steel,sector_keyword
+EVT-2025-10652,HSG,HSG,Steel,sector_keyword
+EVT-2025-10639,HPG,HPG,Steel,sector_keyword
+EVT-2025-10639,NKG,NKG,Steel,sector_keyword
+EVT-2025-10639,HSG,HSG,Steel,sector_keyword
+EVT-2025-10636,VHC,VHC,Seafood,sector_keyword
+EVT-2025-10636,ANV,ANV,Seafood,sector_keyword
+EVT-2025-10636,MPC,MPC,Seafood,sector_keyword
+EVT-2025-10635,VHC,VHC,Seafood,sector_keyword
+EVT-2025-10635,ANV,ANV,Seafood,sector_keyword
+EVT-2025-10635,MPC,MPC,Seafood,sector_keyword
+EVT-2025-10634,VHC,VHC,Seafood,sector_keyword
+EVT-2025-10634,ANV,ANV,Seafood,sector_keyword
+EVT-2025-10634,MPC,MPC,Seafood,sector_keyword
+EVT-2025-10576,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-10576,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-10569,HPG,HPG,Steel,sector_keyword
+EVT-2025-10569,NKG,NKG,Steel,sector_keyword
+EVT-2025-10569,HSG,HSG,Steel,sector_keyword
+EVT-2025-10480,HPG,HPG,Steel,sector_keyword
+EVT-2025-10480,NKG,NKG,Steel,sector_keyword
+EVT-2025-10480,HSG,HSG,Steel,sector_keyword
+EVT-2025-10229,HPG,HPG,Steel,sector_keyword
+EVT-2025-10229,NKG,NKG,Steel,sector_keyword
+EVT-2025-10229,HSG,HSG,Steel,sector_keyword
+EVT-2025-10168,HPG,HPG,Steel,sector_keyword
+EVT-2025-10168,NKG,NKG,Steel,sector_keyword
+EVT-2025-10168,HSG,HSG,Steel,sector_keyword
+EVT-2025-09825,HPG,HPG,Steel,sector_keyword
+EVT-2025-09825,NKG,NKG,Steel,sector_keyword
+EVT-2025-09825,HSG,HSG,Steel,sector_keyword
+EVT-2025-11372,HPG,HPG,Steel,sector_keyword
+EVT-2025-11372,NKG,NKG,Steel,sector_keyword
+EVT-2025-11372,HSG,HSG,Steel,sector_keyword
+EVT-2025-10524,HPG,HPG,Steel,sector_keyword
+EVT-2025-10524,NKG,NKG,Steel,sector_keyword
+EVT-2025-10524,HSG,HSG,Steel,sector_keyword
+EVT-2025-14216,HPG,HPG,Steel,sector_keyword
+EVT-2025-14216,NKG,NKG,Steel,sector_keyword
+EVT-2025-14216,HSG,HSG,Steel,sector_keyword
+EVT-2025-14095,HPG,HPG,Steel,sector_keyword
+EVT-2025-14095,NKG,NKG,Steel,sector_keyword
+EVT-2025-14095,HSG,HSG,Steel,sector_keyword
+EVT-2025-13985,HPG,HPG,Steel,sector_keyword
+EVT-2025-13985,NKG,NKG,Steel,sector_keyword
+EVT-2025-13985,HSG,HSG,Steel,sector_keyword
+EVT-2025-13952,HPG,HPG,Steel,sector_keyword
+EVT-2025-13952,NKG,NKG,Steel,sector_keyword
+EVT-2025-13952,HSG,HSG,Steel,sector_keyword
+EVT-2025-13795,HPG,HPG,Steel,sector_keyword
+EVT-2025-13795,NKG,NKG,Steel,sector_keyword
+EVT-2025-13795,HSG,HSG,Steel,sector_keyword
+EVT-2025-13788,HPG,HPG,Steel,sector_keyword
+EVT-2025-13788,NKG,NKG,Steel,sector_keyword
+EVT-2025-13788,HSG,HSG,Steel,sector_keyword
+EVT-2025-13787,HPG,HPG,Steel,sector_keyword
+EVT-2025-13787,NKG,NKG,Steel,sector_keyword
+EVT-2025-13787,HSG,HSG,Steel,sector_keyword
+EVT-2025-13693,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-13693,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-13340,HPG,HPG,Steel,sector_keyword
+EVT-2025-13340,NKG,NKG,Steel,sector_keyword
+EVT-2025-13340,HSG,HSG,Steel,sector_keyword
+EVT-2025-12934,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-12934,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-12876,HPG,HPG,Steel,sector_keyword
+EVT-2025-12876,NKG,NKG,Steel,sector_keyword
+EVT-2025-12876,HSG,HSG,Steel,sector_keyword
+EVT-2025-12784,HPG,HPG,Steel,sector_keyword
+EVT-2025-12784,NKG,NKG,Steel,sector_keyword
+EVT-2025-12784,HSG,HSG,Steel,sector_keyword
+EVT-2025-12772,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-12772,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-12693,HPG,HPG,Steel,sector_keyword
+EVT-2025-12693,NKG,NKG,Steel,sector_keyword
+EVT-2025-12693,HSG,HSG,Steel,sector_keyword
+EVT-2025-12572,HPG,HPG,Steel,sector_keyword
+EVT-2025-12572,NKG,NKG,Steel,sector_keyword
+EVT-2025-12572,HSG,HSG,Steel,sector_keyword
+EVT-2025-12457,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-12457,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-12428,HPG,HPG,Steel,sector_keyword
+EVT-2025-12428,NKG,NKG,Steel,sector_keyword
+EVT-2025-12428,HSG,HSG,Steel,sector_keyword
+EVT-2025-12373,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-12373,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-12371,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-12371,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-12227,HPG,HPG,Steel,sector_keyword
+EVT-2025-12227,NKG,NKG,Steel,sector_keyword
+EVT-2025-12227,HSG,HSG,Steel,sector_keyword
+EVT-2025-11836,HPG,HPG,Steel,sector_keyword
+EVT-2025-11836,NKG,NKG,Steel,sector_keyword
+EVT-2025-11836,HSG,HSG,Steel,sector_keyword
+EVT-2025-12045,HPG,HPG,Steel,sector_keyword
+EVT-2025-12045,NKG,NKG,Steel,sector_keyword
+EVT-2025-12045,HSG,HSG,Steel,sector_keyword
+EVT-2025-12044,HPG,HPG,Steel,sector_keyword
+EVT-2025-12044,NKG,NKG,Steel,sector_keyword
+EVT-2025-12044,HSG,HSG,Steel,sector_keyword
+EVT-2025-13890,DGC,DGC,Chemicals,sector_keyword
+EVT-2025-12511,HPG,HPG,Steel,sector_keyword
+EVT-2025-12511,NKG,NKG,Steel,sector_keyword
+EVT-2025-12511,HSG,HSG,Steel,sector_keyword
+EVT-2025-16344,HPG,HPG,Steel,sector_keyword
+EVT-2025-16344,NKG,NKG,Steel,sector_keyword
+EVT-2025-16344,HSG,HSG,Steel,sector_keyword
+EVT-2025-16228,HPG,HPG,Steel,sector_keyword
+EVT-2025-16228,NKG,NKG,Steel,sector_keyword
+EVT-2025-16228,HSG,HSG,Steel,sector_keyword
+EVT-2025-16155,HPG,HPG,Steel,sector_keyword
+EVT-2025-16155,NKG,NKG,Steel,sector_keyword
+EVT-2025-16155,HSG,HSG,Steel,sector_keyword
+EVT-2025-16098,HPG,HPG,Steel,sector_keyword
+EVT-2025-16098,NKG,NKG,Steel,sector_keyword
+EVT-2025-16098,HSG,HSG,Steel,sector_keyword
+EVT-2025-15922,HPG,HPG,Steel,sector_keyword
+EVT-2025-15922,NKG,NKG,Steel,sector_keyword
+EVT-2025-15922,HSG,HSG,Steel,sector_keyword
+EVT-2025-15819,HPG,HPG,Steel,sector_keyword
+EVT-2025-15819,NKG,NKG,Steel,sector_keyword
+EVT-2025-15819,HSG,HSG,Steel,sector_keyword
+EVT-2025-15785,HPG,HPG,Steel,sector_keyword
+EVT-2025-15785,NKG,NKG,Steel,sector_keyword
+EVT-2025-15785,HSG,HSG,Steel,sector_keyword
+EVT-2025-15783,HPG,HPG,Steel,sector_keyword
+EVT-2025-15783,NKG,NKG,Steel,sector_keyword
+EVT-2025-15783,HSG,HSG,Steel,sector_keyword
+EVT-2025-15781,HPG,HPG,Steel,sector_keyword
+EVT-2025-15781,NKG,NKG,Steel,sector_keyword
+EVT-2025-15781,HSG,HSG,Steel,sector_keyword
+EVT-2025-15504,HPG,HPG,Steel,sector_keyword
+EVT-2025-15504,NKG,NKG,Steel,sector_keyword
+EVT-2025-15504,HSG,HSG,Steel,sector_keyword
+EVT-2025-15472,HPG,HPG,Steel,sector_keyword
+EVT-2025-15472,NKG,NKG,Steel,sector_keyword
+EVT-2025-15472,HSG,HSG,Steel,sector_keyword
+EVT-2025-15308,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-15308,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-15305,HPG,HPG,Steel,sector_keyword
+EVT-2025-15305,NKG,NKG,Steel,sector_keyword
+EVT-2025-15305,HSG,HSG,Steel,sector_keyword
+EVT-2025-15264,HPG,HPG,Steel,sector_keyword
+EVT-2025-15264,NKG,NKG,Steel,sector_keyword
+EVT-2025-15264,HSG,HSG,Steel,sector_keyword
+EVT-2025-15246,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2025-15246,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2025-15246,TCM,TCM,Textiles / Apparel,sector_keyword
+EVT-2025-15246,HPG,HPG,Steel,sector_keyword
+EVT-2025-15246,NKG,NKG,Steel,sector_keyword
+EVT-2025-15246,HSG,HSG,Steel,sector_keyword
+EVT-2025-15133,HPG,HPG,Steel,sector_keyword
+EVT-2025-15133,NKG,NKG,Steel,sector_keyword
+EVT-2025-15133,HSG,HSG,Steel,sector_keyword
+EVT-2025-14869,HPG,HPG,Steel,sector_keyword
+EVT-2025-14869,NKG,NKG,Steel,sector_keyword
+EVT-2025-14869,HSG,HSG,Steel,sector_keyword
+EVT-2025-14716,HPG,HPG,Steel,sector_keyword
+EVT-2025-14716,NKG,NKG,Steel,sector_keyword
+EVT-2025-14716,HSG,HSG,Steel,sector_keyword
+EVT-2025-14715,HPG,HPG,Steel,sector_keyword
+EVT-2025-14715,NKG,NKG,Steel,sector_keyword
+EVT-2025-14715,HSG,HSG,Steel,sector_keyword
+EVT-2025-14636,HPG,HPG,Steel,sector_keyword
+EVT-2025-14636,NKG,NKG,Steel,sector_keyword
+EVT-2025-14636,HSG,HSG,Steel,sector_keyword
+EVT-2025-14483,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-14483,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-18660,DGC,DGC,Chemicals,sector_keyword
+EVT-2025-18564,HPG,HPG,Steel,sector_keyword
+EVT-2025-18564,NKG,NKG,Steel,sector_keyword
+EVT-2025-18564,HSG,HSG,Steel,sector_keyword
+EVT-2025-18496,HPG,HPG,Steel,sector_keyword
+EVT-2025-18496,NKG,NKG,Steel,sector_keyword
+EVT-2025-18496,HSG,HSG,Steel,sector_keyword
+EVT-2025-18445,HPG,HPG,Steel,sector_keyword
+EVT-2025-18445,NKG,NKG,Steel,sector_keyword
+EVT-2025-18445,HSG,HSG,Steel,sector_keyword
+EVT-2025-18428,HPG,HPG,Steel,sector_keyword
+EVT-2025-18428,NKG,NKG,Steel,sector_keyword
+EVT-2025-18428,HSG,HSG,Steel,sector_keyword
+EVT-2025-18401,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-18401,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-18400,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-18400,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-18371,HPG,HPG,Steel,sector_keyword
+EVT-2025-18371,NKG,NKG,Steel,sector_keyword
+EVT-2025-18371,HSG,HSG,Steel,sector_keyword
+EVT-2025-18338,HPG,HPG,Steel,sector_keyword
+EVT-2025-18338,NKG,NKG,Steel,sector_keyword
+EVT-2025-18338,HSG,HSG,Steel,sector_keyword
+EVT-2025-18233,HPG,HPG,Steel,sector_keyword
+EVT-2025-18233,NKG,NKG,Steel,sector_keyword
+EVT-2025-18233,HSG,HSG,Steel,sector_keyword
+EVT-2025-18134,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-18134,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-18048,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-18048,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-18008,HPG,HPG,Steel,sector_keyword
+EVT-2025-18008,NKG,NKG,Steel,sector_keyword
+EVT-2025-18008,HSG,HSG,Steel,sector_keyword
+EVT-2025-17986,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-17986,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-17985,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-17985,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-17906,HPG,HPG,Steel,sector_keyword
+EVT-2025-17906,NKG,NKG,Steel,sector_keyword
+EVT-2025-17906,HSG,HSG,Steel,sector_keyword
+EVT-2025-17905,HPG,HPG,Steel,sector_keyword
+EVT-2025-17905,NKG,NKG,Steel,sector_keyword
+EVT-2025-17905,HSG,HSG,Steel,sector_keyword
+EVT-2025-17779,HPG,HPG,Steel,sector_keyword
+EVT-2025-17779,NKG,NKG,Steel,sector_keyword
+EVT-2025-17779,HSG,HSG,Steel,sector_keyword
+EVT-2025-17777,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-17777,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-17681,HPG,HPG,Steel,sector_keyword
+EVT-2025-17681,NKG,NKG,Steel,sector_keyword
+EVT-2025-17681,HSG,HSG,Steel,sector_keyword
+EVT-2025-17680,HPG,HPG,Steel,sector_keyword
+EVT-2025-17680,NKG,NKG,Steel,sector_keyword
+EVT-2025-17680,HSG,HSG,Steel,sector_keyword
+EVT-2025-17570,HPG,HPG,Steel,sector_keyword
+EVT-2025-17570,NKG,NKG,Steel,sector_keyword
+EVT-2025-17570,HSG,HSG,Steel,sector_keyword
+EVT-2025-17553,HPG,HPG,Steel,sector_keyword
+EVT-2025-17553,NKG,NKG,Steel,sector_keyword
+EVT-2025-17553,HSG,HSG,Steel,sector_keyword
+EVT-2025-17547,HPG,HPG,Steel,sector_keyword
+EVT-2025-17547,NKG,NKG,Steel,sector_keyword
+EVT-2025-17547,HSG,HSG,Steel,sector_keyword
+EVT-2025-17467,HPG,HPG,Steel,sector_keyword
+EVT-2025-17467,NKG,NKG,Steel,sector_keyword
+EVT-2025-17467,HSG,HSG,Steel,sector_keyword
+EVT-2025-17462,HPG,HPG,Steel,sector_keyword
+EVT-2025-17462,NKG,NKG,Steel,sector_keyword
+EVT-2025-17462,HSG,HSG,Steel,sector_keyword
+EVT-2025-17460,HPG,HPG,Steel,sector_keyword
+EVT-2025-17460,NKG,NKG,Steel,sector_keyword
+EVT-2025-17460,HSG,HSG,Steel,sector_keyword
+EVT-2025-17459,HPG,HPG,Steel,sector_keyword
+EVT-2025-17459,NKG,NKG,Steel,sector_keyword
+EVT-2025-17459,HSG,HSG,Steel,sector_keyword
+EVT-2025-17458,HPG,HPG,Steel,sector_keyword
+EVT-2025-17458,NKG,NKG,Steel,sector_keyword
+EVT-2025-17458,HSG,HSG,Steel,sector_keyword
+EVT-2025-17301,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-17301,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-17128,HPG,HPG,Steel,sector_keyword
+EVT-2025-17128,NKG,NKG,Steel,sector_keyword
+EVT-2025-17128,HSG,HSG,Steel,sector_keyword
+EVT-2025-17122,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2025-17122,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2025-17122,TCM,TCM,Textiles / Apparel,sector_keyword
+EVT-2025-16975,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-16975,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-16965,HPG,HPG,Steel,sector_keyword
+EVT-2025-16965,NKG,NKG,Steel,sector_keyword
+EVT-2025-16965,HSG,HSG,Steel,sector_keyword
+EVT-2025-16798,HPG,HPG,Steel,sector_keyword
+EVT-2025-16798,NKG,NKG,Steel,sector_keyword
+EVT-2025-16798,HSG,HSG,Steel,sector_keyword
+EVT-2025-16786,HPG,HPG,Steel,sector_keyword
+EVT-2025-16786,NKG,NKG,Steel,sector_keyword
+EVT-2025-16786,HSG,HSG,Steel,sector_keyword
+EVT-2025-16784,HPG,HPG,Steel,sector_keyword
+EVT-2025-16784,NKG,NKG,Steel,sector_keyword
+EVT-2025-16784,HSG,HSG,Steel,sector_keyword
+EVT-2025-16726,HPG,HPG,Steel,sector_keyword
+EVT-2025-16726,NKG,NKG,Steel,sector_keyword
+EVT-2025-16726,HSG,HSG,Steel,sector_keyword
+EVT-2025-16613,HPG,HPG,Steel,sector_keyword
+EVT-2025-16613,NKG,NKG,Steel,sector_keyword
+EVT-2025-16613,HSG,HSG,Steel,sector_keyword
+EVT-2025-16612,HPG,HPG,Steel,sector_keyword
+EVT-2025-16612,NKG,NKG,Steel,sector_keyword
+EVT-2025-16612,HSG,HSG,Steel,sector_keyword
+EVT-2025-16611,HPG,HPG,Steel,sector_keyword
+EVT-2025-16611,NKG,NKG,Steel,sector_keyword
+EVT-2025-16611,HSG,HSG,Steel,sector_keyword
+EVT-2025-16610,HPG,HPG,Steel,sector_keyword
+EVT-2025-16610,NKG,NKG,Steel,sector_keyword
+EVT-2025-16610,HSG,HSG,Steel,sector_keyword
+EVT-2025-16609,HPG,HPG,Steel,sector_keyword
+EVT-2025-16609,NKG,NKG,Steel,sector_keyword
+EVT-2025-16609,HSG,HSG,Steel,sector_keyword
+EVT-2025-16608,HPG,HPG,Steel,sector_keyword
+EVT-2025-16608,NKG,NKG,Steel,sector_keyword
+EVT-2025-16608,HSG,HSG,Steel,sector_keyword
+EVT-2025-16607,HPG,HPG,Steel,sector_keyword
+EVT-2025-16607,NKG,NKG,Steel,sector_keyword
+EVT-2025-16607,HSG,HSG,Steel,sector_keyword
+EVT-2025-16606,HPG,HPG,Steel,sector_keyword
+EVT-2025-16606,NKG,NKG,Steel,sector_keyword
+EVT-2025-16606,HSG,HSG,Steel,sector_keyword
+EVT-2025-16605,HPG,HPG,Steel,sector_keyword
+EVT-2025-16605,NKG,NKG,Steel,sector_keyword
+EVT-2025-16605,HSG,HSG,Steel,sector_keyword
+EVT-2025-16604,HPG,HPG,Steel,sector_keyword
+EVT-2025-16604,NKG,NKG,Steel,sector_keyword
+EVT-2025-16604,HSG,HSG,Steel,sector_keyword
+EVT-2025-16603,HPG,HPG,Steel,sector_keyword
+EVT-2025-16603,NKG,NKG,Steel,sector_keyword
+EVT-2025-16603,HSG,HSG,Steel,sector_keyword
+EVT-2025-16602,HPG,HPG,Steel,sector_keyword
+EVT-2025-16602,NKG,NKG,Steel,sector_keyword
+EVT-2025-16602,HSG,HSG,Steel,sector_keyword
+EVT-2025-16601,HPG,HPG,Steel,sector_keyword
+EVT-2025-16601,NKG,NKG,Steel,sector_keyword
+EVT-2025-16601,HSG,HSG,Steel,sector_keyword
+EVT-2025-16600,HPG,HPG,Steel,sector_keyword
+EVT-2025-16600,NKG,NKG,Steel,sector_keyword
+EVT-2025-16600,HSG,HSG,Steel,sector_keyword
+EVT-2025-19421,HPG,HPG,Steel,sector_keyword
+EVT-2025-19421,NKG,NKG,Steel,sector_keyword
+EVT-2025-19421,HSG,HSG,Steel,sector_keyword
+EVT-2025-19418,HPG,HPG,Steel,sector_keyword
+EVT-2025-19418,NKG,NKG,Steel,sector_keyword
+EVT-2025-19418,HSG,HSG,Steel,sector_keyword
+EVT-2025-19413,HPG,HPG,Steel,sector_keyword
+EVT-2025-19413,NKG,NKG,Steel,sector_keyword
+EVT-2025-19413,HSG,HSG,Steel,sector_keyword
+EVT-2025-19411,HPG,HPG,Steel,sector_keyword
+EVT-2025-19411,NKG,NKG,Steel,sector_keyword
+EVT-2025-19411,HSG,HSG,Steel,sector_keyword
+EVT-2025-19408,HPG,HPG,Steel,sector_keyword
+EVT-2025-19408,NKG,NKG,Steel,sector_keyword
+EVT-2025-19408,HSG,HSG,Steel,sector_keyword
+EVT-2025-19193,HPG,HPG,Steel,sector_keyword
+EVT-2025-19193,NKG,NKG,Steel,sector_keyword
+EVT-2025-19193,HSG,HSG,Steel,sector_keyword
+EVT-2025-19130,HPG,HPG,Steel,sector_keyword
+EVT-2025-19130,NKG,NKG,Steel,sector_keyword
+EVT-2025-19130,HSG,HSG,Steel,sector_keyword
+EVT-2025-19030,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-19030,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-18851,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2025-18851,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2025-18851,TCM,TCM,Textiles / Apparel,sector_keyword
+EVT-2025-19482,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-19482,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-21290,HPG,HPG,Steel,sector_keyword
+EVT-2025-21290,NKG,NKG,Steel,sector_keyword
+EVT-2025-21290,HSG,HSG,Steel,sector_keyword
+EVT-2025-21289,HPG,HPG,Steel,sector_keyword
+EVT-2025-21289,NKG,NKG,Steel,sector_keyword
+EVT-2025-21289,HSG,HSG,Steel,sector_keyword
+EVT-2025-21197,HPG,HPG,Steel,sector_keyword
+EVT-2025-21197,NKG,NKG,Steel,sector_keyword
+EVT-2025-21197,HSG,HSG,Steel,sector_keyword
+EVT-2025-21117,HPG,HPG,Steel,sector_keyword
+EVT-2025-21117,NKG,NKG,Steel,sector_keyword
+EVT-2025-21117,HSG,HSG,Steel,sector_keyword
+EVT-2025-20733,DGC,DGC,Chemicals,sector_keyword
+EVT-2025-20331,HPG,HPG,Steel,sector_keyword
+EVT-2025-20331,NKG,NKG,Steel,sector_keyword
+EVT-2025-20331,HSG,HSG,Steel,sector_keyword
+EVT-2025-20324,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-20324,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-20314,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-20314,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-20161,HPG,HPG,Steel,sector_keyword
+EVT-2025-20161,NKG,NKG,Steel,sector_keyword
+EVT-2025-20161,HSG,HSG,Steel,sector_keyword
+EVT-2025-20159,HPG,HPG,Steel,sector_keyword
+EVT-2025-20159,NKG,NKG,Steel,sector_keyword
+EVT-2025-20159,HSG,HSG,Steel,sector_keyword
+EVT-2025-20156,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-20156,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-21204,HPG,HPG,Steel,sector_keyword
+EVT-2025-21204,NKG,NKG,Steel,sector_keyword
+EVT-2025-21204,HSG,HSG,Steel,sector_keyword
+EVT-2025-23456,HPG,HPG,Steel,sector_keyword
+EVT-2025-23456,NKG,NKG,Steel,sector_keyword
+EVT-2025-23456,HSG,HSG,Steel,sector_keyword
+EVT-2025-23455,HPG,HPG,Steel,sector_keyword
+EVT-2025-23455,NKG,NKG,Steel,sector_keyword
+EVT-2025-23455,HSG,HSG,Steel,sector_keyword
+EVT-2025-23453,HPG,HPG,Steel,sector_keyword
+EVT-2025-23453,NKG,NKG,Steel,sector_keyword
+EVT-2025-23453,HSG,HSG,Steel,sector_keyword
+EVT-2025-23431,HPG,HPG,Steel,sector_keyword
+EVT-2025-23431,NKG,NKG,Steel,sector_keyword
+EVT-2025-23431,HSG,HSG,Steel,sector_keyword
+EVT-2025-23430,HPG,HPG,Steel,sector_keyword
+EVT-2025-23430,NKG,NKG,Steel,sector_keyword
+EVT-2025-23430,HSG,HSG,Steel,sector_keyword
+EVT-2025-23316,DGC,DGC,Chemicals,sector_keyword
+EVT-2025-22969,HPG,HPG,Steel,sector_keyword
+EVT-2025-22969,NKG,NKG,Steel,sector_keyword
+EVT-2025-22969,HSG,HSG,Steel,sector_keyword
+EVT-2025-22621,HPG,HPG,Steel,sector_keyword
+EVT-2025-22621,NKG,NKG,Steel,sector_keyword
+EVT-2025-22621,HSG,HSG,Steel,sector_keyword
+EVT-2025-22136,HPG,HPG,Steel,sector_keyword
+EVT-2025-22136,NKG,NKG,Steel,sector_keyword
+EVT-2025-22136,HSG,HSG,Steel,sector_keyword
+EVT-2025-21940,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-21940,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-21834,HPG,HPG,Steel,sector_keyword
+EVT-2025-21834,NKG,NKG,Steel,sector_keyword
+EVT-2025-21834,HSG,HSG,Steel,sector_keyword
+EVT-2025-21793,HPG,HPG,Steel,sector_keyword
+EVT-2025-21793,NKG,NKG,Steel,sector_keyword
+EVT-2025-21793,HSG,HSG,Steel,sector_keyword
+EVT-2025-21761,HPG,HPG,Steel,sector_keyword
+EVT-2025-21761,NKG,NKG,Steel,sector_keyword
+EVT-2025-21761,HSG,HSG,Steel,sector_keyword
+EVT-2025-21687,HPG,HPG,Steel,sector_keyword
+EVT-2025-21687,NKG,NKG,Steel,sector_keyword
+EVT-2025-21687,HSG,HSG,Steel,sector_keyword
+EVT-2025-21683,VHC,VHC,Seafood,sector_keyword
+EVT-2025-21683,ANV,ANV,Seafood,sector_keyword
+EVT-2025-21683,MPC,MPC,Seafood,sector_keyword
+EVT-2025-21678,HPG,HPG,Steel,sector_keyword
+EVT-2025-21678,NKG,NKG,Steel,sector_keyword
+EVT-2025-21678,HSG,HSG,Steel,sector_keyword
+EVT-2026-01187,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-01187,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-01186,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-01186,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-01185,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-01185,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-00742,HPG,HPG,Steel,sector_keyword
+EVT-2026-00742,NKG,NKG,Steel,sector_keyword
+EVT-2026-00742,HSG,HSG,Steel,sector_keyword
+EVT-2026-00597,HPG,HPG,Steel,sector_keyword
+EVT-2026-00597,NKG,NKG,Steel,sector_keyword
+EVT-2026-00597,HSG,HSG,Steel,sector_keyword
+EVT-2026-00495,HPG,HPG,Steel,sector_keyword
+EVT-2026-00495,NKG,NKG,Steel,sector_keyword
+EVT-2026-00495,HSG,HSG,Steel,sector_keyword
+EVT-2026-00494,HPG,HPG,Steel,sector_keyword
+EVT-2026-00494,NKG,NKG,Steel,sector_keyword
+EVT-2026-00494,HSG,HSG,Steel,sector_keyword
+EVT-2026-00493,HPG,HPG,Steel,sector_keyword
+EVT-2026-00493,NKG,NKG,Steel,sector_keyword
+EVT-2026-00493,HSG,HSG,Steel,sector_keyword
+EVT-2026-00256,HPG,HPG,Steel,sector_keyword
+EVT-2026-00256,NKG,NKG,Steel,sector_keyword
+EVT-2026-00256,HSG,HSG,Steel,sector_keyword
+EVT-2026-00227,HPG,HPG,Steel,sector_keyword
+EVT-2026-00227,NKG,NKG,Steel,sector_keyword
+EVT-2026-00227,HSG,HSG,Steel,sector_keyword
+EVT-2026-00226,HPG,HPG,Steel,sector_keyword
+EVT-2026-00226,NKG,NKG,Steel,sector_keyword
+EVT-2026-00226,HSG,HSG,Steel,sector_keyword
+EVT-2026-00193,HPG,HPG,Steel,sector_keyword
+EVT-2026-00193,NKG,NKG,Steel,sector_keyword
+EVT-2026-00193,HSG,HSG,Steel,sector_keyword
+EVT-2026-00192,HPG,HPG,Steel,sector_keyword
+EVT-2026-00192,NKG,NKG,Steel,sector_keyword
+EVT-2026-00192,HSG,HSG,Steel,sector_keyword
+EVT-2026-00191,HPG,HPG,Steel,sector_keyword
+EVT-2026-00191,NKG,NKG,Steel,sector_keyword
+EVT-2026-00191,HSG,HSG,Steel,sector_keyword
+EVT-2026-00184,HPG,HPG,Steel,sector_keyword
+EVT-2026-00184,NKG,NKG,Steel,sector_keyword
+EVT-2026-00184,HSG,HSG,Steel,sector_keyword
+EVT-2026-00181,HPG,HPG,Steel,sector_keyword
+EVT-2026-00181,NKG,NKG,Steel,sector_keyword
+EVT-2026-00181,HSG,HSG,Steel,sector_keyword
+EVT-2026-00168,DGC,DGC,Chemicals,sector_keyword
+EVT-2026-00152,HPG,HPG,Steel,sector_keyword
+EVT-2026-00152,NKG,NKG,Steel,sector_keyword
+EVT-2026-00152,HSG,HSG,Steel,sector_keyword
+EVT-2025-24215,HPG,HPG,Steel,sector_keyword
+EVT-2025-24215,NKG,NKG,Steel,sector_keyword
+EVT-2025-24215,HSG,HSG,Steel,sector_keyword
+EVT-2025-24197,HPG,HPG,Steel,sector_keyword
+EVT-2025-24197,NKG,NKG,Steel,sector_keyword
+EVT-2025-24197,HSG,HSG,Steel,sector_keyword
+EVT-2025-24194,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2025-24194,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2025-23980,HPG,HPG,Steel,sector_keyword
+EVT-2025-23980,NKG,NKG,Steel,sector_keyword
+EVT-2025-23980,HSG,HSG,Steel,sector_keyword
+EVT-2025-23965,HPG,HPG,Steel,sector_keyword
+EVT-2025-23965,NKG,NKG,Steel,sector_keyword
+EVT-2025-23965,HSG,HSG,Steel,sector_keyword
+EVT-2025-23913,HPG,HPG,Steel,sector_keyword
+EVT-2025-23913,NKG,NKG,Steel,sector_keyword
+EVT-2025-23913,HSG,HSG,Steel,sector_keyword
+EVT-2025-23898,DGC,DGC,Chemicals,sector_keyword
+EVT-2026-00327,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-00327,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-03678,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-03678,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-03608,HPG,HPG,Steel,sector_keyword
+EVT-2026-03608,NKG,NKG,Steel,sector_keyword
+EVT-2026-03608,HSG,HSG,Steel,sector_keyword
+EVT-2026-03511,VHC,VHC,Seafood,sector_keyword
+EVT-2026-03511,ANV,ANV,Seafood,sector_keyword
+EVT-2026-03511,MPC,MPC,Seafood,sector_keyword
+EVT-2026-03500,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-03500,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-03482,HPG,HPG,Steel,sector_keyword
+EVT-2026-03482,NKG,NKG,Steel,sector_keyword
+EVT-2026-03482,HSG,HSG,Steel,sector_keyword
+EVT-2026-03424,VHC,VHC,Seafood,sector_keyword
+EVT-2026-03424,ANV,ANV,Seafood,sector_keyword
+EVT-2026-03424,MPC,MPC,Seafood,sector_keyword
+EVT-2026-03418,HPG,HPG,Steel,sector_keyword
+EVT-2026-03418,NKG,NKG,Steel,sector_keyword
+EVT-2026-03418,HSG,HSG,Steel,sector_keyword
+EVT-2026-03339,HPG,HPG,Steel,sector_keyword
+EVT-2026-03339,NKG,NKG,Steel,sector_keyword
+EVT-2026-03339,HSG,HSG,Steel,sector_keyword
+EVT-2026-03207,HPG,HPG,Steel,sector_keyword
+EVT-2026-03207,NKG,NKG,Steel,sector_keyword
+EVT-2026-03207,HSG,HSG,Steel,sector_keyword
+EVT-2026-03202,HPG,HPG,Steel,sector_keyword
+EVT-2026-03202,NKG,NKG,Steel,sector_keyword
+EVT-2026-03202,HSG,HSG,Steel,sector_keyword
+EVT-2026-03193,HPG,HPG,Steel,sector_keyword
+EVT-2026-03193,NKG,NKG,Steel,sector_keyword
+EVT-2026-03193,HSG,HSG,Steel,sector_keyword
+EVT-2026-03135,HPG,HPG,Steel,sector_keyword
+EVT-2026-03135,NKG,NKG,Steel,sector_keyword
+EVT-2026-03135,HSG,HSG,Steel,sector_keyword
+EVT-2026-03103,HPG,HPG,Steel,sector_keyword
+EVT-2026-03103,NKG,NKG,Steel,sector_keyword
+EVT-2026-03103,HSG,HSG,Steel,sector_keyword
+EVT-2026-02878,DGC,DGC,Chemicals,sector_keyword
+EVT-2026-02877,DGC,DGC,Chemicals,sector_keyword
+EVT-2026-02859,HPG,HPG,Steel,sector_keyword
+EVT-2026-02859,NKG,NKG,Steel,sector_keyword
+EVT-2026-02859,HSG,HSG,Steel,sector_keyword
+EVT-2026-02850,HPG,HPG,Steel,sector_keyword
+EVT-2026-02850,NKG,NKG,Steel,sector_keyword
+EVT-2026-02850,HSG,HSG,Steel,sector_keyword
+EVT-2026-02783,VHC,VHC,Seafood,sector_keyword
+EVT-2026-02783,ANV,ANV,Seafood,sector_keyword
+EVT-2026-02783,MPC,MPC,Seafood,sector_keyword
+EVT-2026-02780,HPG,HPG,Steel,sector_keyword
+EVT-2026-02780,NKG,NKG,Steel,sector_keyword
+EVT-2026-02780,HSG,HSG,Steel,sector_keyword
+EVT-2026-02772,VHC,VHC,Seafood,sector_keyword
+EVT-2026-02772,ANV,ANV,Seafood,sector_keyword
+EVT-2026-02772,MPC,MPC,Seafood,sector_keyword
+EVT-2026-02637,HPG,HPG,Steel,sector_keyword
+EVT-2026-02637,NKG,NKG,Steel,sector_keyword
+EVT-2026-02637,HSG,HSG,Steel,sector_keyword
+EVT-2026-02636,HPG,HPG,Steel,sector_keyword
+EVT-2026-02636,NKG,NKG,Steel,sector_keyword
+EVT-2026-02636,HSG,HSG,Steel,sector_keyword
+EVT-2026-02635,HPG,HPG,Steel,sector_keyword
+EVT-2026-02635,NKG,NKG,Steel,sector_keyword
+EVT-2026-02635,HSG,HSG,Steel,sector_keyword
+EVT-2026-02570,HPG,HPG,Steel,sector_keyword
+EVT-2026-02570,NKG,NKG,Steel,sector_keyword
+EVT-2026-02570,HSG,HSG,Steel,sector_keyword
+EVT-2026-02561,HPG,HPG,Steel,sector_keyword
+EVT-2026-02561,NKG,NKG,Steel,sector_keyword
+EVT-2026-02561,HSG,HSG,Steel,sector_keyword
+EVT-2026-02486,VHC,VHC,Seafood,sector_keyword
+EVT-2026-02486,ANV,ANV,Seafood,sector_keyword
+EVT-2026-02486,MPC,MPC,Seafood,sector_keyword
+EVT-2026-02382,HPG,HPG,Steel,sector_keyword
+EVT-2026-02382,NKG,NKG,Steel,sector_keyword
+EVT-2026-02382,HSG,HSG,Steel,sector_keyword
+EVT-2026-02125,HPG,HPG,Steel,sector_keyword
+EVT-2026-02125,NKG,NKG,Steel,sector_keyword
+EVT-2026-02125,HSG,HSG,Steel,sector_keyword
+EVT-2026-02104,HPG,HPG,Steel,sector_keyword
+EVT-2026-02104,NKG,NKG,Steel,sector_keyword
+EVT-2026-02104,HSG,HSG,Steel,sector_keyword
+EVT-2026-01840,HPG,HPG,Steel,sector_keyword
+EVT-2026-01840,NKG,NKG,Steel,sector_keyword
+EVT-2026-01840,HSG,HSG,Steel,sector_keyword
+EVT-2026-01638,HPG,HPG,Steel,sector_keyword
+EVT-2026-01638,NKG,NKG,Steel,sector_keyword
+EVT-2026-01638,HSG,HSG,Steel,sector_keyword
+EVT-2026-01600,HPG,HPG,Steel,sector_keyword
+EVT-2026-01600,NKG,NKG,Steel,sector_keyword
+EVT-2026-01600,HSG,HSG,Steel,sector_keyword
+EVT-2026-01597,HPG,HPG,Steel,sector_keyword
+EVT-2026-01597,NKG,NKG,Steel,sector_keyword
+EVT-2026-01597,HSG,HSG,Steel,sector_keyword
+EVT-2026-01596,HPG,HPG,Steel,sector_keyword
+EVT-2026-01596,NKG,NKG,Steel,sector_keyword
+EVT-2026-01596,HSG,HSG,Steel,sector_keyword
+EVT-2026-01453,HPG,HPG,Steel,sector_keyword
+EVT-2026-01453,NKG,NKG,Steel,sector_keyword
+EVT-2026-01453,HSG,HSG,Steel,sector_keyword
+EVT-2026-01389,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-01389,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-05849,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-05849,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-05809,HPG,HPG,Steel,sector_keyword
+EVT-2026-05809,NKG,NKG,Steel,sector_keyword
+EVT-2026-05809,HSG,HSG,Steel,sector_keyword
+EVT-2026-05808,HPG,HPG,Steel,sector_keyword
+EVT-2026-05808,NKG,NKG,Steel,sector_keyword
+EVT-2026-05808,HSG,HSG,Steel,sector_keyword
+EVT-2026-05807,HPG,HPG,Steel,sector_keyword
+EVT-2026-05807,NKG,NKG,Steel,sector_keyword
+EVT-2026-05807,HSG,HSG,Steel,sector_keyword
+EVT-2026-05508,HPG,HPG,Steel,sector_keyword
+EVT-2026-05508,NKG,NKG,Steel,sector_keyword
+EVT-2026-05508,HSG,HSG,Steel,sector_keyword
+EVT-2026-05467,HPG,HPG,Steel,sector_keyword
+EVT-2026-05467,NKG,NKG,Steel,sector_keyword
+EVT-2026-05467,HSG,HSG,Steel,sector_keyword
+EVT-2026-05466,DGC,DGC,Chemicals,sector_keyword
+EVT-2026-05445,HPG,HPG,Steel,sector_keyword
+EVT-2026-05445,NKG,NKG,Steel,sector_keyword
+EVT-2026-05445,HSG,HSG,Steel,sector_keyword
+EVT-2026-05444,HPG,HPG,Steel,sector_keyword
+EVT-2026-05444,NKG,NKG,Steel,sector_keyword
+EVT-2026-05444,HSG,HSG,Steel,sector_keyword
+EVT-2026-05443,HPG,HPG,Steel,sector_keyword
+EVT-2026-05443,NKG,NKG,Steel,sector_keyword
+EVT-2026-05443,HSG,HSG,Steel,sector_keyword
+EVT-2026-05352,HPG,HPG,Steel,sector_keyword
+EVT-2026-05352,NKG,NKG,Steel,sector_keyword
+EVT-2026-05352,HSG,HSG,Steel,sector_keyword
+EVT-2026-05331,HPG,HPG,Steel,sector_keyword
+EVT-2026-05331,NKG,NKG,Steel,sector_keyword
+EVT-2026-05331,HSG,HSG,Steel,sector_keyword
+EVT-2026-05101,HPG,HPG,Steel,sector_keyword
+EVT-2026-05101,NKG,NKG,Steel,sector_keyword
+EVT-2026-05101,HSG,HSG,Steel,sector_keyword
+EVT-2026-05005,HPG,HPG,Steel,sector_keyword
+EVT-2026-05005,NKG,NKG,Steel,sector_keyword
+EVT-2026-05005,HSG,HSG,Steel,sector_keyword
+EVT-2026-05004,HPG,HPG,Steel,sector_keyword
+EVT-2026-05004,NKG,NKG,Steel,sector_keyword
+EVT-2026-05004,HSG,HSG,Steel,sector_keyword
+EVT-2026-04948,HPG,HPG,Steel,sector_keyword
+EVT-2026-04948,NKG,NKG,Steel,sector_keyword
+EVT-2026-04948,HSG,HSG,Steel,sector_keyword
+EVT-2026-04947,HPG,HPG,Steel,sector_keyword
+EVT-2026-04947,NKG,NKG,Steel,sector_keyword
+EVT-2026-04947,HSG,HSG,Steel,sector_keyword
+EVT-2026-04946,HPG,HPG,Steel,sector_keyword
+EVT-2026-04946,NKG,NKG,Steel,sector_keyword
+EVT-2026-04946,HSG,HSG,Steel,sector_keyword
+EVT-2026-04943,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-04943,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-04883,HPG,HPG,Steel,sector_keyword
+EVT-2026-04883,NKG,NKG,Steel,sector_keyword
+EVT-2026-04883,HSG,HSG,Steel,sector_keyword
+EVT-2026-04882,DGC,DGC,Chemicals,sector_keyword
+EVT-2026-04881,HPG,HPG,Steel,sector_keyword
+EVT-2026-04881,NKG,NKG,Steel,sector_keyword
+EVT-2026-04881,HSG,HSG,Steel,sector_keyword
+EVT-2026-04880,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-04880,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-04676,HPG,HPG,Steel,sector_keyword
+EVT-2026-04676,NKG,NKG,Steel,sector_keyword
+EVT-2026-04676,HSG,HSG,Steel,sector_keyword
+EVT-2026-04612,VHC,VHC,Seafood,sector_keyword
+EVT-2026-04612,ANV,ANV,Seafood,sector_keyword
+EVT-2026-04612,MPC,MPC,Seafood,sector_keyword
+EVT-2026-04611,HPG,HPG,Steel,sector_keyword
+EVT-2026-04611,NKG,NKG,Steel,sector_keyword
+EVT-2026-04611,HSG,HSG,Steel,sector_keyword
+EVT-2026-04405,HPG,HPG,Steel,sector_keyword
+EVT-2026-04405,NKG,NKG,Steel,sector_keyword
+EVT-2026-04405,HSG,HSG,Steel,sector_keyword
+EVT-2026-04403,HPG,HPG,Steel,sector_keyword
+EVT-2026-04403,NKG,NKG,Steel,sector_keyword
+EVT-2026-04403,HSG,HSG,Steel,sector_keyword
+EVT-2026-04328,HPG,HPG,Steel,sector_keyword
+EVT-2026-04328,NKG,NKG,Steel,sector_keyword
+EVT-2026-04328,HSG,HSG,Steel,sector_keyword
+EVT-2026-04323,DGC,DGC,Chemicals,sector_keyword
+EVT-2026-04285,HPG,HPG,Steel,sector_keyword
+EVT-2026-04285,NKG,NKG,Steel,sector_keyword
+EVT-2026-04285,HSG,HSG,Steel,sector_keyword
+EVT-2026-04121,HPG,HPG,Steel,sector_keyword
+EVT-2026-04121,NKG,NKG,Steel,sector_keyword
+EVT-2026-04121,HSG,HSG,Steel,sector_keyword
+EVT-2026-04075,HPG,HPG,Steel,sector_keyword
+EVT-2026-04075,NKG,NKG,Steel,sector_keyword
+EVT-2026-04075,HSG,HSG,Steel,sector_keyword
+EVT-2026-04072,HPG,HPG,Steel,sector_keyword
+EVT-2026-04072,NKG,NKG,Steel,sector_keyword
+EVT-2026-04072,HSG,HSG,Steel,sector_keyword
+EVT-2026-04002,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-04002,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-04001,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-04001,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-04000,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-04000,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-03999,HPG,HPG,Steel,sector_keyword
+EVT-2026-03999,NKG,NKG,Steel,sector_keyword
+EVT-2026-03999,HSG,HSG,Steel,sector_keyword
+EVT-2026-03972,HPG,HPG,Steel,sector_keyword
+EVT-2026-03972,NKG,NKG,Steel,sector_keyword
+EVT-2026-03972,HSG,HSG,Steel,sector_keyword
+EVT-2026-03795,HPG,HPG,Steel,sector_keyword
+EVT-2026-03795,NKG,NKG,Steel,sector_keyword
+EVT-2026-03795,HSG,HSG,Steel,sector_keyword
+EVT-2026-08038,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-08038,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-08036,HPG,HPG,Steel,sector_keyword
+EVT-2026-08036,NKG,NKG,Steel,sector_keyword
+EVT-2026-08036,HSG,HSG,Steel,sector_keyword
+EVT-2026-07987,HPG,HPG,Steel,sector_keyword
+EVT-2026-07987,NKG,NKG,Steel,sector_keyword
+EVT-2026-07987,HSG,HSG,Steel,sector_keyword
+EVT-2026-07866,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-07866,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-07778,HPG,HPG,Steel,sector_keyword
+EVT-2026-07778,NKG,NKG,Steel,sector_keyword
+EVT-2026-07778,HSG,HSG,Steel,sector_keyword
+EVT-2026-07684,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-07684,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-07502,HPG,HPG,Steel,sector_keyword
+EVT-2026-07502,NKG,NKG,Steel,sector_keyword
+EVT-2026-07502,HSG,HSG,Steel,sector_keyword
+EVT-2026-07467,HPG,HPG,Steel,sector_keyword
+EVT-2026-07467,NKG,NKG,Steel,sector_keyword
+EVT-2026-07467,HSG,HSG,Steel,sector_keyword
+EVT-2026-07464,HPG,HPG,Steel,sector_keyword
+EVT-2026-07464,NKG,NKG,Steel,sector_keyword
+EVT-2026-07464,HSG,HSG,Steel,sector_keyword
+EVT-2026-07463,HPG,HPG,Steel,sector_keyword
+EVT-2026-07463,NKG,NKG,Steel,sector_keyword
+EVT-2026-07463,HSG,HSG,Steel,sector_keyword
+EVT-2026-07315,HPG,HPG,Steel,sector_keyword
+EVT-2026-07315,NKG,NKG,Steel,sector_keyword
+EVT-2026-07315,HSG,HSG,Steel,sector_keyword
+EVT-2026-07314,HPG,HPG,Steel,sector_keyword
+EVT-2026-07314,NKG,NKG,Steel,sector_keyword
+EVT-2026-07314,HSG,HSG,Steel,sector_keyword
+EVT-2026-07313,HPG,HPG,Steel,sector_keyword
+EVT-2026-07313,NKG,NKG,Steel,sector_keyword
+EVT-2026-07313,HSG,HSG,Steel,sector_keyword
+EVT-2026-07312,HPG,HPG,Steel,sector_keyword
+EVT-2026-07312,NKG,NKG,Steel,sector_keyword
+EVT-2026-07312,HSG,HSG,Steel,sector_keyword
+EVT-2026-07309,VHC,VHC,Seafood,sector_keyword
+EVT-2026-07309,ANV,ANV,Seafood,sector_keyword
+EVT-2026-07309,MPC,MPC,Seafood,sector_keyword
+EVT-2026-07231,HPG,HPG,Steel,sector_keyword
+EVT-2026-07231,NKG,NKG,Steel,sector_keyword
+EVT-2026-07231,HSG,HSG,Steel,sector_keyword
+EVT-2026-07228,HPG,HPG,Steel,sector_keyword
+EVT-2026-07228,NKG,NKG,Steel,sector_keyword
+EVT-2026-07228,HSG,HSG,Steel,sector_keyword
+EVT-2026-07227,HPG,HPG,Steel,sector_keyword
+EVT-2026-07227,NKG,NKG,Steel,sector_keyword
+EVT-2026-07227,HSG,HSG,Steel,sector_keyword
+EVT-2026-07215,VHC,VHC,Seafood,sector_keyword
+EVT-2026-07215,ANV,ANV,Seafood,sector_keyword
+EVT-2026-07215,MPC,MPC,Seafood,sector_keyword
+EVT-2026-07114,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-07114,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-07109,HPG,HPG,Steel,sector_keyword
+EVT-2026-07109,NKG,NKG,Steel,sector_keyword
+EVT-2026-07109,HSG,HSG,Steel,sector_keyword
+EVT-2026-07057,HPG,HPG,Steel,sector_keyword
+EVT-2026-07057,NKG,NKG,Steel,sector_keyword
+EVT-2026-07057,HSG,HSG,Steel,sector_keyword
+EVT-2026-07008,HPG,HPG,Steel,sector_keyword
+EVT-2026-07008,NKG,NKG,Steel,sector_keyword
+EVT-2026-07008,HSG,HSG,Steel,sector_keyword
+EVT-2026-07005,VHC,VHC,Seafood,sector_keyword
+EVT-2026-07005,ANV,ANV,Seafood,sector_keyword
+EVT-2026-07005,MPC,MPC,Seafood,sector_keyword
+EVT-2026-07004,HPG,HPG,Steel,sector_keyword
+EVT-2026-07004,NKG,NKG,Steel,sector_keyword
+EVT-2026-07004,HSG,HSG,Steel,sector_keyword
+EVT-2026-07003,HPG,HPG,Steel,sector_keyword
+EVT-2026-07003,NKG,NKG,Steel,sector_keyword
+EVT-2026-07003,HSG,HSG,Steel,sector_keyword
+EVT-2026-07002,HPG,HPG,Steel,sector_keyword
+EVT-2026-07002,NKG,NKG,Steel,sector_keyword
+EVT-2026-07002,HSG,HSG,Steel,sector_keyword
+EVT-2026-07001,HPG,HPG,Steel,sector_keyword
+EVT-2026-07001,NKG,NKG,Steel,sector_keyword
+EVT-2026-07001,HSG,HSG,Steel,sector_keyword
+EVT-2026-06998,HPG,HPG,Steel,sector_keyword
+EVT-2026-06998,NKG,NKG,Steel,sector_keyword
+EVT-2026-06998,HSG,HSG,Steel,sector_keyword
+EVT-2026-06783,HPG,HPG,Steel,sector_keyword
+EVT-2026-06783,NKG,NKG,Steel,sector_keyword
+EVT-2026-06783,HSG,HSG,Steel,sector_keyword
+EVT-2026-06782,HPG,HPG,Steel,sector_keyword
+EVT-2026-06782,NKG,NKG,Steel,sector_keyword
+EVT-2026-06782,HSG,HSG,Steel,sector_keyword
+EVT-2026-06755,HPG,HPG,Steel,sector_keyword
+EVT-2026-06755,NKG,NKG,Steel,sector_keyword
+EVT-2026-06755,HSG,HSG,Steel,sector_keyword
+EVT-2026-06738,HPG,HPG,Steel,sector_keyword
+EVT-2026-06738,NKG,NKG,Steel,sector_keyword
+EVT-2026-06738,HSG,HSG,Steel,sector_keyword
+EVT-2026-06678,HPG,HPG,Steel,sector_keyword
+EVT-2026-06678,NKG,NKG,Steel,sector_keyword
+EVT-2026-06678,HSG,HSG,Steel,sector_keyword
+EVT-2026-06576,HPG,HPG,Steel,sector_keyword
+EVT-2026-06576,NKG,NKG,Steel,sector_keyword
+EVT-2026-06576,HSG,HSG,Steel,sector_keyword
+EVT-2026-06559,HPG,HPG,Steel,sector_keyword
+EVT-2026-06559,NKG,NKG,Steel,sector_keyword
+EVT-2026-06559,HSG,HSG,Steel,sector_keyword
+EVT-2026-06449,HPG,HPG,Steel,sector_keyword
+EVT-2026-06449,NKG,NKG,Steel,sector_keyword
+EVT-2026-06449,HSG,HSG,Steel,sector_keyword
+EVT-2026-06293,HPG,HPG,Steel,sector_keyword
+EVT-2026-06293,NKG,NKG,Steel,sector_keyword
+EVT-2026-06293,HSG,HSG,Steel,sector_keyword
+EVT-2026-06288,HPG,HPG,Steel,sector_keyword
+EVT-2026-06288,NKG,NKG,Steel,sector_keyword
+EVT-2026-06288,HSG,HSG,Steel,sector_keyword
+EVT-2026-06287,HPG,HPG,Steel,sector_keyword
+EVT-2026-06287,NKG,NKG,Steel,sector_keyword
+EVT-2026-06287,HSG,HSG,Steel,sector_keyword
+EVT-2026-06265,HPG,HPG,Steel,sector_keyword
+EVT-2026-06265,NKG,NKG,Steel,sector_keyword
+EVT-2026-06265,HSG,HSG,Steel,sector_keyword
+EVT-2026-06006,HPG,HPG,Steel,sector_keyword
+EVT-2026-06006,NKG,NKG,Steel,sector_keyword
+EVT-2026-06006,HSG,HSG,Steel,sector_keyword
+EVT-2026-06960,HPG,HPG,Steel,sector_keyword
+EVT-2026-06960,NKG,NKG,Steel,sector_keyword
+EVT-2026-06960,HSG,HSG,Steel,sector_keyword
+EVT-2026-10080,HPG,HPG,Steel,sector_keyword
+EVT-2026-10080,NKG,NKG,Steel,sector_keyword
+EVT-2026-10080,HSG,HSG,Steel,sector_keyword
+EVT-2026-10052,HPG,HPG,Steel,sector_keyword
+EVT-2026-10052,NKG,NKG,Steel,sector_keyword
+EVT-2026-10052,HSG,HSG,Steel,sector_keyword
+EVT-2026-10051,HPG,HPG,Steel,sector_keyword
+EVT-2026-10051,NKG,NKG,Steel,sector_keyword
+EVT-2026-10051,HSG,HSG,Steel,sector_keyword
+EVT-2026-10004,HPG,HPG,Steel,sector_keyword
+EVT-2026-10004,NKG,NKG,Steel,sector_keyword
+EVT-2026-10004,HSG,HSG,Steel,sector_keyword
+EVT-2026-09903,HPG,HPG,Steel,sector_keyword
+EVT-2026-09903,NKG,NKG,Steel,sector_keyword
+EVT-2026-09903,HSG,HSG,Steel,sector_keyword
+EVT-2026-09826,HPG,HPG,Steel,sector_keyword
+EVT-2026-09826,NKG,NKG,Steel,sector_keyword
+EVT-2026-09826,HSG,HSG,Steel,sector_keyword
+EVT-2026-09825,HPG,HPG,Steel,sector_keyword
+EVT-2026-09825,NKG,NKG,Steel,sector_keyword
+EVT-2026-09825,HSG,HSG,Steel,sector_keyword
+EVT-2026-09755,HPG,HPG,Steel,sector_keyword
+EVT-2026-09755,NKG,NKG,Steel,sector_keyword
+EVT-2026-09755,HSG,HSG,Steel,sector_keyword
+EVT-2026-09754,HPG,HPG,Steel,sector_keyword
+EVT-2026-09754,NKG,NKG,Steel,sector_keyword
+EVT-2026-09754,HSG,HSG,Steel,sector_keyword
+EVT-2026-09753,HPG,HPG,Steel,sector_keyword
+EVT-2026-09753,NKG,NKG,Steel,sector_keyword
+EVT-2026-09753,HSG,HSG,Steel,sector_keyword
+EVT-2026-09714,HPG,HPG,Steel,sector_keyword
+EVT-2026-09714,NKG,NKG,Steel,sector_keyword
+EVT-2026-09714,HSG,HSG,Steel,sector_keyword
+EVT-2026-09713,VHC,VHC,Seafood,sector_keyword
+EVT-2026-09713,ANV,ANV,Seafood,sector_keyword
+EVT-2026-09713,MPC,MPC,Seafood,sector_keyword
+EVT-2026-09710,HPG,HPG,Steel,sector_keyword
+EVT-2026-09710,NKG,NKG,Steel,sector_keyword
+EVT-2026-09710,HSG,HSG,Steel,sector_keyword
+EVT-2026-09709,HPG,HPG,Steel,sector_keyword
+EVT-2026-09709,NKG,NKG,Steel,sector_keyword
+EVT-2026-09709,HSG,HSG,Steel,sector_keyword
+EVT-2026-09707,HPG,HPG,Steel,sector_keyword
+EVT-2026-09707,NKG,NKG,Steel,sector_keyword
+EVT-2026-09707,HSG,HSG,Steel,sector_keyword
+EVT-2026-09692,HPG,HPG,Steel,sector_keyword
+EVT-2026-09692,NKG,NKG,Steel,sector_keyword
+EVT-2026-09692,HSG,HSG,Steel,sector_keyword
+EVT-2026-09691,HPG,HPG,Steel,sector_keyword
+EVT-2026-09691,NKG,NKG,Steel,sector_keyword
+EVT-2026-09691,HSG,HSG,Steel,sector_keyword
+EVT-2026-09689,HPG,HPG,Steel,sector_keyword
+EVT-2026-09689,NKG,NKG,Steel,sector_keyword
+EVT-2026-09689,HSG,HSG,Steel,sector_keyword
+EVT-2026-09509,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-09509,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-09467,HPG,HPG,Steel,sector_keyword
+EVT-2026-09467,NKG,NKG,Steel,sector_keyword
+EVT-2026-09467,HSG,HSG,Steel,sector_keyword
+EVT-2026-09465,VHC,VHC,Seafood,sector_keyword
+EVT-2026-09465,ANV,ANV,Seafood,sector_keyword
+EVT-2026-09465,MPC,MPC,Seafood,sector_keyword
+EVT-2026-09463,HPG,HPG,Steel,sector_keyword
+EVT-2026-09463,NKG,NKG,Steel,sector_keyword
+EVT-2026-09463,HSG,HSG,Steel,sector_keyword
+EVT-2026-09461,DGC,DGC,Chemicals,sector_keyword
+EVT-2026-09460,HPG,HPG,Steel,sector_keyword
+EVT-2026-09460,NKG,NKG,Steel,sector_keyword
+EVT-2026-09460,HSG,HSG,Steel,sector_keyword
+EVT-2026-09459,HPG,HPG,Steel,sector_keyword
+EVT-2026-09459,NKG,NKG,Steel,sector_keyword
+EVT-2026-09459,HSG,HSG,Steel,sector_keyword
+EVT-2026-09457,HPG,HPG,Steel,sector_keyword
+EVT-2026-09457,NKG,NKG,Steel,sector_keyword
+EVT-2026-09457,HSG,HSG,Steel,sector_keyword
+EVT-2026-09445,HPG,HPG,Steel,sector_keyword
+EVT-2026-09445,NKG,NKG,Steel,sector_keyword
+EVT-2026-09445,HSG,HSG,Steel,sector_keyword
+EVT-2026-09321,HPG,HPG,Steel,sector_keyword
+EVT-2026-09321,NKG,NKG,Steel,sector_keyword
+EVT-2026-09321,HSG,HSG,Steel,sector_keyword
+EVT-2026-09218,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-09218,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-09131,HPG,HPG,Steel,sector_keyword
+EVT-2026-09131,NKG,NKG,Steel,sector_keyword
+EVT-2026-09131,HSG,HSG,Steel,sector_keyword
+EVT-2026-08976,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2026-08976,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2026-08976,TCM,TCM,Textiles / Apparel,sector_keyword
+EVT-2026-08737,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-08737,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-08736,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-08736,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-08678,HPG,HPG,Steel,sector_keyword
+EVT-2026-08678,NKG,NKG,Steel,sector_keyword
+EVT-2026-08678,HSG,HSG,Steel,sector_keyword
+EVT-2026-08637,HPG,HPG,Steel,sector_keyword
+EVT-2026-08637,NKG,NKG,Steel,sector_keyword
+EVT-2026-08637,HSG,HSG,Steel,sector_keyword
+EVT-2026-08636,HPG,HPG,Steel,sector_keyword
+EVT-2026-08636,NKG,NKG,Steel,sector_keyword
+EVT-2026-08636,HSG,HSG,Steel,sector_keyword
+EVT-2026-08633,VHC,VHC,Seafood,sector_keyword
+EVT-2026-08633,ANV,ANV,Seafood,sector_keyword
+EVT-2026-08633,MPC,MPC,Seafood,sector_keyword
+EVT-2026-08510,HPG,HPG,Steel,sector_keyword
+EVT-2026-08510,NKG,NKG,Steel,sector_keyword
+EVT-2026-08510,HSG,HSG,Steel,sector_keyword
+EVT-2026-08509,HPG,HPG,Steel,sector_keyword
+EVT-2026-08509,NKG,NKG,Steel,sector_keyword
+EVT-2026-08509,HSG,HSG,Steel,sector_keyword
+EVT-2026-08489,HPG,HPG,Steel,sector_keyword
+EVT-2026-08489,NKG,NKG,Steel,sector_keyword
+EVT-2026-08489,HSG,HSG,Steel,sector_keyword
+EVT-2026-08488,HPG,HPG,Steel,sector_keyword
+EVT-2026-08488,NKG,NKG,Steel,sector_keyword
+EVT-2026-08488,HSG,HSG,Steel,sector_keyword
+EVT-2026-08297,HPG,HPG,Steel,sector_keyword
+EVT-2026-08297,NKG,NKG,Steel,sector_keyword
+EVT-2026-08297,HSG,HSG,Steel,sector_keyword
+EVT-2026-08284,HPG,HPG,Steel,sector_keyword
+EVT-2026-08284,NKG,NKG,Steel,sector_keyword
+EVT-2026-08284,HSG,HSG,Steel,sector_keyword
+EVT-2026-08282,HPG,HPG,Steel,sector_keyword
+EVT-2026-08282,NKG,NKG,Steel,sector_keyword
+EVT-2026-08282,HSG,HSG,Steel,sector_keyword
+EVT-2026-08129,HPG,HPG,Steel,sector_keyword
+EVT-2026-08129,NKG,NKG,Steel,sector_keyword
+EVT-2026-08129,HSG,HSG,Steel,sector_keyword
+EVT-2026-08128,HPG,HPG,Steel,sector_keyword
+EVT-2026-08128,NKG,NKG,Steel,sector_keyword
+EVT-2026-08128,HSG,HSG,Steel,sector_keyword
+EVT-2026-12748,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-12748,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-12694,HPG,HPG,Steel,sector_keyword
+EVT-2026-12694,NKG,NKG,Steel,sector_keyword
+EVT-2026-12694,HSG,HSG,Steel,sector_keyword
+EVT-2026-12651,VHC,VHC,Seafood,sector_keyword
+EVT-2026-12651,ANV,ANV,Seafood,sector_keyword
+EVT-2026-12651,MPC,MPC,Seafood,sector_keyword
+EVT-2026-12609,HPG,HPG,Steel,sector_keyword
+EVT-2026-12609,NKG,NKG,Steel,sector_keyword
+EVT-2026-12609,HSG,HSG,Steel,sector_keyword
+EVT-2026-12569,HPG,HPG,Steel,sector_keyword
+EVT-2026-12569,NKG,NKG,Steel,sector_keyword
+EVT-2026-12569,HSG,HSG,Steel,sector_keyword
+EVT-2026-12506,DGC,DGC,Chemicals,sector_keyword
+EVT-2026-12500,HPG,HPG,Steel,sector_keyword
+EVT-2026-12500,NKG,NKG,Steel,sector_keyword
+EVT-2026-12500,HSG,HSG,Steel,sector_keyword
+EVT-2026-12345,DGC,DGC,Chemicals,sector_keyword
+EVT-2026-12343,HPG,HPG,Steel,sector_keyword
+EVT-2026-12343,NKG,NKG,Steel,sector_keyword
+EVT-2026-12343,HSG,HSG,Steel,sector_keyword
+EVT-2026-12248,HPG,HPG,Steel,sector_keyword
+EVT-2026-12248,NKG,NKG,Steel,sector_keyword
+EVT-2026-12248,HSG,HSG,Steel,sector_keyword
+EVT-2026-12102,HPG,HPG,Steel,sector_keyword
+EVT-2026-12102,NKG,NKG,Steel,sector_keyword
+EVT-2026-12102,HSG,HSG,Steel,sector_keyword
+EVT-2026-11864,HPG,HPG,Steel,sector_keyword
+EVT-2026-11864,NKG,NKG,Steel,sector_keyword
+EVT-2026-11864,HSG,HSG,Steel,sector_keyword
+EVT-2026-11862,HPG,HPG,Steel,sector_keyword
+EVT-2026-11862,NKG,NKG,Steel,sector_keyword
+EVT-2026-11862,HSG,HSG,Steel,sector_keyword
+EVT-2026-11549,DGC,DGC,Chemicals,sector_keyword
+EVT-2026-11374,HPG,HPG,Steel,sector_keyword
+EVT-2026-11374,NKG,NKG,Steel,sector_keyword
+EVT-2026-11374,HSG,HSG,Steel,sector_keyword
+EVT-2026-11371,VHC,VHC,Seafood,sector_keyword
+EVT-2026-11371,ANV,ANV,Seafood,sector_keyword
+EVT-2026-11371,MPC,MPC,Seafood,sector_keyword
+EVT-2026-11356,HPG,HPG,Steel,sector_keyword
+EVT-2026-11356,NKG,NKG,Steel,sector_keyword
+EVT-2026-11356,HSG,HSG,Steel,sector_keyword
+EVT-2026-11296,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2026-11296,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2026-11296,TCM,TCM,Textiles / Apparel,sector_keyword
+EVT-2026-11266,HPG,HPG,Steel,sector_keyword
+EVT-2026-11266,NKG,NKG,Steel,sector_keyword
+EVT-2026-11266,HSG,HSG,Steel,sector_keyword
+EVT-2026-11120,HPG,HPG,Steel,sector_keyword
+EVT-2026-11120,NKG,NKG,Steel,sector_keyword
+EVT-2026-11120,HSG,HSG,Steel,sector_keyword
+EVT-2026-11118,HPG,HPG,Steel,sector_keyword
+EVT-2026-11118,NKG,NKG,Steel,sector_keyword
+EVT-2026-11118,HSG,HSG,Steel,sector_keyword
+EVT-2026-11007,HPG,HPG,Steel,sector_keyword
+EVT-2026-11007,NKG,NKG,Steel,sector_keyword
+EVT-2026-11007,HSG,HSG,Steel,sector_keyword
+EVT-2026-10997,DGC,DGC,Chemicals,sector_keyword
+EVT-2026-10914,HPG,HPG,Steel,sector_keyword
+EVT-2026-10914,NKG,NKG,Steel,sector_keyword
+EVT-2026-10914,HSG,HSG,Steel,sector_keyword
+EVT-2026-10867,HPG,HPG,Steel,sector_keyword
+EVT-2026-10867,NKG,NKG,Steel,sector_keyword
+EVT-2026-10867,HSG,HSG,Steel,sector_keyword
+EVT-2026-10571,HPG,HPG,Steel,sector_keyword
+EVT-2026-10571,NKG,NKG,Steel,sector_keyword
+EVT-2026-10571,HSG,HSG,Steel,sector_keyword
+EVT-2026-10571,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-10571,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-11314,HPG,HPG,Steel,sector_keyword
+EVT-2026-11314,NKG,NKG,Steel,sector_keyword
+EVT-2026-11314,HSG,HSG,Steel,sector_keyword
+EVT-2026-14628,HPG,HPG,Steel,sector_keyword
+EVT-2026-14628,NKG,NKG,Steel,sector_keyword
+EVT-2026-14628,HSG,HSG,Steel,sector_keyword
+EVT-2026-14614,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-14614,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-14613,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-14613,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-14612,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-14612,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-14611,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-14611,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-14610,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-14610,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-14609,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-14609,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-14594,HPG,HPG,Steel,sector_keyword
+EVT-2026-14594,NKG,NKG,Steel,sector_keyword
+EVT-2026-14594,HSG,HSG,Steel,sector_keyword
+EVT-2026-14420,HPG,HPG,Steel,sector_keyword
+EVT-2026-14420,NKG,NKG,Steel,sector_keyword
+EVT-2026-14420,HSG,HSG,Steel,sector_keyword
+EVT-2026-14417,HPG,HPG,Steel,sector_keyword
+EVT-2026-14417,NKG,NKG,Steel,sector_keyword
+EVT-2026-14417,HSG,HSG,Steel,sector_keyword
+EVT-2026-14291,HPG,HPG,Steel,sector_keyword
+EVT-2026-14291,NKG,NKG,Steel,sector_keyword
+EVT-2026-14291,HSG,HSG,Steel,sector_keyword
+EVT-2026-14287,HPG,HPG,Steel,sector_keyword
+EVT-2026-14287,NKG,NKG,Steel,sector_keyword
+EVT-2026-14287,HSG,HSG,Steel,sector_keyword
+EVT-2026-14145,HPG,HPG,Steel,sector_keyword
+EVT-2026-14145,NKG,NKG,Steel,sector_keyword
+EVT-2026-14145,HSG,HSG,Steel,sector_keyword
+EVT-2026-14069,HPG,HPG,Steel,sector_keyword
+EVT-2026-14069,NKG,NKG,Steel,sector_keyword
+EVT-2026-14069,HSG,HSG,Steel,sector_keyword
+EVT-2026-14031,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-14031,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-14030,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-14030,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-14026,HPG,HPG,Steel,sector_keyword
+EVT-2026-14026,NKG,NKG,Steel,sector_keyword
+EVT-2026-14026,HSG,HSG,Steel,sector_keyword
+EVT-2026-14025,HPG,HPG,Steel,sector_keyword
+EVT-2026-14025,NKG,NKG,Steel,sector_keyword
+EVT-2026-14025,HSG,HSG,Steel,sector_keyword
+EVT-2026-14024,HPG,HPG,Steel,sector_keyword
+EVT-2026-14024,NKG,NKG,Steel,sector_keyword
+EVT-2026-14024,HSG,HSG,Steel,sector_keyword
+EVT-2026-13975,HPG,HPG,Steel,sector_keyword
+EVT-2026-13975,NKG,NKG,Steel,sector_keyword
+EVT-2026-13975,HSG,HSG,Steel,sector_keyword
+EVT-2026-13784,HPG,HPG,Steel,sector_keyword
+EVT-2026-13784,NKG,NKG,Steel,sector_keyword
+EVT-2026-13784,HSG,HSG,Steel,sector_keyword
+EVT-2026-13709,HPG,HPG,Steel,sector_keyword
+EVT-2026-13709,NKG,NKG,Steel,sector_keyword
+EVT-2026-13709,HSG,HSG,Steel,sector_keyword
+EVT-2026-13607,HPG,HPG,Steel,sector_keyword
+EVT-2026-13607,NKG,NKG,Steel,sector_keyword
+EVT-2026-13607,HSG,HSG,Steel,sector_keyword
+EVT-2026-13567,HPG,HPG,Steel,sector_keyword
+EVT-2026-13567,NKG,NKG,Steel,sector_keyword
+EVT-2026-13567,HSG,HSG,Steel,sector_keyword
+EVT-2026-13510,HPG,HPG,Steel,sector_keyword
+EVT-2026-13510,NKG,NKG,Steel,sector_keyword
+EVT-2026-13510,HSG,HSG,Steel,sector_keyword
+EVT-2026-13490,HPG,HPG,Steel,sector_keyword
+EVT-2026-13490,NKG,NKG,Steel,sector_keyword
+EVT-2026-13490,HSG,HSG,Steel,sector_keyword
+EVT-2026-13489,HPG,HPG,Steel,sector_keyword
+EVT-2026-13489,NKG,NKG,Steel,sector_keyword
+EVT-2026-13489,HSG,HSG,Steel,sector_keyword
+EVT-2026-13488,HPG,HPG,Steel,sector_keyword
+EVT-2026-13488,NKG,NKG,Steel,sector_keyword
+EVT-2026-13488,HSG,HSG,Steel,sector_keyword
+EVT-2026-13435,DGC,DGC,Chemicals,sector_keyword
+EVT-2026-13345,HPG,HPG,Steel,sector_keyword
+EVT-2026-13345,NKG,NKG,Steel,sector_keyword
+EVT-2026-13345,HSG,HSG,Steel,sector_keyword
+EVT-2026-13342,HPG,HPG,Steel,sector_keyword
+EVT-2026-13342,NKG,NKG,Steel,sector_keyword
+EVT-2026-13342,HSG,HSG,Steel,sector_keyword
+EVT-2026-13183,HPG,HPG,Steel,sector_keyword
+EVT-2026-13183,NKG,NKG,Steel,sector_keyword
+EVT-2026-13183,HSG,HSG,Steel,sector_keyword
+EVT-2026-13103,PTB,PTB,Wood / Furniture,sector_keyword
+EVT-2026-13103,GDT,GDT,Wood / Furniture,sector_keyword
+EVT-2026-13037,VHC,VHC,Seafood,sector_keyword
+EVT-2026-13037,ANV,ANV,Seafood,sector_keyword
+EVT-2026-13037,MPC,MPC,Seafood,sector_keyword
+EVT-2026-14452,DGC,DGC,Chemicals,sector_keyword
+EVT-2026-13588,DPM,DPM,Fertilizer,sector_keyword
+EVT-2026-13588,DCM,DCM,Fertilizer,sector_keyword
 EVT-2026-16553,VHC,VHC,Seafood,sector_keyword
 EVT-2026-16553,ANV,ANV,Seafood,sector_keyword
 EVT-2026-16553,MPC,MPC,Seafood,sector_keyword
@@ -16,3 +1583,90 @@ EVT-2026-16390,HSG,HSG,Steel,sector_keyword
 EVT-2026-16380,HPG,HPG,Steel,sector_keyword
 EVT-2026-16380,NKG,NKG,Steel,sector_keyword
 EVT-2026-16380,HSG,HSG,Steel,sector_keyword
+EVT-2026-16182,HPG,HPG,Steel,sector_keyword
+EVT-2026-16182,NKG,NKG,Steel,sector_keyword
+EVT-2026-16182,HSG,HSG,Steel,sector_keyword
+EVT-2026-16057,HPG,HPG,Steel,sector_keyword
+EVT-2026-16057,NKG,NKG,Steel,sector_keyword
+EVT-2026-16057,HSG,HSG,Steel,sector_keyword
+EVT-2026-16036,HPG,HPG,Steel,sector_keyword
+EVT-2026-16036,NKG,NKG,Steel,sector_keyword
+EVT-2026-16036,HSG,HSG,Steel,sector_keyword
+EVT-2026-16034,HPG,HPG,Steel,sector_keyword
+EVT-2026-16034,NKG,NKG,Steel,sector_keyword
+EVT-2026-16034,HSG,HSG,Steel,sector_keyword
+EVT-2026-16017,HPG,HPG,Steel,sector_keyword
+EVT-2026-16017,NKG,NKG,Steel,sector_keyword
+EVT-2026-16017,HSG,HSG,Steel,sector_keyword
+EVT-2026-16014,HPG,HPG,Steel,sector_keyword
+EVT-2026-16014,NKG,NKG,Steel,sector_keyword
+EVT-2026-16014,HSG,HSG,Steel,sector_keyword
+EVT-2026-16008,HPG,HPG,Steel,sector_keyword
+EVT-2026-16008,NKG,NKG,Steel,sector_keyword
+EVT-2026-16008,HSG,HSG,Steel,sector_keyword
+EVT-2026-16007,HPG,HPG,Steel,sector_keyword
+EVT-2026-16007,NKG,NKG,Steel,sector_keyword
+EVT-2026-16007,HSG,HSG,Steel,sector_keyword
+EVT-2026-16006,HPG,HPG,Steel,sector_keyword
+EVT-2026-16006,NKG,NKG,Steel,sector_keyword
+EVT-2026-16006,HSG,HSG,Steel,sector_keyword
+EVT-2026-16005,HPG,HPG,Steel,sector_keyword
+EVT-2026-16005,NKG,NKG,Steel,sector_keyword
+EVT-2026-16005,HSG,HSG,Steel,sector_keyword
+EVT-2026-15997,HPG,HPG,Steel,sector_keyword
+EVT-2026-15997,NKG,NKG,Steel,sector_keyword
+EVT-2026-15997,HSG,HSG,Steel,sector_keyword
+EVT-2026-15990,VHC,VHC,Seafood,sector_keyword
+EVT-2026-15990,ANV,ANV,Seafood,sector_keyword
+EVT-2026-15990,MPC,MPC,Seafood,sector_keyword
+EVT-2026-15961,HPG,HPG,Steel,sector_keyword
+EVT-2026-15961,NKG,NKG,Steel,sector_keyword
+EVT-2026-15961,HSG,HSG,Steel,sector_keyword
+EVT-2026-15924,HPG,HPG,Steel,sector_keyword
+EVT-2026-15924,NKG,NKG,Steel,sector_keyword
+EVT-2026-15924,HSG,HSG,Steel,sector_keyword
+EVT-2026-15923,HPG,HPG,Steel,sector_keyword
+EVT-2026-15923,NKG,NKG,Steel,sector_keyword
+EVT-2026-15923,HSG,HSG,Steel,sector_keyword
+EVT-2026-15922,HPG,HPG,Steel,sector_keyword
+EVT-2026-15922,NKG,NKG,Steel,sector_keyword
+EVT-2026-15922,HSG,HSG,Steel,sector_keyword
+EVT-2026-15877,HPG,HPG,Steel,sector_keyword
+EVT-2026-15877,NKG,NKG,Steel,sector_keyword
+EVT-2026-15877,HSG,HSG,Steel,sector_keyword
+EVT-2026-15749,HPG,HPG,Steel,sector_keyword
+EVT-2026-15749,NKG,NKG,Steel,sector_keyword
+EVT-2026-15749,HSG,HSG,Steel,sector_keyword
+EVT-2026-15747,HPG,HPG,Steel,sector_keyword
+EVT-2026-15747,NKG,NKG,Steel,sector_keyword
+EVT-2026-15747,HSG,HSG,Steel,sector_keyword
+EVT-2026-15742,HPG,HPG,Steel,sector_keyword
+EVT-2026-15742,NKG,NKG,Steel,sector_keyword
+EVT-2026-15742,HSG,HSG,Steel,sector_keyword
+EVT-2026-15646,HPG,HPG,Steel,sector_keyword
+EVT-2026-15646,NKG,NKG,Steel,sector_keyword
+EVT-2026-15646,HSG,HSG,Steel,sector_keyword
+EVT-2026-15561,HPG,HPG,Steel,sector_keyword
+EVT-2026-15561,NKG,NKG,Steel,sector_keyword
+EVT-2026-15561,HSG,HSG,Steel,sector_keyword
+EVT-2026-15470,HPG,HPG,Steel,sector_keyword
+EVT-2026-15470,NKG,NKG,Steel,sector_keyword
+EVT-2026-15470,HSG,HSG,Steel,sector_keyword
+EVT-2026-15441,HPG,HPG,Steel,sector_keyword
+EVT-2026-15441,NKG,NKG,Steel,sector_keyword
+EVT-2026-15441,HSG,HSG,Steel,sector_keyword
+EVT-2026-15440,HPG,HPG,Steel,sector_keyword
+EVT-2026-15440,NKG,NKG,Steel,sector_keyword
+EVT-2026-15440,HSG,HSG,Steel,sector_keyword
+EVT-2026-15439,HPG,HPG,Steel,sector_keyword
+EVT-2026-15439,NKG,NKG,Steel,sector_keyword
+EVT-2026-15439,HSG,HSG,Steel,sector_keyword
+EVT-2026-15438,HPG,HPG,Steel,sector_keyword
+EVT-2026-15438,NKG,NKG,Steel,sector_keyword
+EVT-2026-15438,HSG,HSG,Steel,sector_keyword
+EVT-2026-15437,HPG,HPG,Steel,sector_keyword
+EVT-2026-15437,NKG,NKG,Steel,sector_keyword
+EVT-2026-15437,HSG,HSG,Steel,sector_keyword
+EVT-2026-15181,TNG,TNG,Textiles / Apparel,sector_keyword
+EVT-2026-15181,MSH,MSH,Textiles / Apparel,sector_keyword
+EVT-2026-15181,TCM,TCM,Textiles / Apparel,sector_keyword

@@ -56,13 +56,15 @@ def classify_document_type(document: dict) -> str:
     return "Other"
 
 
+# Most-advanced-stage-wins tie-break order when a document matches more than
+# one stage's phrases -- must match the key order in config/legal_basis.yaml.
+STAGE_ORDER = ["Khởi xướng", "Điều tra", "Sơ bộ", "Cuối cùng"]
+
+
 def classify_stage(document: dict) -> str | None:
     text = _text(document)
     phrases = config.stage_phrases()
-    matched_stage_numbers = []
-    for stage_key, phrase_list in phrases.items():
-        if any_keyword(text, phrase_list):
-            matched_stage_numbers.append(int(stage_key.split("_")[1]))
-    if not matched_stage_numbers:
+    matched = [stage for stage in STAGE_ORDER if any_keyword(text, phrases.get(stage, []))]
+    if not matched:
         return None
-    return f"STAGE_{max(matched_stage_numbers)}"
+    return max(matched, key=STAGE_ORDER.index)

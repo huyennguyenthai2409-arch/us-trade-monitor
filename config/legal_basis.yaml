@@ -137,43 +137,43 @@ SPECIAL_301_IP:
     - intellectual property protection
     - market access
 
-# Stage phrases used by classify.py to infer investigation_stage (spec section 8).
-# Order matters: later matches override earlier ones (more advanced stage wins).
+# Stage phrases used by classify.py to infer investigation_stage -- collapsed
+# to 4 stages per user request (simpler than spec section 8's 9-stage model).
+# Order matters: later stages override earlier ones when a document matches
+# more than one (most-advanced-stage wins). "Điều tra" covers reviews of an
+# EXISTING order (administrative/sunset/changed-circumstances review, scope
+# or tariff modification) -- distinct from "Khởi xướng", which covers a fresh
+# case being opened (signal, petition, initiation).
 stage_phrases:
-  STAGE_0:
+  "Khởi xướng":
     - industry pressure
     - domestic producer complaint
-  STAGE_1:
     - petition filed
     - request for
-  STAGE_2:
     - investigation initiated
     - initiation of investigation
     - notice of initiation
-  STAGE_3:
-    - preliminary determination
-    - preliminary affirmative
-    - preliminary negative
-  STAGE_4:
-    - proposed remedy
-    - proposed action
-    - proposed tariff
-  STAGE_5:
-    - final determination
-    - final affirmative
-    - final action
-  STAGE_6:
-    - antidumping duty order
-    - countervailing duty order
-    - order effective
-    - tariff effective
-  STAGE_7:
+  "Điều tra":
     - administrative review
     - sunset review
     - changed circumstances review
     - scope modification
     - tariff modification
-  STAGE_8:
+  "Sơ bộ":
+    - preliminary determination
+    - preliminary affirmative
+    - preliminary negative
+    - proposed remedy
+    - proposed action
+    - proposed tariff
+  "Cuối cùng":
+    - final determination
+    - final affirmative
+    - final action
+    - antidumping duty order
+    - countervailing duty order
+    - order effective
+    - tariff effective
     - terminated
     - withdrawn
     - revoked
