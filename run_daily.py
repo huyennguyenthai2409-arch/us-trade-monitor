@@ -20,6 +20,7 @@ import argparse
 import datetime as dt
 
 import digest
+import export_site_data
 import pipeline
 
 
@@ -38,6 +39,8 @@ def _run_chunked(start_date: dt.date, end_date: dt.date, chunk_days: int) -> Non
 
     print(f"\nBackfill done ({start_date} to {end_date}): fetched {total_fetched}, "
           f"new documents {total_new}, new High-priority alerts {total_alerts}. No digest generated for backfills.")
+
+    export_site_data.main()
 
 
 def main() -> None:
@@ -71,6 +74,7 @@ def main() -> None:
         # leave the earlier, more informative digest for today in place
         # rather than overwriting it with an empty one.
         print(f"Fetched: {result['fetched']} | New documents: 0 | digest for {digest_date.isoformat()} left unchanged")
+        export_site_data.main()
         return
 
     content = digest.build_daily_digest(result, digest_date)
@@ -79,6 +83,8 @@ def main() -> None:
     print(f"Fetched: {result['fetched']} | New documents: {result['new_documents']} | "
           f"New High-priority alerts: {result['new_alerts']}")
     print(f"Digest written to: {path}")
+
+    export_site_data.main()
 
 
 if __name__ == "__main__":

@@ -2,8 +2,13 @@
 
 Tracks US trade-policy actions (AD/CVD, Section 232/301/201/337, IEEPA, UFLPA,
 BIS export controls, OFAC sanctions) that could affect Vietnam, scores them
-for Vietnam/sector/company exposure, and surfaces High-priority items in a
-Streamlit dashboard.
+for Vietnam/sector/company exposure, and surfaces High-priority items in two
+UIs backed by the same `data/` CSVs:
+- **`docs/`** — a static site (colors/type/layout ported from the "Peers
+  Holdings" design system), hosted on GitHub Pages, fed by
+  `export_site_data.py`. This is the primary UI going forward.
+- **`app.py`** — the original Streamlit dashboard, kept running in parallel
+  as a fallback / raw-data view.
 
 Investigation stage and risk level use a simplified vocabulary (collapsed
 from the spec's original 9-stage / 5-tier model, per user request):
@@ -33,22 +38,43 @@ pip install -r requirements.txt
 
 ```
 python run_daily.py             # incremental fetch since last run (or last 14 days on first run)
-streamlit run app.py            # dashboard at http://localhost:8501
+python export_site_data.py      # regenerate docs/data/*.json from data/*.csv (run_daily.py also calls this)
+python -m http.server 8000 --directory docs   # static site at http://localhost:8000
+streamlit run app.py            # Streamlit fallback UI at http://localhost:8501
 ```
 
 `run_daily.py --start 2026-01-01 --end 2026-08-19` runs an explicit date
 range (useful for a one-time backfill).
 
+## The static site (`docs/`)
+
+`export_site_data.py` reads `data/*.csv` (never a live pipeline run) and
+writes `docs/data/events.json`, `meta.json`, `companies.json`,
+`digests_index.json`, and `docs/data/digests/<date>.json` — plain static
+files, no backend. `docs/index.html` + `docs/assets/js/*.js` (vanilla ES
+modules, no bundler/framework) fetch those and do all filtering/sorting
+client-side. Hosted on GitHub Pages: repo Settings → Pages → Deploy from a
+branch → `main` / `/docs`. Every push to `main` that touches `docs/`
+auto-republishes.
+
+**GH Pages footgun:** the site serves under `/us-trade-monitor/`, not `/` —
+all `fetch()` calls in the JS use relative paths (`./data/events.json`), not
+root-relative ones.
+
 ## How the daily automation works
 
 A Claude Code scheduled cloud agent runs daily: pulls this repo, runs
-`python run_daily.py`, commits the updated `data/` files, pushes. The
-Streamlit dashboard (local or hosted) just reads whatever is in `data/` at
-the time it's loaded — `git pull` before checking it if running locally.
+`python run_daily.py` (which also regenerates `docs/data/`), commits the
+updated `data/` and `docs/data/` files, pushes. The Streamlit dashboard
+(local or hosted) and the GitHub Pages site both just read whatever is
+committed at the time they're loaded — `git pull` before checking locally.
 
 Data is stored as CSV files under `data/`, not SQLite — a cloud agent can't
 touch a local SQLite file directly, and CSVs commit cleanly (append-mostly,
 human-diffable) where a daily-rewritten SQLite binary would bloat the repo.
+`docs/data/*.json` are generated from those CSVs and committed alongside
+them for the same reason (the static site has no backend to compute from
+CSVs at request time).
 
 ## Editing the watchlists
 

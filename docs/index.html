@@ -1,0 +1,164 @@
+<title>US Trade Policy Monitor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./assets/css/tokens.css" />
+<link rel="stylesheet" href="./assets/css/styles.css" />
+
+<div class="shell">
+  <header class="topbar">
+    <div class="brand">US Trade Policy Monitor</div>
+    <nav>
+      <a href="https://github.com/huyennguyenthai2409-arch/us-trade-monitor" target="_blank" rel="noopener">View on GitHub</a>
+      <button class="btn primary" id="download-csv">Download CSV</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 class="h-display">Trade Policy Monitor</h1>
+    <div class="hero-meta" id="hero-meta">LOADING…</div>
+    <p class="hero-sub">
+      Tracks US trade-policy actions (AD/CVD, Section 232/301/201/337, IEEPA, UFLPA, BIS, OFAC) via the
+      Federal Register API, scored for Vietnam exposure. Rule-based classification, no LLM &mdash; verify
+      High-priority items against the source before acting.
+    </p>
+  </section>
+
+  <div class="top-summary" id="top-summary">
+    <div class="ts-col">
+      <div class="eyebrow" id="ts-kpi-date">HIGH-PRIORITY ALERTS</div>
+      <div class="ts-kpi-value tnum" id="ts-kpi-value">&mdash;</div>
+      <div class="ts-kpi-label" id="ts-kpi-label">&nbsp;</div>
+      <div class="ts-kpi-sub" id="ts-kpi-sub">&nbsp;</div>
+      <div class="risk-mix">
+        <div class="rm-track" id="rm-track"></div>
+        <div class="rm-legend" id="rm-legend"></div>
+      </div>
+    </div>
+    <div class="ts-col">
+      <div class="ts-head-row">
+        <h3>Where High-priority alerts come from</h3>
+        <div class="note">by legal basis</div>
+      </div>
+      <div id="contrib-rows"></div>
+      <div class="contrib-eq tnum" id="contrib-eq"></div>
+    </div>
+    <div class="ts-col">
+      <div class="ts-head-row">
+        <h3>Top events</h3>
+        <div class="note">by risk score</div>
+      </div>
+      <div class="ranked-events" id="ranked-events"></div>
+      <a class="ts-see-all" href="#events-section">See all events &rarr;</a>
+    </div>
+  </div>
+
+  <section class="section" id="events-section">
+    <div class="section-head">
+      <span class="num">&sect;1</span>
+      <h2>Events</h2>
+      <span class="right" id="events-count-label"></span>
+    </div>
+
+    <div class="card">
+      <div class="filter-bar" id="filter-bar"></div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+        <label class="filter-checkbox">
+          <input type="checkbox" id="hide-low-confidence" checked />
+          Hide low-confidence matches
+        </label>
+        <div class="pill-toggle" id="sort-toggle">
+          <button data-sort="newest" class="active">Newest first</button>
+          <button data-sort="oldest">Oldest first</button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="table" id="events-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Legal Basis</th>
+              <th>Action</th>
+              <th>VN Exposure</th>
+              <th>Country</th>
+              <th>Sector</th>
+              <th>Stage</th>
+              <th class="ta-right">Risk Score</th>
+              <th>Risk</th>
+              <th>Companies</th>
+              <th>Summary</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+          <tbody id="events-tbody"></tbody>
+        </table>
+      </div>
+      <div class="download-row">
+        <button class="btn" id="download-csv-2">Download filtered table (CSV)</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="num">&sect;2</span>
+      <h2>By sector</h2>
+    </div>
+    <div class="card">
+      <div class="ranked-list" id="sector-ranked-list"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="num">&sect;3</span>
+      <h2>Events per week</h2>
+    </div>
+    <div class="card chart-wrap">
+      <div id="weekly-chart"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="num">&sect;4</span>
+      <h2>Daily Digest</h2>
+    </div>
+    <div class="card">
+      <div class="filter-field wide" style="margin-bottom:16px;">
+        <span class="filter-label">Digest date</span>
+        <select id="digest-select" class="filter-date" style="border:1px solid var(--rule-3); border-radius:8px; padding:8px 10px;"></select>
+      </div>
+      <div id="digest-body"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="num">&sect;5</span>
+      <h2>Companies</h2>
+    </div>
+    <div class="card">
+      <p class="muted" style="margin-top:0;">
+        Company exposure DB &mdash; seeded with ticker + sector only. HS codes and US revenue exposure are
+        left blank deliberately (not fabricated).
+      </p>
+      <div class="table-wrap">
+        <table class="table" id="companies-table">
+          <thead>
+            <tr><th>Ticker</th><th>Company</th><th>Sector</th><th>Subsector</th></tr>
+          </thead>
+          <tbody id="companies-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>Source: Federal Register API</span>
+    <span id="footer-generated"></span>
+  </footer>
+</div>
+
+<script type="module" src="./assets/js/app.js"></script>

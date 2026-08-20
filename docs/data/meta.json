@@ -1,0 +1,732 @@
+{
+  "generated_at": "2026-08-20T07:30:32.336473+00:00",
+  "last_run_date": "2026-08-20",
+  "last_run_at": "2026-08-20T01:02:57.484230+00:00",
+  "total_events": 4199,
+  "shown_default": 1749,
+  "high_count": 217,
+  "medium_count": 358,
+  "low_count": 1174,
+  "direct_vn_count": 166,
+  "date_range": {
+    "min": "2025-01-02",
+    "max": "2026-08-21"
+  },
+  "facets": {
+    "legal_basis": [
+      {
+        "key": "AD_CVD",
+        "label": "AD/CVD"
+      },
+      {
+        "key": "BIS_EXPORT_CONTROLS",
+        "label": "BIS Export Controls"
+      },
+      {
+        "key": "IEEPA_PRESIDENTIAL",
+        "label": "IEEPA / Presidential"
+      },
+      {
+        "key": "OFAC_SANCTIONS",
+        "label": "OFAC Sanctions"
+      },
+      {
+        "key": "SECTION_201",
+        "label": "Section 201"
+      },
+      {
+        "key": "SECTION_232",
+        "label": "Section 232"
+      },
+      {
+        "key": "SECTION_301",
+        "label": "Section 301"
+      },
+      {
+        "key": "SECTION_337",
+        "label": "Section 337"
+      },
+      {
+        "key": "SPECIAL_301_IP",
+        "label": "Special 301 (IP)"
+      },
+      {
+        "key": "UFLPA_FORCED_LABOR",
+        "label": "UFLPA / Forced Labor"
+      }
+    ],
+    "sectors": [
+      "Agriculture",
+      "Aluminum",
+      "Batteries",
+      "Chemicals",
+      "Copper",
+      "EV / Automotive",
+      "Electronics",
+      "Fertilizer",
+      "Machinery",
+      "Pharmaceuticals",
+      "Plastics",
+      "Rice",
+      "Rubber",
+      "Seafood",
+      "Semiconductors",
+      "Solar",
+      "Steel",
+      "Textiles / Apparel",
+      "Wood / Furniture"
+    ],
+    "stages": [
+      "Final",
+      "Initiation",
+      "Preliminary",
+      "Review"
+    ],
+    "companies": [
+      "ANV",
+      "DCM",
+      "DGC",
+      "DPM",
+      "GDT",
+      "HPG",
+      "HSG",
+      "MPC",
+      "MSH",
+      "NKG",
+      "PTB",
+      "TCM",
+      "TNG",
+      "VHC"
+    ]
+  },
+  "top_legal_basis_high": [
+    {
+      "key": "AD_CVD",
+      "label": "AD/CVD",
+      "count": 192
+    },
+    {
+      "key": "(unspecified)",
+      "label": "(unspecified)",
+      "count": 24
+    },
+    {
+      "key": "SECTION_337",
+      "label": "Section 337",
+      "count": 3
+    }
+  ],
+  "top_events": [
+    {
+      "id": "EVT-2025-01654",
+      "date": "2025-01-24",
+      "legal_basis": [
+        "AD_CVD"
+      ],
+      "action": "Order",
+      "vn_exposure": "Direct",
+      "countries": [
+        "Vietnam"
+      ],
+      "sectors": [
+        "Seafood"
+      ],
+      "risk_score": 90,
+      "risk_level": "High",
+      "summary": "On January 17, 2025, the United States, through the Office of the U.S. Trade Representative (USTR), and the Government of the Socialist Republic of Vietnam (Vietnam) signed an agreement regarding the World Trade Organization (WTO) dispute United States--Anti-Dumping Measures on Fish Fillets from Viet Nam (DS536). In light of this agreement, the U.S. Department of Commerce (Commerce) is issuing this notice of partial revocation of Vinh Hoan Corporation (Vinh Hoan) from the antidumping duty order…",
+      "source": "https://www.federalregister.gov/documents/2025/01/24/2025-01654/certain-frozen-fish-fillets-from-the-socialist-republic-of-vietnam-notice-of-partial-revocation-of"
+    },
+    {
+      "id": "EVT-2025-02380",
+      "date": "2025-02-10",
+      "legal_basis": [
+        "AD_CVD"
+      ],
+      "action": "Preliminary determination",
+      "vn_exposure": "Direct",
+      "countries": [
+        "Vietnam"
+      ],
+      "sectors": [
+        "Steel"
+      ],
+      "risk_score": 90,
+      "risk_level": "High",
+      "summary": "The U.S. Department of Commerce (Commerce) preliminarily determines that countervailable subsidies are being provided to producers and exporters of certain corrosion-resistant steel products (CORE) from the Socialist Republic of Vietnam (Vietnam) during the period of investigation, January 1, 2023, through December 31, 2023. Interested parties are invited to comment on this preliminary determination.",
+      "source": "https://www.federalregister.gov/documents/2025/02/10/2025-02380/certain-corrosion-resistant-steel-products-from-the-socialist-republic-of-vietnam-preliminary"
+    },
+    {
+      "id": "EVT-2025-06142",
+      "date": "2025-04-10",
+      "legal_basis": [
+        "AD_CVD"
+      ],
+      "action": "Preliminary determination",
+      "vn_exposure": "Direct",
+      "countries": [
+        "Vietnam"
+      ],
+      "sectors": [
+        "Steel"
+      ],
+      "risk_score": 90,
+      "risk_level": "High",
+      "summary": "The U.S. Department of Commerce (Commerce) preliminarily determines that certain corrosion-resistant steel products (CORE) from the Socialist Republic of Vietnam (Vietnam) are being, or are likely to be, sold in the United States at less than fair value (LTFV). The period of investigation (POI) is January 1, 2024, through June 30, 2024. Interested parties are invited to comment on this preliminary determination.",
+      "source": "https://www.federalregister.gov/documents/2025/04/10/2025-06142/certain-corrosion-resistant-steel-products-from-the-socialist-republic-of-vietnam-preliminary"
+    },
+    {
+      "id": "EVT-2025-16613",
+      "date": "2025-08-29",
+      "legal_basis": [
+        "AD_CVD"
+      ],
+      "action": "Final determination",
+      "vn_exposure": "Direct",
+      "countries": [
+        "Vietnam"
+      ],
+      "sectors": [
+        "Steel"
+      ],
+      "risk_score": 90,
+      "risk_level": "High",
+      "summary": "The U.S. Department of Commerce (Commerce) determines that countervailable subsidies are being provided to producers and exporters of certain corrosion-resistant steel products (CORE) from the Socialist Republic of Vietnam (Vietnam) during the period of investigation (POI), January 1, 2023, through December 31, 2023.",
+      "source": "https://www.federalregister.gov/documents/2025/08/29/2025-16613/certain-corrosion-resistant-steel-products-from-the-socialist-republic-of-vietnam-final-affirmative"
+    },
+    {
+      "id": "EVT-2025-16612",
+      "date": "2025-08-29",
+      "legal_basis": [],
+      "action": "Final determination",
+      "vn_exposure": "Direct",
+      "countries": [
+        "Vietnam"
+      ],
+      "sectors": [
+        "Steel"
+      ],
+      "risk_score": 90,
+      "risk_level": "High",
+      "summary": "The U.S. Department of Commerce (Commerce) determines that certain corrosion-resistant steel products (CORE) from the Socialist Republic of Vietnam (Vietnam) are being, or are likely to be, sold in the United States at less than fair value (LTFV) for the period of investigation (POI) January 1, 2024, through June 30, 2024.",
+      "source": "https://www.federalregister.gov/documents/2025/08/29/2025-16612/certain-corrosion-resistant-steel-products-from-the-socialist-republic-of-vietnam-final-affirmative"
+    },
+    {
+      "id": "EVT-2025-21683",
+      "date": "2025-12-01",
+      "legal_basis": [
+        "AD_CVD"
+      ],
+      "action": "Order",
+      "vn_exposure": "Direct",
+      "countries": [
+        "Vietnam"
+      ],
+      "sectors": [
+        "Seafood"
+      ],
+      "risk_score": 90,
+      "risk_level": "High",
+      "summary": "The Commission hereby gives notice that it has instituted a review pursuant to the Tariff Act of 1930, as amended, to determine whether revocation of the antidumping duty order on frozen fish fillets from Vietnam would be likely to lead to continuation or recurrence of material injury. Pursuant to the Act, interested parties are requested to respond to this notice by submitting the information specified below to the Commission.",
+      "source": "https://www.federalregister.gov/documents/2025/12/01/2025-21683/frozen-fish-fillets-from-vietnam-institution-of-a-five-year-review"
+    },
+    {
+      "id": "EVT-2026-01187",
+      "date": "2026-01-22",
+      "legal_basis": [
+        "AD_CVD"
+      ],
+      "action": "Preliminary determination",
+      "vn_exposure": "Direct",
+      "countries": [
+        "Vietnam"
+      ],
+      "sectors": [
+        "Wood / Furniture"
+      ],
+      "risk_score": 90,
+      "risk_level": "High",
+      "summary": "The U.S. Department of Commerce (Commerce) preliminarily determines that countervailable subsidies are being provided to producers and exporters of hardwood and decorative plywood (plywood) from the Socialist Republic of Vietnam (Vietnam). The period of investigation is January 1, 2024, through December 31, 2024. Interested parties are invited to comment on this preliminary determination.",
+      "source": "https://www.federalregister.gov/documents/2026/01/22/2026-01187/hardwood-and-decorative-plywood-from-the-socialist-republic-of-vietnam-preliminary-affirmative"
+    },
+    {
+      "id": "EVT-2026-00495",
+      "date": "2026-01-13",
+      "legal_basis": [
+        "AD_CVD"
+      ],
+      "action": "Preliminary determination",
+      "vn_exposure": "Direct",
+      "countries": [
+        "Vietnam"
+      ],
+      "sectors": [
+        "Steel"
+      ],
+      "risk_score": 90,
+      "risk_level": "High",
+      "summary": "The U.S. Department of Commerce (Commerce) preliminarily determines that countervailable subsidies are being provided to producers and exporters of steel concrete reinforcing bar (rebar) from the Socialist Republic of Vietnam (Vietnam) during the period of investigation, January 1, 2024, through December 31, 2024. Interested parties are invited to comment on this preliminary determination.",
+      "source": "https://www.federalregister.gov/documents/2026/01/13/2026-00495/steel-concrete-reinforcing-bar-from-the-socialist-republic-of-vietnam-preliminary-affirmative"
+    }
+  ],
+  "top_sectors": [
+    {
+      "sector": "Steel",
+      "count": 453
+    },
+    {
+      "sector": "Aluminum",
+      "count": 111
+    },
+    {
+      "sector": "Wood / Furniture",
+      "count": 79
+    },
+    {
+      "sector": "Solar",
+      "count": 77
+    },
+    {
+      "sector": "Seafood",
+      "count": 28
+    },
+    {
+      "sector": "Chemicals",
+      "count": 27
+    },
+    {
+      "sector": "Semiconductors",
+      "count": 24
+    },
+    {
+      "sector": "Textiles / Apparel",
+      "count": 16
+    }
+  ],
+  "weekly_counts": [
+    {
+      "week_start": "2024-12-30",
+      "count": 7,
+      "high_count": 3
+    },
+    {
+      "week_start": "2025-01-06",
+      "count": 17,
+      "high_count": 2
+    },
+    {
+      "week_start": "2025-01-13",
+      "count": 21,
+      "high_count": 1
+    },
+    {
+      "week_start": "2025-01-20",
+      "count": 12,
+      "high_count": 1
+    },
+    {
+      "week_start": "2025-01-27",
+      "count": 22,
+      "high_count": 4
+    },
+    {
+      "week_start": "2025-02-03",
+      "count": 11,
+      "high_count": 1
+    },
+    {
+      "week_start": "2025-02-10",
+      "count": 21,
+      "high_count": 8
+    },
+    {
+      "week_start": "2025-02-17",
+      "count": 20,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-02-24",
+      "count": 13,
+      "high_count": 4
+    },
+    {
+      "week_start": "2025-03-03",
+      "count": 32,
+      "high_count": 4
+    },
+    {
+      "week_start": "2025-03-10",
+      "count": 23,
+      "high_count": 1
+    },
+    {
+      "week_start": "2025-03-17",
+      "count": 11,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-03-24",
+      "count": 17,
+      "high_count": 1
+    },
+    {
+      "week_start": "2025-03-31",
+      "count": 29,
+      "high_count": 1
+    },
+    {
+      "week_start": "2025-04-07",
+      "count": 27,
+      "high_count": 13
+    },
+    {
+      "week_start": "2025-04-14",
+      "count": 24,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-04-21",
+      "count": 23,
+      "high_count": 2
+    },
+    {
+      "week_start": "2025-04-28",
+      "count": 11,
+      "high_count": 1
+    },
+    {
+      "week_start": "2025-05-05",
+      "count": 24,
+      "high_count": 5
+    },
+    {
+      "week_start": "2025-05-12",
+      "count": 22,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-05-19",
+      "count": 20,
+      "high_count": 4
+    },
+    {
+      "week_start": "2025-05-26",
+      "count": 25,
+      "high_count": 4
+    },
+    {
+      "week_start": "2025-06-02",
+      "count": 20,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-06-09",
+      "count": 29,
+      "high_count": 2
+    },
+    {
+      "week_start": "2025-06-16",
+      "count": 25,
+      "high_count": 4
+    },
+    {
+      "week_start": "2025-06-23",
+      "count": 13,
+      "high_count": 2
+    },
+    {
+      "week_start": "2025-06-30",
+      "count": 20,
+      "high_count": 6
+    },
+    {
+      "week_start": "2025-07-07",
+      "count": 23,
+      "high_count": 2
+    },
+    {
+      "week_start": "2025-07-14",
+      "count": 16,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-07-21",
+      "count": 19,
+      "high_count": 6
+    },
+    {
+      "week_start": "2025-07-28",
+      "count": 15,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-08-04",
+      "count": 18,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-08-11",
+      "count": 28,
+      "high_count": 1
+    },
+    {
+      "week_start": "2025-08-18",
+      "count": 19,
+      "high_count": 2
+    },
+    {
+      "week_start": "2025-08-25",
+      "count": 26,
+      "high_count": 16
+    },
+    {
+      "week_start": "2025-09-01",
+      "count": 17,
+      "high_count": 3
+    },
+    {
+      "week_start": "2025-09-08",
+      "count": 26,
+      "high_count": 1
+    },
+    {
+      "week_start": "2025-09-15",
+      "count": 20,
+      "high_count": 1
+    },
+    {
+      "week_start": "2025-09-22",
+      "count": 17,
+      "high_count": 2
+    },
+    {
+      "week_start": "2025-09-29",
+      "count": 34,
+      "high_count": 1
+    },
+    {
+      "week_start": "2025-10-06",
+      "count": 2,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-10-13",
+      "count": 1,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-10-27",
+      "count": 1,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-11-03",
+      "count": 2,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-11-10",
+      "count": 3,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-11-17",
+      "count": 18,
+      "high_count": 4
+    },
+    {
+      "week_start": "2025-11-24",
+      "count": 13,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-12-01",
+      "count": 12,
+      "high_count": 3
+    },
+    {
+      "week_start": "2025-12-08",
+      "count": 10,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-12-15",
+      "count": 15,
+      "high_count": 3
+    },
+    {
+      "week_start": "2025-12-22",
+      "count": 4,
+      "high_count": 0
+    },
+    {
+      "week_start": "2025-12-29",
+      "count": 25,
+      "high_count": 3
+    },
+    {
+      "week_start": "2026-01-05",
+      "count": 34,
+      "high_count": 3
+    },
+    {
+      "week_start": "2026-01-12",
+      "count": 14,
+      "high_count": 4
+    },
+    {
+      "week_start": "2026-01-19",
+      "count": 15,
+      "high_count": 3
+    },
+    {
+      "week_start": "2026-01-26",
+      "count": 22,
+      "high_count": 2
+    },
+    {
+      "week_start": "2026-02-02",
+      "count": 22,
+      "high_count": 2
+    },
+    {
+      "week_start": "2026-02-09",
+      "count": 39,
+      "high_count": 5
+    },
+    {
+      "week_start": "2026-02-16",
+      "count": 22,
+      "high_count": 1
+    },
+    {
+      "week_start": "2026-02-23",
+      "count": 30,
+      "high_count": 2
+    },
+    {
+      "week_start": "2026-03-02",
+      "count": 25,
+      "high_count": 4
+    },
+    {
+      "week_start": "2026-03-09",
+      "count": 26,
+      "high_count": 6
+    },
+    {
+      "week_start": "2026-03-16",
+      "count": 28,
+      "high_count": 6
+    },
+    {
+      "week_start": "2026-03-23",
+      "count": 17,
+      "high_count": 4
+    },
+    {
+      "week_start": "2026-03-30",
+      "count": 18,
+      "high_count": 1
+    },
+    {
+      "week_start": "2026-04-06",
+      "count": 30,
+      "high_count": 1
+    },
+    {
+      "week_start": "2026-04-13",
+      "count": 32,
+      "high_count": 5
+    },
+    {
+      "week_start": "2026-04-20",
+      "count": 19,
+      "high_count": 2
+    },
+    {
+      "week_start": "2026-04-27",
+      "count": 21,
+      "high_count": 3
+    },
+    {
+      "week_start": "2026-05-04",
+      "count": 28,
+      "high_count": 3
+    },
+    {
+      "week_start": "2026-05-11",
+      "count": 43,
+      "high_count": 3
+    },
+    {
+      "week_start": "2026-05-18",
+      "count": 21,
+      "high_count": 2
+    },
+    {
+      "week_start": "2026-05-25",
+      "count": 19,
+      "high_count": 0
+    },
+    {
+      "week_start": "2026-06-01",
+      "count": 33,
+      "high_count": 2
+    },
+    {
+      "week_start": "2026-06-08",
+      "count": 19,
+      "high_count": 1
+    },
+    {
+      "week_start": "2026-06-15",
+      "count": 16,
+      "high_count": 0
+    },
+    {
+      "week_start": "2026-06-22",
+      "count": 28,
+      "high_count": 1
+    },
+    {
+      "week_start": "2026-06-29",
+      "count": 23,
+      "high_count": 4
+    },
+    {
+      "week_start": "2026-07-06",
+      "count": 25,
+      "high_count": 3
+    },
+    {
+      "week_start": "2026-07-13",
+      "count": 41,
+      "high_count": 3
+    },
+    {
+      "week_start": "2026-07-20",
+      "count": 24,
+      "high_count": 6
+    },
+    {
+      "week_start": "2026-07-27",
+      "count": 23,
+      "high_count": 6
+    },
+    {
+      "week_start": "2026-08-03",
+      "count": 41,
+      "high_count": 6
+    },
+    {
+      "week_start": "2026-08-10",
+      "count": 21,
+      "high_count": 1
+    },
+    {
+      "week_start": "2026-08-17",
+      "count": 7,
+      "high_count": 0
+    }
+  ]
+}

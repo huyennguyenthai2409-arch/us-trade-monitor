@@ -1,0 +1,53 @@
+:root {
+  /* Surfaces */
+  --bg-page:  #F3F5F9;
+  --bg-paper: #FFFFFF;
+  --bg-elev:  #FFFFFF;
+  --bg-tint:  #E6F3F2;
+
+  /* Ink (text) */
+  --ink-1: #171819;
+  --ink-2: #5E6062;
+  --ink-3: #75787B;
+  --ink-4: #ACAEB0;
+
+  /* Rules / borders */
+  --rule-1: #E3E4E5;
+  --rule-2: rgba(23,24,25,0.055);
+  --rule-3: #C8C9CA;
+
+  /* Accent (teal) */
+  --accent:      #008478;
+  --accent-ink:  #066962;
+  --accent-tint: #E6F3F2;
+
+  /* Semantic tones */
+  --act-entry:  #0051CC;
+  --act-add:    #0AA630;
+  --act-reduce: #F59E0B;
+  --act-exit:   #DC2626;
+
+  /* Risk tones (reuse the semantic tones above) */
+  --risk-high:   var(--act-exit);
+  --risk-medium: var(--act-reduce);
+  --risk-low:    var(--act-add);
+
+  /* Type */
+  --font-sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-disp: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "Manrope", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Shape */
+  --radius:    12px;
+  --radius-sm: 8px;
+  --shadow-card: 0 1px 2px rgba(23,24,25,0.04), 0 4px 16px rgba(23,24,25,0.05);
+
+  /* Type sizes */
+  --t-eyebrow: 11px;
+  --t-body:    13px;
+  --t-meta:    12px;
+  --t-h3:      18px;
+  --t-h2:      28px;
+  --t-h1:      56px;
+  --t-display: 92px;
+}

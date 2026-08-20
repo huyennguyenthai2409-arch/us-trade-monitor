@@ -1,0 +1,86 @@
+[
+  {
+    "ticker": "VHC",
+    "company_name": "Vinh Hoan Corporation",
+    "sector": "Seafood",
+    "subsector": "Pangasius"
+  },
+  {
+    "ticker": "ANV",
+    "company_name": "Nam Viet Corporation",
+    "sector": "Seafood",
+    "subsector": "Pangasius"
+  },
+  {
+    "ticker": "MPC",
+    "company_name": "Minh Phu Seafood Corporation",
+    "sector": "Seafood",
+    "subsector": "Shrimp"
+  },
+  {
+    "ticker": "TNG",
+    "company_name": "TNG Investment and Trading JSC",
+    "sector": "Textiles / Apparel",
+    "subsector": "Apparel manufacturing"
+  },
+  {
+    "ticker": "MSH",
+    "company_name": "Song Hong Garment JSC",
+    "sector": "Textiles / Apparel",
+    "subsector": "Apparel manufacturing"
+  },
+  {
+    "ticker": "TCM",
+    "company_name": "Thanh Cong Textile Garment",
+    "sector": "Textiles / Apparel",
+    "subsector": "Textile & apparel"
+  },
+  {
+    "ticker": "HPG",
+    "company_name": "Hoa Phat Group",
+    "sector": "Steel",
+    "subsector": "Steel production"
+  },
+  {
+    "ticker": "NKG",
+    "company_name": "Nam Kim Steel JSC",
+    "sector": "Steel",
+    "subsector": "Steel sheet"
+  },
+  {
+    "ticker": "HSG",
+    "company_name": "Hoa Sen Group",
+    "sector": "Steel",
+    "subsector": "Steel sheet"
+  },
+  {
+    "ticker": "PTB",
+    "company_name": "Phu Tai Corporation",
+    "sector": "Wood / Furniture",
+    "subsector": "Wood furniture"
+  },
+  {
+    "ticker": "GDT",
+    "company_name": "Duc Thanh Wood Processing JSC",
+    "sector": "Wood / Furniture",
+    "subsector": "Wood furniture"
+  },
+  {
+    "ticker": "DGC",
+    "company_name": "Duc Giang Chemicals Group",
+    "sector": "Chemicals",
+    "subsector": "Industrial chemicals"
+  },
+  {
+    "ticker": "DPM",
+    "company_name": "Phu My Fertilizer (PVFCCo)",
+    "sector": "Fertilizer",
+    "subsector": "Nitrogen fertilizer"
+  },
+  {
+    "ticker": "DCM",
+    "company_name": "Ca Mau Fertilizer (PVCFC)",
+    "sector": "Fertilizer",
+    "subsector": "Nitrogen fertilizer"
+  }
+]
