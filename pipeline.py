@@ -30,7 +30,7 @@ EVENTS_COLUMNS = [
     "event_id", "document_id", "canonical_event_id", "legal_basis", "document_type",
     "investigation_stage", "vietnam_direct", "vietnam_indirect", "global_measure",
     "third_country_risk", "sector_risk", "sectors_matched", "company_product_match",
-    "company_sector_match", "other_countries", "low_confidence", "risk_score",
+    "company_sector_match", "other_countries", "countries_named", "low_confidence", "risk_score",
     "risk_level", "alert_level", "source_agency", "title", "publication_date",
     "source_url", "case_number", "fr_citation",
 ]
@@ -120,12 +120,18 @@ def run_pipeline(start_date: dt.date | None = None, end_date: dt.date | None = N
         matched_companies = exposure.match_companies(sectors_matched, companies_df)
         exp = exposure.compute_exposure(doc, sectors_matched, matched_companies)
 
-        is_core_agency_source = doc["source"] in (
-            "Federal Register", "Federal Register - Presidential", "Federal Register - Public Inspection",
-        )
+        # A legal-basis keyword hit alone isn't enough -- "sanction"/"antidumping"
+        # match nearly every OFAC/ITC filing's own boilerplate title regardless of
+        # Vietnam relevance (e.g. hundreds of individually-real but VN-unrelated
+        # "Notice of OFAC Sanctions Action" filings), which used to flood the
+        # dashboard looking like the same story repeated. Require it to be paired
+        # with an actual country or sector signal; sector/company matches and a
+        # direct/indirect Vietnam signal remain relevant on their own.
+        has_country_signal = bool(exp["countries_named"])
         relevant = bool(
-            legal_basis or exp["sector_risk"] or exp["vietnam_direct"] or exp["vietnam_indirect"]
-            or exp["company_sector_match"] or is_core_agency_source
+            exp["sector_risk"] or exp["company_sector_match"]
+            or exp["vietnam_direct"] or exp["vietnam_indirect"]
+            or (legal_basis and has_country_signal)
         )
         low_confidence = not relevant
 
@@ -157,6 +163,7 @@ def run_pipeline(start_date: dt.date | None = None, end_date: dt.date | None = N
             "company_product_match": exp["company_product_match"],
             "company_sector_match": exp["company_sector_match"],
             "other_countries": "; ".join(exp["other_countries"]),
+            "countries_named": "; ".join(exp["countries_named"]),
             "low_confidence": low_confidence,
             "risk_score": score,
             "risk_level": r_level,

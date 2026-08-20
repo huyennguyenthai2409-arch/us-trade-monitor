@@ -81,6 +81,19 @@ def compute_exposure(document: dict, sectors_matched: list[str], matched_compani
     company_product_match = has_hs_match  # confirmed only when a company row has HS codes filled in
     company_sector_match = not matched_companies.empty  # possible match, sector-level only
 
+    # All countries actually named in the text -- used both for display (the
+    # dashboard's Country column) and as the relevance signal in pipeline.py
+    # (a legal-basis keyword hit with no country/sector attached at all is
+    # generic agency boilerplate, not a Vietnam-relevant event).
+    countries_named = []
+    if vietnam_direct:
+        countries_named.append("Vietnam")
+    if countries["china_named"]:
+        countries_named.append("China")
+    countries_named.extend(c.title() for c in countries["other_countries"])
+    if not countries_named and global_measure:
+        countries_named = ["Global / all countries"]
+
     return {
         "vietnam_direct": vietnam_direct,
         "vietnam_indirect": vietnam_indirect,
@@ -90,4 +103,5 @@ def compute_exposure(document: dict, sectors_matched: list[str], matched_compani
         "company_product_match": company_product_match,
         "company_sector_match": company_sector_match,
         "other_countries": countries["other_countries"],
+        "countries_named": countries_named,
     }

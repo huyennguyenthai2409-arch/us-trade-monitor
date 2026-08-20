@@ -22,10 +22,14 @@ def load_events() -> pd.DataFrame:
     if not path.exists():
         return pd.DataFrame()
     df = pd.read_csv(path, dtype=str).fillna("")
+    if "countries_named" not in df.columns:
+        df["countries_named"] = ""
     for col in ("risk_score",):
         df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0).astype(int)
     df["publication_date"] = pd.to_datetime(df["publication_date"], errors="coerce")
     for bool_col in ("vietnam_direct", "vietnam_indirect", "low_confidence"):
+        if bool_col not in df.columns:
+            df[bool_col] = ""
         df[bool_col] = df[bool_col].astype(str).str.lower().isin(["true", "1"])
     return df
 
@@ -37,6 +41,12 @@ def load_documents() -> pd.DataFrame:
         return pd.DataFrame(columns=["document_id", "abstract"])
     df = pd.read_csv(path, dtype=str).fillna("")
     return df[["document_id", "abstract"]].drop_duplicates("document_id")
+
+
+def country_label(row) -> str:
+    if row["countries_named"]:
+        return row["countries_named"].replace("; ", ", ")
+    return "—"
 
 
 @st.cache_data(ttl=300)
@@ -85,12 +95,13 @@ with tab_dashboard:
         events = events.merge(companies_by_event.rename("companies"), on="event_id", how="left")
         events["companies"] = events["companies"].fillna("")
         events["vietnam_exposure"] = events.apply(vietnam_exposure_label, axis=1)
+        events["country"] = events.apply(country_label, axis=1)
 
         documents = load_documents()
         events = events.merge(documents, on="document_id", how="left")
         events["abstract"] = events["abstract"].fillna("")
         events["summary"] = events["abstract"].where(events["abstract"] != "", events["title"])
-        events["summary"] = events["summary"].str.slice(0, 300)
+        events["summary"] = events["summary"].str.slice(0, 600)
 
         st.subheader("Filters")
         f1, f2, f3, f4 = st.columns(4)
@@ -170,6 +181,7 @@ with tab_dashboard:
             "legal_basis": "Legal Basis",
             "document_type": "Action",
             "vietnam_exposure": "VN Exposure",
+            "country": "Country",
             "sectors_matched": "Sector",
             "investigation_stage": "Stage",
             "risk_score": "Risk Score",
@@ -186,10 +198,12 @@ with tab_dashboard:
             table,
             width="stretch",
             hide_index=True,
+            row_height=80,
             column_config={
                 "Source": st.column_config.LinkColumn("Source", display_text="Open"),
                 "Risk Score": st.column_config.NumberColumn(format="%d"),
                 "Summary": st.column_config.TextColumn(width="large"),
+                "Country": st.column_config.TextColumn(width="medium"),
             },
         )
 
