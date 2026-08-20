@@ -11,6 +11,8 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
+import summarize
+
 st.set_page_config(page_title="US Trade Policy Monitor", layout="wide")
 
 DATA_DIR = Path(__file__).parent / "data"
@@ -100,8 +102,13 @@ with tab_dashboard:
         documents = load_documents()
         events = events.merge(documents, on="document_id", how="left")
         events["abstract"] = events["abstract"].fillna("")
-        events["summary"] = events["abstract"].where(events["abstract"] != "", events["title"])
-        events["summary"] = events["summary"].str.slice(0, 600)
+
+        def _build_summary(row) -> str:
+            legal_basis = [b.strip() for b in row["legal_basis"].split(";") if b.strip()]
+            rate = summarize.extract_rate(f"{row['title']} {row['abstract']}", legal_basis)
+            return summarize.short_summary(row["title"], row["abstract"], rate)
+
+        events["summary"] = events.apply(_build_summary, axis=1)
 
         st.subheader("Filters")
         f1, f2, f3, f4 = st.columns(4)
