@@ -106,7 +106,7 @@ with tab_dashboard:
         def _build_summary(row) -> str:
             legal_basis = [b.strip() for b in row["legal_basis"].split(";") if b.strip()]
             rate = summarize.extract_rate(f"{row['title']} {row['abstract']}", legal_basis)
-            return summarize.short_summary(row["title"], row["abstract"], rate)
+            return summarize.short_summary(row["title"], row["abstract"], rate, max_chars=500)
 
         events["summary"] = events.apply(_build_summary, axis=1)
 
@@ -204,12 +204,13 @@ with tab_dashboard:
         st.dataframe(
             table,
             width="stretch",
+            height=650,
             hide_index=True,
-            row_height=80,
+            row_height=160,
             column_config={
                 "Source": st.column_config.LinkColumn("Source", display_text="Open"),
                 "Risk Score": st.column_config.NumberColumn(format="%d"),
-                "Summary": st.column_config.TextColumn(width="large"),
+                "Summary": st.column_config.TextColumn(width=500),
                 "Country": st.column_config.TextColumn(width="medium"),
             },
         )
