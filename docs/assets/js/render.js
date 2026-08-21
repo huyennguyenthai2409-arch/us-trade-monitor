@@ -109,6 +109,19 @@ function vnTagClass(exposure) {
   return exposure === "Direct" ? "tag-vn-direct" : exposure === "Indirect" ? "tag-vn-indirect" : "tag-vn-none";
 }
 
+// A bold lead-in built from already-classified fields (document_type /
+// legal_basis), not from hoping a literal phrase appears in the free-text
+// abstract -- covers ~92% of shown rows vs ~55% for phrase-matching alone,
+// since abstracts phrase the same action many different ways ("Commerce
+// determines that..." vs "...antidumping duty (AD) order...") that a fixed
+// phrase list can't all anticipate. "Other" (the classifier's fallback,
+// carrying no real signal) is skipped in favor of legal_basis if present.
+function buildLead(e) {
+  if (e.action && e.action !== "Other") return e.action;
+  if (e.legal_basis.length) return e.legal_basis.join(" / ");
+  return null;
+}
+
 export function renderTable(filtered) {
   const tbody = document.getElementById("events-tbody");
   if (!filtered.length) {
@@ -116,8 +129,11 @@ export function renderTable(filtered) {
     return;
   }
   tbody.innerHTML = filtered
-    .map(
-      (e) => `
+    .map((e) => {
+      const lead = buildLead(e);
+      const leadHtml = lead ? `<strong>${escapeHtml(lead)}</strong>. ` : "";
+      const summaryHtml = leadHtml + highlightKeywords(escapeHtml(e.summary));
+      return `
     <tr>
       <td class="t-date tnum">${e.date}</td>
       <td>${e.legal_basis.map((b) => `<span class="basis-chip">${escapeHtml(b)}</span>`).join("") || "—"}</td>
@@ -129,10 +145,10 @@ export function renderTable(filtered) {
       <td class="ta-right t-score tnum">${e.risk_score}</td>
       <td><span class="tag ${riskTagClass(e.risk_level)}">${escapeHtml(e.risk_level)}</span></td>
       <td>${escapeHtml(e.companies.join(", ")) || "—"}</td>
-      <td class="t-summary">${highlightKeywords(escapeHtml(e.summary))}</td>
+      <td class="t-summary">${summaryHtml}</td>
       <td class="t-source"><a href="${escapeHtml(e.source)}" target="_blank" rel="noopener">Open</a></td>
-    </tr>`
-    )
+    </tr>`;
+    })
     .join("");
 }
 

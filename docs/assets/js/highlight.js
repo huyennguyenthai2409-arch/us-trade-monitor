@@ -17,17 +17,22 @@ const KEYWORD_GROUPS = [
   {
     cls: "kw-high",
     phrases: [
-      "antidumping duty order", "countervailing duty order", "circumvention",
+      "antidumping duty order", "countervailing duty order", "safeguard order",
+      "circumvention", "anti-circumvention", "evasion inquiry",
       "transshipment", "final affirmative", "final determination",
-      "final results", "revoked", "imposed",
+      "final results", "final action", "withhold release order",
+      "revoked", "rescinded", "rescission", "imposed",
     ],
   },
   {
     cls: "kw-medium",
     phrases: [
-      "preliminary determination", "preliminary affirmative",
-      "administrative review", "sunset review", "investigation initiated",
-      "notice of initiation",
+      "preliminary determination", "preliminary affirmative", "preliminary negative",
+      "preliminary results", "administrative review", "sunset review",
+      "changed circumstances review", "new shipper review",
+      "investigation initiated", "notice of initiation",
+      "scope ruling", "scope inquiry", "entity list", "export control",
+      "tariff modification",
     ],
   },
 ];
