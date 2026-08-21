@@ -3,3 +3,4 @@ pandas
 requests
 pyyaml
 python-dateutil
+beautifulsoup4

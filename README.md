@@ -18,13 +18,35 @@ from the spec's original 9-stage / 5-tier model, per user request):
 Built from `US_Trade_Policy_Monitoring_AI_Coding_Spec_v1.0.md` — this is the
 **Phase 1 MVP** of that spec (see "Scope" below for what's deferred).
 
-## Data source
+## Data sources
 
-[Federal Register API](https://www.federalregister.gov/developers/documentation/api/v1)
-(`federalregister.gov/api/v1`) — free, public, no API key. Nearly everything
-DOC/ITA, USTR, USITC, BIS, OFAC, CBP, and the White House do formally gets
-published there, so one connector (`federal_register.py`) covers most of the
-spec's Tier-A sources instead of separate scrapers per agency.
+- **[Federal Register API](https://www.federalregister.gov/developers/documentation/api/v1)**
+  (`federal_register.py`) — free, public, no API key. Nearly everything
+  DOC/ITA, USTR, USITC, BIS, OFAC, CBP, and the White House do *formally*
+  gets published there eventually, so this one connector covers most of the
+  spec's Tier-A sources. Its downside: formal publication regularly lags the
+  actual news by days.
+- **White House** (`whitehouse.py`) — scrapes
+  `whitehouse.gov/presidential-actions/`. An EO/proclamation/memorandum
+  typically appears here the day it's signed, well before its Federal
+  Register filing.
+- **USTR** (`ustr.py`) — scrapes USTR's press-releases page. Section
+  301/232 actions and tariff/trade-deal announcements are often first (or
+  only) announced as a press release, not a Federal Register notice.
+- **Commerce** (`commerce.py`) — scrapes `trade.gov` (International Trade
+  Administration) press releases. `commerce.gov` itself sits behind a
+  Cloudflare JS challenge no plain scraper can pass, so ITA's own site is
+  the practical Commerce source.
+
+None of these three have a public API, so they're plain HTML scrapers
+(`web_scrape_common.py` has the shared fetch/parse helpers) — more fragile
+than the Federal Register connector by nature, which is why `pipeline.py`
+wraps each of their `fetch_all()` calls in its own try/except: one of them
+breaking (site redesign, temporary block) prints a warning and skips that
+source for the run rather than failing the whole daily pipeline. All three
+normalize into the exact same document shape `federal_register.py`
+produces, so nothing downstream (classify/exposure/scoring/dedupe/site
+export) needed to change.
 
 ## Setup
 
@@ -93,14 +115,16 @@ No code changes needed for:
 
 **In:** Federal Register agency-filtered pulls (DOC/ITA, USTR, USITC, BIS,
 OFAC, CBP) + Presidential Documents + Public Inspection (early-warning) +
-a no-miss term-search sweep (spec §19, condensed). Rule-based classification:
+a no-miss term-search sweep (spec §19, condensed) + dedicated White House /
+USTR / Commerce (ITA) scrapers for early-warning coverage ahead of formal
+Federal Register publication. Rule-based classification:
 legal basis, document type, investigation stage, Vietnam exposure
 (direct/indirect/global/third-country), sector/company keyword matching,
 risk scoring (spec §10-11), alert priority (spec §12), case-level dedup
 (spec §13). Daily Markdown digest. Streamlit dashboard.
 
 **Deferred (see spec §32 Phase 2-4):**
-- Dedicated USTR/USITC/CBP/BIS/OFAC scrapers beyond what Federal Register's
+- Dedicated USITC/CBP/BIS/OFAC scrapers beyond what Federal Register's
   agency filter covers — only add if a specific gap shows up.
 - LLM-based extraction (spec §25), PDF/OCR parsing (spec §24).
 - Event relationship graph (spec §14), change detection (spec §27), full

@@ -179,7 +179,13 @@ def _normalize_public_inspection(d: dict) -> dict:
         "source": "Federal Register - Public Inspection",
         "source_url": d.get("html_url"),
         "source_agency": "; ".join(d.get("agency_names") or []),
-        "publication_date": d.get("publication_date") or d.get("filed_at", "")[:10],
+        # d.get("filed_at", "") only falls back to "" when the key is
+        # *absent* -- the live API returns filed_at present but null for
+        # some records, which made the old `d.get("filed_at", "")[:10]`
+        # crash with `TypeError: 'NoneType' object is not subscriptable`
+        # (confirmed: broke the 2026-08-21 scheduled run before it could
+        # write anything). `(d.get("filed_at") or "")` catches both cases.
+        "publication_date": d.get("publication_date") or (d.get("filed_at") or "")[:10],
         "title": d.get("title") or "",
         "abstract": d.get("excerpts") or "",
         "document_type": d.get("type") or "",

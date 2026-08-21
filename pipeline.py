@@ -12,11 +12,14 @@ from pathlib import Path
 import pandas as pd
 
 import classify
+import commerce
 import config
 import dedupe
 import exposure
 import federal_register
 import scoring
+import ustr
+import whitehouse
 
 DATA_DIR = Path(__file__).parent / "data"
 DIGESTS_DIR = DATA_DIR / "digests"
@@ -99,10 +102,24 @@ def run_pipeline(start_date: dt.date | None = None, end_date: dt.date | None = N
         ["company_id", "ticker", "company_name", "sector", "subsector", "hs_codes", "us_exposure_notes"],
     )
 
-    raw_docs = federal_register.fetch_all(start_date, end_date)
-    raw_docs = dedupe.drop_exact_duplicates(raw_docs)
-
     known_document_ids = set(documents_df["document_id"])
+
+    raw_docs = federal_register.fetch_all(start_date, end_date)
+    # White House / USTR / Commerce are HTML scrapers against sites we don't
+    # control (unlike Federal Register's stable JSON API), so one of them
+    # changing its page layout or going down shouldn't take out the whole
+    # daily run -- log and carry on with whatever sources did work.
+    for source_name, fetch_fn in (
+        ("White House", whitehouse.fetch_all),
+        ("USTR", ustr.fetch_all),
+        ("Commerce/ITA", commerce.fetch_all),
+    ):
+        try:
+            raw_docs.extend(fetch_fn(start_date, end_date, known_document_ids))
+        except Exception as exc:
+            print(f"WARNING: {source_name} scrape failed, continuing without it: {exc}")
+
+    raw_docs = dedupe.drop_exact_duplicates(raw_docs)
     new_docs = [d for d in raw_docs if d["document_id"] not in known_document_ids]
 
     new_document_rows = []
