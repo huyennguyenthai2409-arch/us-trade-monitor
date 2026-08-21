@@ -29,6 +29,19 @@ def sectors() -> dict:
         return yaml.safe_load(f)
 
 
+@lru_cache
+def major_export_sectors() -> frozenset[str]:
+    with open(CONFIG_DIR / "major_export_sectors.yaml", encoding="utf-8") as f:
+        names = frozenset(yaml.safe_load(f) or [])
+    unknown = names - sectors().keys()
+    if unknown:
+        raise ValueError(
+            f"config/major_export_sectors.yaml lists sector(s) not defined in sectors.yaml: {sorted(unknown)} "
+            "-- names must match a sectors.yaml key exactly (typo/case mismatch silently drops the sector otherwise)"
+        )
+    return names
+
+
 def legal_basis_categories() -> dict:
     """Legal basis categories only (excludes the stage_phrases block)."""
     return {k: v for k, v in legal_basis().items() if k != "stage_phrases"}

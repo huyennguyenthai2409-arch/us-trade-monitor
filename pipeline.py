@@ -12,6 +12,7 @@ from pathlib import Path
 import pandas as pd
 
 import classify
+import config
 import dedupe
 import exposure
 import federal_register
@@ -120,18 +121,20 @@ def run_pipeline(start_date: dt.date | None = None, end_date: dt.date | None = N
         matched_companies = exposure.match_companies(sectors_matched, companies_df)
         exp = exposure.compute_exposure(doc, sectors_matched, matched_companies)
 
-        # A legal-basis keyword hit alone isn't enough -- "sanction"/"antidumping"
-        # match nearly every OFAC/ITC filing's own boilerplate title regardless of
-        # Vietnam relevance (e.g. hundreds of individually-real but VN-unrelated
-        # "Notice of OFAC Sanctions Action" filings), which used to flood the
-        # dashboard looking like the same story repeated. Require it to be paired
-        # with an actual country or sector signal; sector/company matches and a
-        # direct/indirect Vietnam signal remain relevant on their own.
-        has_country_signal = bool(exp["countries_named"])
+        # Per user request 2026-08-20: the dashboard should only surface (a)
+        # events with a direct/indirect Vietnam signal (or a truly global
+        # measure, which by definition also hits Vietnam), (b) events
+        # matching a tracked company in companies.csv regardless of sector,
+        # or (c) events whose sector is one of Vietnam's major export
+        # industries (config/major_export_sectors.yaml -- edit that file to
+        # widen/narrow this list). A bare AD/CVD-against-some-other-country
+        # match with no Vietnam/major-sector/tracked-company link is no
+        # longer enough on its own -- that was still letting through a lot
+        # of volume the user doesn't consider relevant to their coverage.
+        major_sector_match = bool(set(sectors_matched) & config.major_export_sectors())
         relevant = bool(
-            exp["sector_risk"] or exp["company_sector_match"]
-            or exp["vietnam_direct"] or exp["vietnam_indirect"]
-            or (legal_basis and has_country_signal)
+            exp["vietnam_direct"] or exp["vietnam_indirect"] or exp["global_measure"]
+            or exp["company_sector_match"] or major_sector_match
         )
         low_confidence = not relevant
 

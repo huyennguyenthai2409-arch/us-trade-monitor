@@ -1,0 +1,25 @@
+# Vietnam's major export industries (per user request 2026-08-20): the
+# dashboard's "relevant" gate treats a sector-only match (no direct/indirect
+# Vietnam signal, no tracked-company match) as relevant ONLY if the sector is
+# listed here. Edit this list to widen/narrow the sector-only trigger without
+# touching code -- keys must match a sector name in sectors.yaml exactly.
+#
+# Sectors NOT listed here still surface normally whenever the event also has
+# a direct/indirect Vietnam signal, a global-measure signal, or matches a
+# tracked company in data/companies.csv (e.g. Chemicals/Fertilizer via
+# DGC/DPM/DCM) -- this list only gates the sector-keyword-alone case.
+
+- Seafood
+- Wood / Furniture
+- Textiles / Apparel
+- Footwear
+- Steel
+- Aluminum
+- Solar
+- Rubber
+- Electronics
+- Semiconductors
+- Quartz
+- Rice
+- Coffee
+- Cashew

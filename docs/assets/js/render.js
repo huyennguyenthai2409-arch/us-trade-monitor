@@ -2,6 +2,8 @@
 // DOM node -- no framework, no virtual DOM, this scale (~4-5k rows) doesn't
 // need one.
 
+import { highlightKeywords } from "./highlight.js";
+
 export function escapeHtml(s) {
   return String(s ?? "")
     .replace(/&/g, "&amp;")
@@ -61,21 +63,30 @@ export function renderTopSummary(meta) {
     .join("");
   // Sum the rows actually shown, not meta.high_count -- an event with more
   // than one legal-basis tag is counted once per tag in top_legal_basis_high,
-  // so those two totals aren't guaranteed equal in general.
+  // so those two totals aren't guaranteed equal (shown explicitly below
+  // rather than presented as a false "=" equation when they diverge).
   const shownSum = rows.reduce((sum, r) => sum + r.count, 0);
-  document.getElementById("contrib-eq").textContent =
-    rows.map((r) => r.count).join(" + ") + ` = ${shownSum}`;
+  const eqLine =
+    shownSum === meta.high_count
+      ? `${rows.map((r) => r.count).join(" + ")} = ${shownSum}`
+      : `${rows.map((r) => r.count).join(" + ")} = ${shownSum} mentions across ${meta.high_count} alerts`;
+  document.getElementById("contrib-eq").textContent = eqLine;
 
   document.getElementById("ranked-events").innerHTML = meta.top_events
     .map((e) => {
       const dotClass = e.risk_level === "High" ? "tag-risk-high" : e.risk_level === "Medium" ? "tag-risk-medium" : "tag-risk-low";
       const subject = e.sectors.join(", ") || e.countries.join(", ") || "Unspecified";
+      // Slice the RAW text first, then escape, then highlight. Slicing the
+      // already-escaped string instead can cut an HTML entity in half (e.g.
+      // "&amp;" -> "&amp") and also desyncs the ellipsis-length check below
+      // from what was actually cut.
+      const desc = highlightKeywords(escapeHtml(e.summary.slice(0, 140))) + (e.summary.length > 140 ? "…" : "");
       return `
       <div class="ranked-event">
         <span class="re-dot ${dotClass}" style="background:currentColor;"></span>
         <div class="re-body">
           <span class="re-title">${escapeHtml(e.action)} — ${escapeHtml(subject)} (${escapeHtml(e.countries.join(", ") || "—")})</span>
-          <div class="re-desc">${escapeHtml(e.summary).slice(0, 140)}${e.summary.length > 140 ? "…" : ""}</div>
+          <div class="re-desc">${desc}</div>
         </div>
         <div class="re-score tnum">${e.risk_score}</div>
       </div>`;
@@ -118,7 +129,7 @@ export function renderTable(filtered) {
       <td class="ta-right t-score tnum">${e.risk_score}</td>
       <td><span class="tag ${riskTagClass(e.risk_level)}">${escapeHtml(e.risk_level)}</span></td>
       <td>${escapeHtml(e.companies.join(", ")) || "—"}</td>
-      <td class="t-summary">${escapeHtml(e.summary)}</td>
+      <td class="t-summary">${highlightKeywords(escapeHtml(e.summary))}</td>
       <td class="t-source"><a href="${escapeHtml(e.source)}" target="_blank" rel="noopener">Open</a></td>
     </tr>`
     )
