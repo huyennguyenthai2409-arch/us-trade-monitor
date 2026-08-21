@@ -4,8 +4,10 @@
 // a "Christmas tree" of highlights on every other word defeats the point.
 //
 // Call highlightKeywords() on text that has ALREADY been through
-// escapeHtml() -- it only inserts <mark> tags around matched spans of that
-// already-safe text, it never receives or re-escapes raw untrusted input.
+// escapeHtml() -- it only inserts <strong> tags around matched spans of
+// that already-safe text, it never receives or re-escapes raw untrusted
+// input. Bold weight only, no color/background -- per user request, plain
+// bold reads faster in a dense table than a colored highlight box.
 
 const KEYWORD_GROUPS = [
   {
@@ -47,6 +49,6 @@ const MATCH_RE = new RegExp(
 export function highlightKeywords(escapedText) {
   return escapedText.replace(MATCH_RE, (match) => {
     const cls = CLASS_BY_PHRASE.get(match.toLowerCase());
-    return `<mark class="${cls}">${match}</mark>`;
+    return `<strong class="${cls}">${match}</strong>`;
   });
 }
