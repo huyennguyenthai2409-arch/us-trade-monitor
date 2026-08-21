@@ -102,9 +102,6 @@ export function renderKpis(filtered) {
     `${filtered.length} shown · ${high} high · ${medium} medium · ${direct} direct VN`;
 }
 
-function riskTagClass(level) {
-  return level === "High" ? "tag-risk-high" : level === "Medium" ? "tag-risk-medium" : "tag-risk-low";
-}
 function vnTagClass(exposure) {
   return exposure === "Direct" ? "tag-vn-direct" : exposure === "Indirect" ? "tag-vn-indirect" : "tag-vn-none";
 }
@@ -125,7 +122,7 @@ function buildLead(e) {
 export function renderTable(filtered) {
   const tbody = document.getElementById("events-tbody");
   if (!filtered.length) {
-    tbody.innerHTML = `<tr><td colspan="12" class="empty-state">No events match the current filters.</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="10" class="empty-state">No events match the current filters.</td></tr>`;
     return;
   }
   tbody.innerHTML = filtered
@@ -142,8 +139,6 @@ export function renderTable(filtered) {
       <td>${escapeHtml(e.countries.join(", ")) || "—"}</td>
       <td>${escapeHtml(e.sectors.join(", ")) || "—"}</td>
       <td>${escapeHtml(e.stage) || "—"}</td>
-      <td class="ta-right t-score tnum">${e.risk_score}</td>
-      <td><span class="tag ${riskTagClass(e.risk_level)}">${escapeHtml(e.risk_level)}</span></td>
       <td>${escapeHtml(e.companies.join(", ")) || "—"}</td>
       <td class="t-summary">${summaryHtml}</td>
       <td class="t-source"><a href="${escapeHtml(e.source)}" target="_blank" rel="noopener">Open</a></td>

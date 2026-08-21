@@ -310,7 +310,7 @@ input[type="date"].filter-date {
 
 /* -------------------------------------------------------------- table */
 .table-wrap { overflow-x: auto; border: 1px solid var(--rule-1); border-radius: var(--radius); }
-.table { width: 100%; border-collapse: collapse; min-width: 1180px; }
+.table { width: 100%; table-layout: fixed; border-collapse: collapse; min-width: 980px; }
 .table thead th {
   text-align: left;
   font-size: 10px;
@@ -321,17 +321,24 @@ input[type="date"].filter-date {
   background: var(--ink-1);
   padding: 10px 12px;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   position: sticky;
   top: 0;
 }
 .table thead th.ta-right { text-align: right; }
-.table tbody td { padding: 12px; border-top: 1px solid var(--rule-2); vertical-align: top; font-size: var(--t-body); }
+.table tbody td {
+  padding: 12px;
+  border-top: 1px solid var(--rule-2);
+  vertical-align: top;
+  font-size: var(--t-body);
+  overflow-wrap: break-word;
+}
 .table tbody tr:hover { background: #FAFBFB; }
 .table td.ta-right { text-align: right; }
 .table td.t-date { white-space: nowrap; color: var(--ink-3); }
-.table td.t-summary { max-width: 420px; color: var(--ink-2); }
+.table td.t-summary { color: var(--ink-2); }
 .table td.t-source a { color: var(--accent); font-weight: 600; }
-.table td.t-score { font-weight: 700; }
 
 .tag { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 700; }
 .tag-risk-high { background: rgba(220,38,38,0.1); color: var(--risk-high); }
