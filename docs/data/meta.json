@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-21T11:13:03.684143+00:00",
-  "last_run_date": "2026-08-21",
-  "last_run_at": "2026-08-21T11:13:03.059045+00:00",
-  "total_events": 4315,
-  "shown_default": 959,
+  "generated_at": "2026-08-22T01:03:45.002102+00:00",
+  "last_run_date": "2026-08-22",
+  "last_run_at": "2026-08-22T01:03:44.710341+00:00",
+  "total_events": 4400,
+  "shown_default": 961,
   "high_count": 217,
   "medium_count": 350,
-  "low_count": 392,
+  "low_count": 394,
   "direct_vn_count": 167,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-08-24"
+    "max": "2026-08-26"
   },
   "facets": {
     "legal_basis": [
@@ -280,7 +280,7 @@
     },
     {
       "sector": "Wood / Furniture",
-      "count": 79
+      "count": 80
     },
     {
       "sector": "Solar",
@@ -296,7 +296,7 @@
     },
     {
       "sector": "Semiconductors",
-      "count": 24
+      "count": 25
     },
     {
       "sector": "Quartz",
@@ -707,6 +707,11 @@
     {
       "week_start": "2026-08-17",
       "count": 8,
+      "high_count": 0
+    },
+    {
+      "week_start": "2026-08-24",
+      "count": 2,
       "high_count": 0
     }
   ]
