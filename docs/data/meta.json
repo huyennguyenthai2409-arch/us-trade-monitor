@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-26T01:03:37.973756+00:00",
-  "last_run_date": "2026-08-26",
-  "last_run_at": "2026-08-26T01:03:37.625955+00:00",
-  "total_events": 4583,
-  "shown_default": 971,
+  "generated_at": "2026-08-27T01:03:30.706061+00:00",
+  "last_run_date": "2026-08-27",
+  "last_run_at": "2026-08-27T01:03:30.406908+00:00",
+  "total_events": 4684,
+  "shown_default": 974,
   "high_count": 217,
   "medium_count": 350,
-  "low_count": 404,
-  "direct_vn_count": 167,
+  "low_count": 407,
+  "direct_vn_count": 168,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-08-27"
+    "max": "2026-08-28"
   },
   "facets": {
     "legal_basis": [
@@ -288,7 +288,7 @@
     },
     {
       "sector": "Chemicals",
-      "count": 35
+      "count": 37
     },
     {
       "sector": "Seafood",
@@ -711,7 +711,7 @@
     },
     {
       "week_start": "2026-08-24",
-      "count": 12,
+      "count": 15,
       "high_count": 0
     }
   ]
