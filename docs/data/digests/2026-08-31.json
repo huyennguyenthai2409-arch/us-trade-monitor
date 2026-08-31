@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-31",
+  "fetched": 142,
+  "start_date": "2026-08-27",
+  "end_date": "2026-08-31",
+  "new_documents": 2,
+  "new_alerts": 0,
+  "events": [
+    {
+      "title": "[No title available]",
+      "agency": "Executive Office of the President",
+      "legal_basis": [],
+      "doc_type": "Presidential action",
+      "stage": null,
+      "vn_exposure": "None",
+      "sectors": [],
+      "risk_score": 3,
+      "risk_level": "Low",
+      "alert_level": "Low",
+      "source": "https://www.federalregister.gov/documents/2026/08/31/X26-20831/no-title-available",
+      "band": "LOW"
+    },
+    {
+      "title": "Further Ensuring Affordable Beef for the American Consumer",
+      "agency": "Executive Office of the President",
+      "legal_basis": [],
+      "doc_type": "Presidential action",
+      "stage": null,
+      "vn_exposure": "None",
+      "sectors": [],
+      "risk_score": 3,
+      "risk_level": "Low",
+      "alert_level": "Low",
+      "source": "https://www.federalregister.gov/documents/2026/08/31/X26-10831/further-ensuring-affordable-beef-for-the-american-consumer",
+      "band": "LOW"
+    }
+  ]
+}
