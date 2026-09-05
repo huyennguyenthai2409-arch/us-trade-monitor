@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-04T01:02:41.099966+00:00",
-  "last_run_date": "2026-09-04",
-  "last_run_at": "2026-09-04T01:02:40.570740+00:00",
-  "total_events": 5310,
-  "shown_default": 1002,
+  "generated_at": "2026-09-05T01:02:42.922045+00:00",
+  "last_run_date": "2026-09-05",
+  "last_run_at": "2026-09-05T01:02:42.513501+00:00",
+  "total_events": 5384,
+  "shown_default": 1004,
   "high_count": 220,
   "medium_count": 350,
-  "low_count": 432,
-  "direct_vn_count": 174,
+  "low_count": 434,
+  "direct_vn_count": 175,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-09-08"
+    "max": "2026-09-09"
   },
   "facets": {
     "legal_basis": [
@@ -296,7 +296,7 @@
     },
     {
       "sector": "Semiconductors",
-      "count": 26
+      "count": 27
     },
     {
       "sector": "Quartz",
@@ -718,6 +718,11 @@
       "week_start": "2026-08-31",
       "count": 21,
       "high_count": 2
+    },
+    {
+      "week_start": "2026-09-07",
+      "count": 2,
+      "high_count": 0
     }
   ]
 }
