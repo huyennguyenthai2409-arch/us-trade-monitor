@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-10T01:02:54.060877+00:00",
-  "last_run_date": "2026-09-10",
-  "last_run_at": "2026-09-10T01:02:53.567950+00:00",
-  "total_events": 5625,
-  "shown_default": 1015,
+  "generated_at": "2026-09-11T01:03:06.318665+00:00",
+  "last_run_date": "2026-09-11",
+  "last_run_at": "2026-09-11T01:03:05.678978+00:00",
+  "total_events": 5743,
+  "shown_default": 1017,
   "high_count": 221,
   "medium_count": 350,
-  "low_count": 444,
+  "low_count": 446,
   "direct_vn_count": 176,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-09-11"
+    "max": "2026-09-14"
   },
   "facets": {
     "legal_basis": [
@@ -280,7 +280,7 @@
     },
     {
       "sector": "Wood / Furniture",
-      "count": 82
+      "count": 83
     },
     {
       "sector": "Solar",
@@ -721,7 +721,7 @@
     },
     {
       "week_start": "2026-09-07",
-      "count": 13,
+      "count": 15,
       "high_count": 1
     }
   ]
