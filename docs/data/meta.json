@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-11T01:03:06.318665+00:00",
-  "last_run_date": "2026-09-11",
-  "last_run_at": "2026-09-11T01:03:05.678978+00:00",
-  "total_events": 5743,
-  "shown_default": 1017,
+  "generated_at": "2026-09-12T01:02:17.346386+00:00",
+  "last_run_date": "2026-09-12",
+  "last_run_at": "2026-09-12T01:02:17.043272+00:00",
+  "total_events": 5896,
+  "shown_default": 1022,
   "high_count": 221,
   "medium_count": 350,
-  "low_count": 446,
-  "direct_vn_count": 176,
+  "low_count": 451,
+  "direct_vn_count": 177,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-09-14"
+    "max": "2026-09-15"
   },
   "facets": {
     "legal_basis": [
@@ -272,11 +272,11 @@
   "top_sectors": [
     {
       "sector": "Steel",
-      "count": 474
+      "count": 475
     },
     {
       "sector": "Aluminum",
-      "count": 112
+      "count": 113
     },
     {
       "sector": "Wood / Furniture",
@@ -292,7 +292,7 @@
     },
     {
       "sector": "Seafood",
-      "count": 31
+      "count": 32
     },
     {
       "sector": "Semiconductors",
@@ -300,7 +300,7 @@
     },
     {
       "sector": "Quartz",
-      "count": 17
+      "count": 18
     }
   ],
   "weekly_counts": [
@@ -723,6 +723,11 @@
       "week_start": "2026-09-07",
       "count": 15,
       "high_count": 1
+    },
+    {
+      "week_start": "2026-09-14",
+      "count": 5,
+      "high_count": 0
     }
   ]
 }
