@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-16T01:03:03.059148+00:00",
-  "last_run_date": "2026-09-16",
-  "last_run_at": "2026-09-16T01:03:02.513622+00:00",
-  "total_events": 6121,
-  "shown_default": 1036,
+  "generated_at": "2026-09-17T01:02:18.487091+00:00",
+  "last_run_date": "2026-09-17",
+  "last_run_at": "2026-09-17T01:02:18.092168+00:00",
+  "total_events": 6195,
+  "shown_default": 1037,
   "high_count": 222,
   "medium_count": 350,
-  "low_count": 464,
-  "direct_vn_count": 178,
+  "low_count": 465,
+  "direct_vn_count": 179,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-09-17"
+    "max": "2026-09-18"
   },
   "facets": {
     "legal_basis": [
@@ -64,6 +64,7 @@
       "EV / Automotive",
       "Electronics",
       "Fertilizer",
+      "Fruit / Durian",
       "Machinery",
       "Pharmaceuticals",
       "Plastics",
@@ -726,7 +727,7 @@
     },
     {
       "week_start": "2026-09-14",
-      "count": 19,
+      "count": 20,
       "high_count": 1
     }
   ]
