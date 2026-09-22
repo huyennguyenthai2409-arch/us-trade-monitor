@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-21T01:15:51.897295+00:00",
-  "last_run_date": "2026-09-21",
-  "last_run_at": "2026-09-21T01:15:51.286692+00:00",
-  "total_events": 6283,
-  "shown_default": 1041,
-  "high_count": 225,
+  "generated_at": "2026-09-22T01:17:20.829493+00:00",
+  "last_run_date": "2026-09-22",
+  "last_run_at": "2026-09-22T01:17:20.372208+00:00",
+  "total_events": 6385,
+  "shown_default": 1044,
+  "high_count": 227,
   "medium_count": 350,
-  "low_count": 466,
-  "direct_vn_count": 181,
+  "low_count": 467,
+  "direct_vn_count": 183,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-09-22"
+    "max": "2026-09-24"
   },
   "facets": {
     "legal_basis": [
@@ -105,7 +105,7 @@
     {
       "key": "AD_CVD",
       "label": "AD/CVD",
-      "count": 197
+      "count": 199
     },
     {
       "key": "(unspecified)",
@@ -273,7 +273,7 @@
   "top_sectors": [
     {
       "sector": "Steel",
-      "count": 482
+      "count": 484
     },
     {
       "sector": "Aluminum",
@@ -293,7 +293,7 @@
     },
     {
       "sector": "Seafood",
-      "count": 32
+      "count": 33
     },
     {
       "sector": "Semiconductors",
@@ -732,8 +732,8 @@
     },
     {
       "week_start": "2026-09-21",
-      "count": 1,
-      "high_count": 0
+      "count": 4,
+      "high_count": 2
     }
   ]
 }
