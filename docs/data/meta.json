@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-22T01:17:20.829493+00:00",
-  "last_run_date": "2026-09-22",
-  "last_run_at": "2026-09-22T01:17:20.372208+00:00",
-  "total_events": 6385,
-  "shown_default": 1044,
+  "generated_at": "2026-09-23T01:12:32.833808+00:00",
+  "last_run_date": "2026-09-23",
+  "last_run_at": "2026-09-23T01:12:32.380551+00:00",
+  "total_events": 6482,
+  "shown_default": 1046,
   "high_count": 227,
   "medium_count": 350,
-  "low_count": 467,
-  "direct_vn_count": 183,
+  "low_count": 469,
+  "direct_vn_count": 184,
   "date_range": {
     "min": "2025-01-02",
     "max": "2026-09-24"
@@ -273,7 +273,7 @@
   "top_sectors": [
     {
       "sector": "Steel",
-      "count": 484
+      "count": 485
     },
     {
       "sector": "Aluminum",
@@ -732,7 +732,7 @@
     },
     {
       "week_start": "2026-09-21",
-      "count": 4,
+      "count": 6,
       "high_count": 2
     }
   ]
