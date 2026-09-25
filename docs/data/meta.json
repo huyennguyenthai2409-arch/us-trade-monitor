@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-24T01:12:38.876257+00:00",
-  "last_run_date": "2026-09-24",
-  "last_run_at": "2026-09-24T01:12:38.402875+00:00",
-  "total_events": 6589,
-  "shown_default": 1052,
+  "generated_at": "2026-09-25T01:16:10.996172+00:00",
+  "last_run_date": "2026-09-25",
+  "last_run_at": "2026-09-25T01:16:10.612831+00:00",
+  "total_events": 6691,
+  "shown_default": 1057,
   "high_count": 227,
   "medium_count": 350,
-  "low_count": 475,
-  "direct_vn_count": 184,
+  "low_count": 480,
+  "direct_vn_count": 185,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-09-25"
+    "max": "2026-09-28"
   },
   "facets": {
     "legal_basis": [
@@ -300,8 +300,8 @@
       "count": 28
     },
     {
-      "sector": "Quartz",
-      "count": 18
+      "sector": "Textiles / Apparel",
+      "count": 21
     }
   ],
   "weekly_counts": [
@@ -732,7 +732,7 @@
     },
     {
       "week_start": "2026-09-21",
-      "count": 12,
+      "count": 17,
       "high_count": 2
     }
   ]
