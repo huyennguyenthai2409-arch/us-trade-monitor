@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-25T01:16:10.996172+00:00",
-  "last_run_date": "2026-09-25",
-  "last_run_at": "2026-09-25T01:16:10.612831+00:00",
-  "total_events": 6691,
-  "shown_default": 1057,
+  "generated_at": "2026-09-26T01:15:50.629152+00:00",
+  "last_run_date": "2026-09-26",
+  "last_run_at": "2026-09-26T01:15:50.174482+00:00",
+  "total_events": 6796,
+  "shown_default": 1058,
   "high_count": 227,
   "medium_count": 350,
-  "low_count": 480,
+  "low_count": 481,
   "direct_vn_count": 185,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-09-28"
+    "max": "2026-09-29"
   },
   "facets": {
     "legal_basis": [
@@ -293,7 +293,7 @@
     },
     {
       "sector": "Seafood",
-      "count": 33
+      "count": 34
     },
     {
       "sector": "Semiconductors",
@@ -734,6 +734,11 @@
       "week_start": "2026-09-21",
       "count": 17,
       "high_count": 2
+    },
+    {
+      "week_start": "2026-09-28",
+      "count": 1,
+      "high_count": 0
     }
   ]
 }
