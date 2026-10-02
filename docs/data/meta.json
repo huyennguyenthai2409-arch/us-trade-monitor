@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-01T01:16:47.091125+00:00",
-  "last_run_date": "2026-10-01",
-  "last_run_at": "2026-10-01T01:16:46.421965+00:00",
-  "total_events": 7045,
-  "shown_default": 1066,
+  "generated_at": "2026-10-02T01:17:27.936183+00:00",
+  "last_run_date": "2026-10-02",
+  "last_run_at": "2026-10-02T01:17:27.460795+00:00",
+  "total_events": 7140,
+  "shown_default": 1070,
   "high_count": 228,
   "medium_count": 351,
-  "low_count": 487,
+  "low_count": 491,
   "direct_vn_count": 187,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-10-02"
+    "max": "2026-10-05"
   },
   "facets": {
     "legal_basis": [
@@ -273,11 +273,11 @@
   "top_sectors": [
     {
       "sector": "Steel",
-      "count": 488
+      "count": 489
     },
     {
       "sector": "Aluminum",
-      "count": 117
+      "count": 119
     },
     {
       "sector": "Solar",
@@ -301,7 +301,7 @@
     },
     {
       "sector": "Textiles / Apparel",
-      "count": 21
+      "count": 22
     }
   ],
   "weekly_counts": [
@@ -737,7 +737,7 @@
     },
     {
       "week_start": "2026-09-28",
-      "count": 9,
+      "count": 13,
       "high_count": 1
     }
   ]
