@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-06T01:17:53.850000+00:00",
-  "last_run_date": "2026-10-06",
-  "last_run_at": "2026-10-06T01:17:53.361772+00:00",
-  "total_events": 7336,
-  "shown_default": 1078,
+  "generated_at": "2026-10-07T01:23:01.110644+00:00",
+  "last_run_date": "2026-10-07",
+  "last_run_at": "2026-10-07T01:23:00.651447+00:00",
+  "total_events": 7413,
+  "shown_default": 1079,
   "high_count": 228,
   "medium_count": 351,
-  "low_count": 499,
+  "low_count": 500,
   "direct_vn_count": 188,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-10-06"
+    "max": "2026-10-08"
   },
   "facets": {
     "legal_basis": [
@@ -280,12 +280,12 @@
       "count": 119
     },
     {
-      "sector": "Solar",
+      "sector": "Wood / Furniture",
       "count": 84
     },
     {
-      "sector": "Wood / Furniture",
-      "count": 83
+      "sector": "Solar",
+      "count": 84
     },
     {
       "sector": "Chemicals",
@@ -742,7 +742,7 @@
     },
     {
       "week_start": "2026-10-05",
-      "count": 8,
+      "count": 9,
       "high_count": 0
     }
   ]
