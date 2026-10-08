@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-07T01:23:01.110644+00:00",
-  "last_run_date": "2026-10-07",
-  "last_run_at": "2026-10-07T01:23:00.651447+00:00",
-  "total_events": 7413,
-  "shown_default": 1079,
-  "high_count": 228,
+  "generated_at": "2026-10-08T01:17:12.851982+00:00",
+  "last_run_date": "2026-10-08",
+  "last_run_at": "2026-10-08T01:17:12.154194+00:00",
+  "total_events": 7549,
+  "shown_default": 1088,
+  "high_count": 229,
   "medium_count": 351,
-  "low_count": 500,
+  "low_count": 508,
   "direct_vn_count": 188,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-10-08"
+    "max": "2026-10-09"
   },
   "facets": {
     "legal_basis": [
@@ -110,7 +110,7 @@
     {
       "key": "(unspecified)",
       "label": "(unspecified)",
-      "count": 27
+      "count": 28
     },
     {
       "key": "SECTION_337",
@@ -273,23 +273,23 @@
   "top_sectors": [
     {
       "sector": "Steel",
-      "count": 493
+      "count": 499
     },
     {
       "sector": "Aluminum",
       "count": 119
     },
     {
+      "sector": "Solar",
+      "count": 85
+    },
+    {
       "sector": "Wood / Furniture",
       "count": 84
     },
     {
-      "sector": "Solar",
-      "count": 84
-    },
-    {
       "sector": "Chemicals",
-      "count": 46
+      "count": 47
     },
     {
       "sector": "Seafood",
@@ -742,8 +742,8 @@
     },
     {
       "week_start": "2026-10-05",
-      "count": 9,
-      "high_count": 0
+      "count": 18,
+      "high_count": 1
     }
   ]
 }
