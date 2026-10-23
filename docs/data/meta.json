@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-22T01:09:30.349788+00:00",
-  "last_run_date": "2026-10-22",
-  "last_run_at": "2026-10-22T01:09:29.994491+00:00",
-  "total_events": 8166,
-  "shown_default": 1112,
+  "generated_at": "2026-10-23T01:09:33.653853+00:00",
+  "last_run_date": "2026-10-23",
+  "last_run_at": "2026-10-23T01:09:33.305030+00:00",
+  "total_events": 8249,
+  "shown_default": 1113,
   "high_count": 232,
   "medium_count": 357,
-  "low_count": 523,
+  "low_count": 524,
   "direct_vn_count": 193,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-10-23"
+    "max": "2026-10-26"
   },
   "facets": {
     "legal_basis": [
@@ -297,7 +297,7 @@
     },
     {
       "sector": "Semiconductors",
-      "count": 29
+      "count": 30
     },
     {
       "sector": "Textiles / Apparel",
@@ -752,7 +752,7 @@
     },
     {
       "week_start": "2026-10-19",
-      "count": 7,
+      "count": 8,
       "high_count": 1
     }
   ]
