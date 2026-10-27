@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-26T01:09:20.635006+00:00",
-  "last_run_date": "2026-10-26",
-  "last_run_at": "2026-10-26T01:09:19.929621+00:00",
-  "total_events": 8352,
-  "shown_default": 1118,
+  "generated_at": "2026-10-27T01:09:35.612253+00:00",
+  "last_run_date": "2026-10-27",
+  "last_run_at": "2026-10-27T01:09:35.107240+00:00",
+  "total_events": 8430,
+  "shown_default": 1119,
   "high_count": 232,
   "medium_count": 357,
-  "low_count": 529,
-  "direct_vn_count": 193,
+  "low_count": 530,
+  "direct_vn_count": 194,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-10-27"
+    "max": "2026-10-28"
   },
   "facets": {
     "legal_basis": [
@@ -757,7 +757,7 @@
     },
     {
       "week_start": "2026-10-26",
-      "count": 5,
+      "count": 6,
       "high_count": 0
     }
   ]
