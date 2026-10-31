@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-30T01:09:47.916336+00:00",
-  "last_run_date": "2026-10-30",
-  "last_run_at": "2026-10-30T01:09:47.271254+00:00",
-  "total_events": 8755,
-  "shown_default": 1128,
-  "high_count": 232,
+  "generated_at": "2026-10-31T01:09:49.767799+00:00",
+  "last_run_date": "2026-10-31",
+  "last_run_at": "2026-10-31T01:09:49.158393+00:00",
+  "total_events": 8859,
+  "shown_default": 1132,
+  "high_count": 233,
   "medium_count": 358,
-  "low_count": 538,
-  "direct_vn_count": 195,
+  "low_count": 541,
+  "direct_vn_count": 196,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-11-02"
+    "max": "2026-11-03"
   },
   "facets": {
     "legal_basis": [
@@ -110,7 +110,7 @@
     {
       "key": "(unspecified)",
       "label": "(unspecified)",
-      "count": 29
+      "count": 30
     },
     {
       "key": "SECTION_337",
@@ -273,7 +273,7 @@
   "top_sectors": [
     {
       "sector": "Steel",
-      "count": 517
+      "count": 518
     },
     {
       "sector": "Aluminum",
@@ -289,7 +289,7 @@
     },
     {
       "sector": "Chemicals",
-      "count": 51
+      "count": 53
     },
     {
       "sector": "Seafood",
@@ -301,7 +301,7 @@
     },
     {
       "sector": "Textiles / Apparel",
-      "count": 22
+      "count": 23
     }
   ],
   "weekly_counts": [
@@ -759,6 +759,11 @@
       "week_start": "2026-10-26",
       "count": 15,
       "high_count": 0
+    },
+    {
+      "week_start": "2026-11-02",
+      "count": 4,
+      "high_count": 1
     }
   ]
 }
