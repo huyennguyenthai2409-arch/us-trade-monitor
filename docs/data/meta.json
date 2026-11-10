@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-09T01:08:43.911715+00:00",
-  "last_run_date": "2026-11-09",
-  "last_run_at": "2026-11-09T01:08:43.548071+00:00",
-  "total_events": 9320,
-  "shown_default": 1153,
+  "generated_at": "2026-11-10T01:12:15.010063+00:00",
+  "last_run_date": "2026-11-10",
+  "last_run_at": "2026-11-10T01:12:14.663425+00:00",
+  "total_events": 9424,
+  "shown_default": 1161,
   "high_count": 235,
   "medium_count": 359,
-  "low_count": 559,
-  "direct_vn_count": 200,
+  "low_count": 567,
+  "direct_vn_count": 202,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-11-10"
+    "max": "2026-11-12"
   },
   "facets": {
     "legal_basis": [
@@ -273,7 +273,7 @@
   "top_sectors": [
     {
       "sector": "Steel",
-      "count": 525
+      "count": 526
     },
     {
       "sector": "Aluminum",
@@ -285,11 +285,11 @@
     },
     {
       "sector": "Solar",
-      "count": 88
+      "count": 89
     },
     {
       "sector": "Chemicals",
-      "count": 54
+      "count": 56
     },
     {
       "sector": "Seafood",
@@ -767,7 +767,7 @@
     },
     {
       "week_start": "2026-11-09",
-      "count": 9,
+      "count": 17,
       "high_count": 0
     }
   ]
