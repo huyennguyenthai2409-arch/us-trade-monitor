@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-10T01:12:15.010063+00:00",
-  "last_run_date": "2026-11-10",
-  "last_run_at": "2026-11-10T01:12:14.663425+00:00",
-  "total_events": 9424,
-  "shown_default": 1161,
+  "generated_at": "2026-11-11T01:08:41.500430+00:00",
+  "last_run_date": "2026-11-11",
+  "last_run_at": "2026-11-11T01:08:41.065321+00:00",
+  "total_events": 9547,
+  "shown_default": 1165,
   "high_count": 235,
   "medium_count": 359,
-  "low_count": 567,
+  "low_count": 571,
   "direct_vn_count": 202,
   "date_range": {
     "min": "2025-01-02",
@@ -281,7 +281,7 @@
     },
     {
       "sector": "Wood / Furniture",
-      "count": 89
+      "count": 91
     },
     {
       "sector": "Solar",
@@ -293,7 +293,7 @@
     },
     {
       "sector": "Seafood",
-      "count": 40
+      "count": 41
     },
     {
       "sector": "Semiconductors",
@@ -767,7 +767,7 @@
     },
     {
       "week_start": "2026-11-09",
-      "count": 17,
+      "count": 21,
       "high_count": 0
     }
   ]
