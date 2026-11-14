@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-13T01:08:52.054120+00:00",
-  "last_run_date": "2026-11-13",
-  "last_run_at": "2026-11-13T01:08:51.681006+00:00",
-  "total_events": 9672,
-  "shown_default": 1171,
-  "high_count": 235,
+  "generated_at": "2026-11-14T01:09:24.176859+00:00",
+  "last_run_date": "2026-11-14",
+  "last_run_at": "2026-11-14T01:09:23.757381+00:00",
+  "total_events": 9773,
+  "shown_default": 1182,
+  "high_count": 236,
   "medium_count": 359,
-  "low_count": 577,
-  "direct_vn_count": 202,
+  "low_count": 587,
+  "direct_vn_count": 203,
   "date_range": {
     "min": "2025-01-02",
     "max": "2026-11-17"
@@ -105,7 +105,7 @@
     {
       "key": "AD_CVD",
       "label": "AD/CVD",
-      "count": 204
+      "count": 205
     },
     {
       "key": "(unspecified)",
@@ -273,15 +273,15 @@
   "top_sectors": [
     {
       "sector": "Steel",
-      "count": 527
+      "count": 532
     },
     {
       "sector": "Aluminum",
-      "count": 125
+      "count": 127
     },
     {
       "sector": "Wood / Furniture",
-      "count": 92
+      "count": 93
     },
     {
       "sector": "Solar",
@@ -293,7 +293,7 @@
     },
     {
       "sector": "Seafood",
-      "count": 43
+      "count": 44
     },
     {
       "sector": "Semiconductors",
@@ -769,6 +769,11 @@
       "week_start": "2026-11-09",
       "count": 26,
       "high_count": 0
+    },
+    {
+      "week_start": "2026-11-16",
+      "count": 11,
+      "high_count": 1
     }
   ]
 }
