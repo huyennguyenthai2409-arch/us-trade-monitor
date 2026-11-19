@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-18T01:08:20.349257+00:00",
-  "last_run_date": "2026-11-18",
-  "last_run_at": "2026-11-18T01:08:19.738714+00:00",
-  "total_events": 9987,
+  "generated_at": "2026-11-19T01:10:22.180273+00:00",
+  "last_run_date": "2026-11-19",
+  "last_run_at": "2026-11-19T01:10:21.669564+00:00",
+  "total_events": 10081,
   "shown_default": 1186,
   "high_count": 238,
   "medium_count": 359,
@@ -10,7 +10,7 @@
   "direct_vn_count": 205,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-11-19"
+    "max": "2026-11-20"
   },
   "facets": {
     "legal_basis": [
