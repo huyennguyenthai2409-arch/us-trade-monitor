@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-27T01:07:59.889481+00:00",
-  "last_run_date": "2026-11-27",
-  "last_run_at": "2026-11-27T01:07:59.379830+00:00",
-  "total_events": 10616,
-  "shown_default": 1199,
+  "generated_at": "2026-11-28T01:09:24.769595+00:00",
+  "last_run_date": "2026-11-28",
+  "last_run_at": "2026-11-28T01:09:24.227755+00:00",
+  "total_events": 10756,
+  "shown_default": 1205,
   "high_count": 239,
   "medium_count": 359,
-  "low_count": 601,
+  "low_count": 607,
   "direct_vn_count": 208,
   "date_range": {
     "min": "2025-01-02",
-    "max": "2026-11-30"
+    "max": "2026-12-01"
   },
   "facets": {
     "legal_basis": [
@@ -273,11 +273,11 @@
   "top_sectors": [
     {
       "sector": "Steel",
-      "count": 539
+      "count": 541
     },
     {
       "sector": "Aluminum",
-      "count": 127
+      "count": 130
     },
     {
       "sector": "Wood / Furniture",
@@ -779,6 +779,11 @@
       "week_start": "2026-11-23",
       "count": 9,
       "high_count": 1
+    },
+    {
+      "week_start": "2026-11-30",
+      "count": 6,
+      "high_count": 0
     }
   ]
 }
